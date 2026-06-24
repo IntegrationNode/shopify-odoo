@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html data-attr-t="lang" lang-t="meta.lang">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-attr-t content-t="meta.pricing.description">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" data-attr-t="href" href-t="meta.pricing.canonical">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" data-attr-t="content" content-t="meta.pricing.canonical">
+    <meta property="og:title" data-attr-t content-t="meta.pricing.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.pricing.ogDescription">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-attr-t content-t="meta.pricing.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.pricing.twitterDescription">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title data-t="meta.pricing.title"></title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="fonts/outlined.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Hide prices until regional pricing JS processes them -->
+    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Product",
+                "name": "Odoo Integration for Gmail",
+                "description": "Chrome extension for Gmail-Odoo CRM integration. View contacts, create opportunities, tasks, and tickets directly in Gmail.",
+                "image": "https://integrationnode.com/shopify-odoo/assets/og-image.png",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "IntegrationNode"
+                },
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "Free Plan",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "5 records per section, basic email logging, unlimited contacts"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "PLUS Monthly",
+                        "price": "19",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "50 records, real-time search, auto-logging, multi-company, financial insights, recent activities, priority support"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "PLUS Yearly",
+                        "price": "182",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "50 records, real-time search, auto-logging, multi-company, financial insights, recent activities, priority support. Save 20% vs monthly."
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Team Monthly",
+                        "price": "19",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "priceValidUntil": "2026-12-31",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "Per-user volume pricing for teams with centralized billing and seat management. Minimum 3 seats."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What's included in the free plan?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The free plan includes viewing contacts and company info, creating opportunities, tasks and tickets, logging emails to Odoo, viewing up to 5 records per section, and smart contact detection."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What additional features does PLUS offer?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "PLUS adds real-time search across all lists, up to 50 records per section (vs 5 in Free), auto-logging of Gmail threads into Odoo records, multi-company support, financial insights for your contacts, customizable email quote depth, Contact/Company tabs, related contacts by domain, customizable sections, performance insights, group records by stage, email participants info, recent activities from Odoo conversations and notification email organization."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is there a free trial for PLUS?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, you can try the PLUS features free for 14 days. No credit card required to start the trial."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I cancel my subscription anytime?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, you can cancel your PLUS subscription at any time. You'll continue to have access until the end of your billing period, then your account will revert to the free plan."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you offer team or enterprise pricing?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, we offer a Team plan with per-user volume pricing. All Team plans include every PLUS feature plus centralized billing and seat management. Minimum 3 seats required."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.com/shopify-odoo/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Pricing",
+                        "item": "https://integrationnode.com/shopify-odoo/pricing.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./" class="logo" data-t="nav.logo"></a>
+                <div class="nav-links">
+                    <a href="./#features" data-t="nav.features"></a>
+                    <a href="pricing.html" class="active" data-t="nav.pricing"></a>
+                    <a href="user-guide.html" data-t="nav.userGuide"></a>
+                    <a href="blog.html" data-t="nav.blog"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current" data-t="nav.currentLang"></span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1 data-t="pricingPage.hero.title"></h1>
+            <p class="subtitle" data-t="pricingPage.hero.subtitle"></p>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="pricing-grid-extended">
+                <!-- FREE Plan -->
+                <div class="pricing-card-extended">
+                    <div class="plan-header">
+                        <h3 data-t="pricingPage.free.name"></h3>
+                        <div class="price-large">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period" data-t="pricingPage.perMonth"></span>
+                        </div>
+                        <p class="plan-description" data-t="pricingPage.free.description"></p>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-t="pricingPage.featuresIncluded"></h4>
+                        <ul>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature3"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature4"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature5"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature6"></span></li>
+                        </ul>
+                    </div>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_free" target="_blank" class="btn btn-outline btn-block" data-t="pricingPage.free.cta"></a>
+                </div>
+
+                <!-- PLUS Plan (Featured) -->
+                <div class="pricing-card-extended featured">
+                    <div class="badge-top" data-t="pricingPage.plus.badge"></div>
+                    <div class="plan-header">
+                        <h3 data-t="pricingPage.plus.name"></h3>
+                        <div class="price-large">
+                            <span class="currency">$</span>
+                            <span class="amount" data-plan="plus" data-price="monthly" data-price-format="large">19</span>
+                            <span class="period" data-t="pricingPage.perMonth"></span>
+                        </div>
+                        <div class="price-annual-option">
+                            <span data-t="pricingPage.plus.or"></span> <strong>$<span data-plan="plus" data-price="annual" data-price-format="text">182</span><span data-t="pricingPage.plus.perYear"></span></strong> <span class="save-badge-small" data-t="pricingPage.plus.save"></span>
+                        </div>
+                        <p class="plan-description" data-t="pricingPage.plus.description"></p>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-t="pricingPage.plus.everythingInFree"></h4>
+                        <ul>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature12"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature13"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature14"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature10"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature11"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature3"></span></li>
+                        </ul>
+                        <a href="#full-comparison" class="see-full-comparison" data-t="pricingPage.plus.seeFullComparison"></a>
+                    </div>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_plus" target="_blank" class="btn btn-primary btn-block" data-t="pricingPage.plus.cta"></a>
+                </div>
+
+                <!-- TEAM Plan -->
+                <div class="pricing-card-extended pricing-card-team">
+                    <span class="badge-inline" data-t="pricingPage.team.badge"></span>
+                    <div class="plan-header">
+                        <h3 data-t="pricingPage.team.name"></h3>
+                        <div class="price-large">
+                            <span class="currency">$</span>
+                            <span class="amount" data-plan="team" data-price="perUser" data-price-format="large">19</span>
+                            <span class="period" data-t="pricingPage.team.perUserMonth"></span>
+                        </div>
+                        <div class="price-annual-option">
+                            <span data-t="pricingPage.team.annualAvailable"></span> <span class="save-badge-small" data-t="pricingPage.plus.save"></span>
+                        </div>
+                        <p class="plan-description" data-t="pricingPage.team.description"></p>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-t="pricingPage.team.everythingInPlus"></h4>
+                        <ul>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.team.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.team.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.team.feature3"></span></li>
+                        </ul>
+                    </div>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_team" target="_blank" class="btn btn-outline btn-block" data-t="pricingPage.team.cta"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="comparison-table-section" id="full-comparison">
+        <div class="container">
+            <h2 data-t="pricingPage.comparison.title"></h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-t="pricingPage.comparison.feature"></th>
+                            <th data-t="pricingPage.free.name"></th>
+                            <th class="featured-col" data-t="pricingPage.plus.name"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="pricingPage.comparison.coreFeatures"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.viewContacts"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.createRecords"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.logEmails"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.smartDetection"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="pricingPage.comparison.dataSearch"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.recordsPerSection"></td>
+                            <td>5</td>
+                            <td><strong>50</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.realtimeSearch"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.contactCompanyTabs"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.relatedContacts"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="pricingPage.comparison.customization"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.financialInsights"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.customizeSections"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.groupByStage"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.emailParticipants"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.recentActivities"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.notificationOrganization"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.customQuoteLevels"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr class="section-header">
+                            <td colspan="3"><strong data-t="pricingPage.comparison.automation"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.autoLogging"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.multiCompany"></td>
+                            <td><span class="cross-red">✗</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="comparison-note" data-t="pricingPage.comparison.teamNote"></p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pricing-cta">
+        <div class="container">
+            <h2 data-t="pricingPage.cta.title"></h2>
+            <p data-t="pricingPage.cta.subtitle"></p>
+            <div class="cta-buttons">
+                <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_cta_free" target="_blank" class="btn btn-primary btn-lg" data-t="pricingPage.cta.getStarted"></a>
+                <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_cta_plus" target="_blank" class="btn btn-secondary btn-lg" data-t="pricingPage.cta.upgrade"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.resources"></h4>
+                    <ul>
+                        <li><a href="./" data-t="footer.home"></a></li>
+                        <li><a href="pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="comparison.html" data-t="footer.comparison"></a></li>
+                        <li><a href="blog.html" data-t="footer.blog"></a></li>
+                        <li><a href="privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-t="footer.copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+    <!-- Regional Pricing Detection -->
+    <script src="regional-pricing.js"></script>
+</body>
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html data-attr-t="lang" lang-t="meta.lang">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-attr-t content-t="meta.userGuide.description">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" data-attr-t="href" href-t="meta.userGuide.canonical">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" data-attr-t="content" content-t="meta.userGuide.canonical">
+    <meta property="og:title" data-attr-t content-t="meta.userGuide.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.userGuide.ogDescription">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo Integration for Gmail">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-attr-t content-t="meta.userGuide.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.userGuide.twitterDescription">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title data-t="meta.userGuide.title"></title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="fonts/outlined.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .guide-page { padding: var(--spacing-xl) 0; background: var(--color-bg); min-height: 70vh; }
+        .guide-header { text-align: center; margin-bottom: var(--spacing-lg); }
+        .guide-header h1 { margin-bottom: var(--spacing-xs); }
+        .guide-header p { color: var(--color-text-light); font-size: 1.125rem; }
+        .guide-content { display: flex; gap: 2rem; max-width: 1200px; margin: 0 auto; align-items: flex-start; }
+        .guide-nav { background: white; border-radius: var(--radius-lg); padding: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); position: sticky; top: 100px; width: 240px; flex-shrink: 0; height: fit-content; }
+        .guide-nav h2 { font-size: 1.1rem; margin-bottom: var(--spacing-sm); color: var(--color-primary); }
+        .guide-nav ul { display: flex; flex-direction: column; gap: 0.25rem; list-style: none; padding: 0; margin: 0; }
+        .guide-nav a { color: var(--color-text); text-decoration: none; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; transition: all var(--transition-base); font-size: 0.9rem; }
+        .guide-nav a:hover { background: var(--color-bg-highlight); color: var(--color-primary); }
+        .guide-main { flex: 1; min-width: 0; }
+        .guide-nav .material-symbols-outlined { font-size: 18px; color: var(--color-primary); }
+        .guide-section { background: white; border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); scroll-margin-top: 100px; }
+        .guide-nav a.active { background: var(--color-bg-highlight); color: var(--color-primary); font-weight: 500; }
+        .guide-section h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 2px solid var(--color-border); display: flex; align-items: center; gap: 0.5rem; }
+        .guide-section h3 { color: var(--color-text); font-size: 1.25rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+        .guide-section h4 { color: var(--color-text); font-size: 1rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs); }
+        .guide-section p { margin-bottom: var(--spacing-sm); line-height: 1.7; }
+        .guide-section ul, .guide-section ol { margin-left: 1.5rem; margin-bottom: var(--spacing-sm); }
+        .guide-section li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .guide-section code { background: var(--color-bg-highlight); padding: 0.125rem 0.375rem; border-radius: var(--radius-sm); font-family: monospace; font-size: 0.875rem; }
+        .feature-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-free { background: #DCFCE7; color: #166534; }
+        .badge-plus { background: var(--color-badge); color: var(--color-badge-text); }
+        .info-box { background: var(--color-bg-highlight); border-left: 4px solid var(--color-primary); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: var(--spacing-sm) 0; }
+        .info-box.warning { border-left-color: #F59E0B; background: #FEF3C7; }
+        .info-box strong { color: var(--color-primary); }
+        .info-box.warning strong { color: #92400E; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: var(--spacing-sm) 0; }
+        .comparison-table th, .comparison-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-border); }
+        .comparison-table th { background: var(--color-bg-highlight); font-weight: 600; }
+        .steps-list { counter-reset: step-counter; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step-counter; padding-left: 2.5rem; position: relative; margin-bottom: var(--spacing-sm); }
+        .steps-list li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; width: 1.75rem; height: 1.75rem; background: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; }
+        .faq-item { margin-bottom: var(--spacing-sm); }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        @media (max-width: 1024px) { .guide-content { flex-direction: column; } .guide-nav { position: static; width: 100%; } .guide-nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.5rem; } .guide-nav a { padding: 0.5rem 1rem; } }
+        @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "TechArticle",
+                "@id": "https://integrationnode.com/shopify-odoo/user-guide.html#article",
+                "headline": "Odoo Integration for Gmail - Complete User Guide",
+                "description": "Step-by-step guide to install, configure, and use Odoo Integration for Gmail. Learn about email logging, CRM features, tasks, tickets, and troubleshooting.",
+                "datePublished": "2025-11-22T00:00:00+00:00",
+                "dateModified": "2026-02-22T00:00:00+00:00",
+                "author": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://integrationnode.com/shopify-odoo/user-guide.html"
+                },
+                "keywords": ["odoo gmail setup", "odoo gmail configuration", "odoo gmail tutorial", "odoo extension guide"],
+                "articleSection": "Documentation",
+                "inLanguage": "en",
+                "proficiencyLevel": "Beginner"
+            },
+            {
+                "@type": "HowTo",
+                "name": "How to Set Up Odoo Integration for Gmail",
+                "description": "Quick setup guide for the Odoo Gmail Chrome extension",
+                "totalTime": "PT2M",
+                "estimatedCost": {
+                    "@type": "MonetaryAmount",
+                    "currency": "USD",
+                    "value": "0"
+                },
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "position": 1,
+                        "name": "Install Extension",
+                        "text": "Visit Chrome Web Store and click 'Add to Chrome' to install Odoo Integration for Gmail.",
+                        "url": "https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 2,
+                        "name": "Enter Odoo URL",
+                        "text": "Open Gmail, click the extension icon, and enter your Odoo instance URL (e.g., https://yourcompany.odoo.com)."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 3,
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension connects using your active Odoo session."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 4,
+                        "name": "Connect",
+                        "text": "Click Connect and the extension verifies your active session — no API key required. You're ready to use Odoo from Gmail!"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.com/shopify-odoo/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "User Guide",
+                        "item": "https://integrationnode.com/shopify-odoo/user-guide.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./" class="logo" data-t="nav.logo"></a>
+                <div class="nav-links">
+                    <a href="./#features" data-t="nav.features"></a>
+                    <a href="pricing.html" data-t="nav.pricing"></a>
+                    <a href="user-guide.html" class="active" data-t="nav.userGuide"></a>
+                    <a href="blog.html" data-t="nav.blog"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=userguide_navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current" data-t="nav.currentLang"></span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-page">
+        <div class="container">
+            <div class="guide-header">
+                <h1 data-t="userGuide.header.title"></h1>
+                <p data-t="userGuide.header.subtitle"></p>
+            </div>
+
+            <div class="guide-content">
+                <!-- Table of Contents -->
+                <nav class="guide-nav">
+                    <h2 data-t="userGuide.quickNav"></h2>
+                    <ul>
+                        <li><a href="#installation"><span class="material-symbols-outlined">download</span> <span data-t="userGuide.nav.installation"></span></a></li>
+                        <li><a href="#configuration"><span class="material-symbols-outlined">settings</span> <span data-t="userGuide.nav.configuration"></span></a></li>
+                        <li><a href="#features"><span class="material-symbols-outlined">star</span> <span data-t="userGuide.nav.features"></span></a></li>
+                        <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span data-t="userGuide.nav.subscription"></span></a></li>
+                        <li><a href="#email-logging"><span class="material-symbols-outlined">mail</span> <span data-t="userGuide.nav.emailLogging"></span></a></li>
+                        <li><a href="#autolog"><span class="material-symbols-outlined">sync</span> <span data-t="userGuide.nav.autolog"></span></a></li>
+                        <li><a href="#related-contacts"><span class="material-symbols-outlined">groups</span> <span data-t="userGuide.nav.relatedContacts"></span></a></li>
+                        <li><a href="#recent-activities"><span class="material-symbols-outlined">history</span> <span data-t="userGuide.nav.recentActivities"></span></a></li>
+                        <li><a href="#opportunities"><span class="material-symbols-outlined">handshake</span> <span data-t="userGuide.nav.opportunities"></span></a></li>
+                        <li><a href="#tasks-tickets"><span class="material-symbols-outlined">task</span> <span data-t="userGuide.nav.tasksTickets"></span></a></li>
+                        <li><a href="#notifications"><span class="material-symbols-outlined">notifications</span> <span data-t="userGuide.nav.notifications"></span></a></li>
+                        <li><a href="#multi-company"><span class="material-symbols-outlined">business</span> <span data-t="userGuide.nav.multiCompany"></span></a></li>
+                        <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span data-t="userGuide.nav.troubleshooting"></span></a></li>
+                        <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span data-t="userGuide.nav.faq"></span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="guide-main">
+                <!-- Installation Section -->
+                <section id="installation" class="guide-section">
+                    <h2><span class="material-symbols-outlined">download</span> <span data-t="userGuide.installation.title"></span></h2>
+                    <h3 data-t="userGuide.installation.prerequisites"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.installation.chromeLabel"></strong>: <span data-t="userGuide.installation.chromeVersion"></span></li>
+                        <li><strong data-t="userGuide.installation.odooLabel"></strong>: <span data-t="userGuide.installation.odooVersion"></span></li>
+                    </ul>
+                    <h3 data-t="userGuide.installation.stepsTitle"></h3>
+                    <ol class="steps-list">
+                        <li><strong data-t="userGuide.installation.step1Title"></strong><br><span data-t="userGuide.installation.step1Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step2Title"></strong><br><span data-t="userGuide.installation.step2Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step3Title"></strong><br><span data-t="userGuide.installation.step3Desc"></span></li>
+                        <li><strong data-t="userGuide.installation.step4Title"></strong><br><span data-t="userGuide.installation.step4Desc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.installation.noteTitle"></strong> <span data-t="userGuide.installation.noteDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Configuration Section -->
+                <section id="configuration" class="guide-section">
+                    <h2><span class="material-symbols-outlined">settings</span> <span data-t="userGuide.configuration.title"></span></h2>
+                    <h3 data-t="userGuide.configuration.firstTimeSetup"></h3>
+                    <ol class="steps-list">
+                        <li><strong data-t="userGuide.configuration.step1Title"></strong><br><span data-t="userGuide.configuration.step1Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step2Title"></strong><br><span data-t="userGuide.configuration.step2Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step3Title"></strong><br><span data-t="userGuide.configuration.step3Desc"></span></li>
+                        <li><strong data-t="userGuide.configuration.step4Title"></strong><br><span data-t="userGuide.configuration.step4Desc"></span></li>
+                    </ol>
+                    <div class="warning-box" style="background: #e8f4f8; border-color: #0288d1;">
+                        <span class="material-symbols-outlined" style="color: #0288d1;">info</span>
+                        <span><span data-t="userGuide.configuration.versionNote"></span> <a href="blog/odoo-api-key-setup.html" data-t="userGuide.configuration.versionNoteLink"></a></span>
+                    </div>
+                    <h3 data-t="userGuide.configuration.updateTitle"></h3>
+                    <p data-t="userGuide.configuration.updateDesc"></p>
+                    <ol>
+                        <li data-t="userGuide.configuration.updateStep1"></li>
+                        <li data-t="userGuide.configuration.updateStep2"></li>
+                        <li data-t="userGuide.configuration.updateStep3"></li>
+                    </ol>
+                    <p data-t="userGuide.configuration.updateApiKeyNote"></p>
+                </section>
+
+                <!-- Features Overview Section -->
+                <section id="features" class="guide-section">
+                    <h2><span class="material-symbols-outlined">star</span> <span data-t="userGuide.features.title"></span></h2>
+                    <h3><span data-t="userGuide.features.freePlanTitle"></span> <span class="feature-badge badge-free" data-t="userGuide.features.freeBadge"></span></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.features.free.contactViewing"></strong>: <span data-t="userGuide.features.free.contactViewingDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.smartDetection"></strong>: <span data-t="userGuide.features.free.smartDetectionDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.emailLogging"></strong>: <span data-t="userGuide.features.free.emailLoggingDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.recordCreation"></strong>: <span data-t="userGuide.features.free.recordCreationDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.limitedRecords"></strong>: <span data-t="userGuide.features.free.limitedRecordsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.refresh"></strong>: <span data-t="userGuide.features.free.refreshDesc"></span></li>
+                        <li><strong data-t="userGuide.features.free.loadTime"></strong>: <span data-t="userGuide.features.free.loadTimeDesc"></span></li>
+                    </ul>
+                    <h3><span data-t="userGuide.features.plusPlanTitle"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h3>
+                    <p data-t="userGuide.features.plusIntro"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.features.plus.advancedSearch"></strong>: <span data-t="userGuide.features.plus.advancedSearchDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.tabs"></strong>: <span data-t="userGuide.features.plus.tabsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.relatedContacts"></strong>: <span data-t="userGuide.features.plus.relatedContactsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.financial"></strong>: <span data-t="userGuide.features.plus.financialDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.settings"></strong>: <span data-t="userGuide.features.plus.settingsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.quoteLevels"></strong>: <span data-t="userGuide.features.plus.quoteLevelsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.grouping"></strong>: <span data-t="userGuide.features.plus.groupingDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.emailParticipants"></strong>: <span data-t="userGuide.features.plus.emailParticipantsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.recentActivities"></strong>: <span data-t="userGuide.features.plus.recentActivitiesDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.notifications"></strong>: <span data-t="userGuide.features.plus.notificationsDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.autolog"></strong>: <span data-t="userGuide.features.plus.autologDesc"></span></li>
+                        <li><strong data-t="userGuide.features.plus.multiCompany"></strong>: <span data-t="userGuide.features.plus.multiCompanyDesc"></span></li>
+                    </ul>
+                </section>
+
+                <!-- Subscription Management Section -->
+                <section id="subscription" class="guide-section">
+                    <h2><span class="material-symbols-outlined">credit_card</span> <span data-t="userGuide.subscription.title"></span></h2>
+
+                    <h3 data-t="userGuide.subscription.howToSubscribe"></h3>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.subscription.subscribeStep1"></li>
+                        <li data-t="userGuide.subscription.subscribeStep2"></li>
+                        <li data-t="userGuide.subscription.subscribeStep3"></li>
+                    </ol>
+
+                    <h4 data-t="userGuide.subscription.activatingLicense"></h4>
+                    <p data-t="userGuide.subscription.activatingIntro"></p>
+                    <ul>
+                        <li data-t="userGuide.subscription.activateOption1"></li>
+                        <li data-t="userGuide.subscription.activateOption2"></li>
+                        <li data-t="userGuide.subscription.activateOption3"></li>
+                    </ul>
+
+                    <div class="info-box">
+                        <strong data-t="userGuide.subscription.licenseInfoTitle"></strong> <span data-t="userGuide.subscription.licenseInfoDesc"></span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong data-t="userGuide.subscription.freeTrialTitle"></strong> <span data-t="userGuide.subscription.freeTrialDesc"></span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong data-t="userGuide.subscription.regionalPricingTitle"></strong> <span data-t="userGuide.subscription.regionalPricingDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.subscription.howToCancel"></h3>
+                    <p data-t="userGuide.subscription.cancelIntro"></p>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.subscription.cancelStep1"></li>
+                        <li data-t="userGuide.subscription.cancelStep2"></li>
+                        <li data-t="userGuide.subscription.cancelStep3"></li>
+                    </ol>
+                    <p data-t="userGuide.subscription.cancelNote"></p>
+                </section>
+
+                <!-- Email Logging Section -->
+                <section id="email-logging" class="guide-section">
+                    <h2><span class="material-symbols-outlined">mail</span> <span data-t="userGuide.emailLogging.title"></span></h2>
+                    <h3 data-t="userGuide.emailLogging.howToLog"></h3>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.emailLogging.step1"></li>
+                        <li data-t="userGuide.emailLogging.step2"></li>
+                        <li data-t="userGuide.emailLogging.step3"></li>
+                        <li data-t="userGuide.emailLogging.step4"></li>
+                        <li data-t="userGuide.emailLogging.step5"></li>
+                    </ol>
+                    <h3 data-t="userGuide.emailLogging.whatGetsLogged"></h3>
+                    <ul>
+                        <li data-t="userGuide.emailLogging.logged1"></li>
+                        <li data-t="userGuide.emailLogging.logged2"></li>
+                        <li data-t="userGuide.emailLogging.logged3"></li>
+                        <li data-t="userGuide.emailLogging.logged4"></li>
+                        <li data-t="userGuide.emailLogging.logged5"></li>
+                        <li data-t="userGuide.emailLogging.logged6"></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong data-t="userGuide.emailLogging.internalNoteTitle"></strong> <span data-t="userGuide.emailLogging.internalNoteDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.emailLogging.duplicateTitle"></h3>
+                    <p data-t="userGuide.emailLogging.duplicateIntro"></p>
+                    <ol>
+                        <li><strong data-t="userGuide.emailLogging.visualIndicator"></strong>: <span data-t="userGuide.emailLogging.visualIndicatorDesc"></span></li>
+                        <li><strong data-t="userGuide.emailLogging.serverSide"></strong>: <span data-t="userGuide.emailLogging.serverSideDesc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.emailLogging.importantTitle"></strong> <span data-t="userGuide.emailLogging.importantDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Auto-logging Section -->
+                <section id="autolog" class="guide-section">
+                    <h2><span class="material-symbols-outlined">sync</span> <span data-t="userGuide.autolog.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.autolog.intro"></p>
+
+                    <div class="info-box">
+                        <strong data-t="userGuide.autolog.betaTitle"></strong> <span data-t="userGuide.autolog.betaDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.autolog.requirementsTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.autolog.requirement1"></li>
+                        <li data-t="userGuide.autolog.requirement2"></li>
+                        <li data-t="userGuide.autolog.requirement3"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.autolog.activateTitle"></h3>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.autolog.activateStep1"></li>
+                        <li data-t="userGuide.autolog.activateStep2"></li>
+                        <li data-t="userGuide.autolog.activateStep3"></li>
+                        <li data-t="userGuide.autolog.activateStep4"></li>
+                    </ol>
+                    <div class="info-box warning">
+                        <strong data-t="userGuide.autolog.forwardOnlyTitle"></strong> <span data-t="userGuide.autolog.forwardOnlyDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.autolog.whatGetsLoggedTitle"></h3>
+                    <p data-t="userGuide.autolog.whatGetsLoggedDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.autolog.logged1"></li>
+                        <li data-t="userGuide.autolog.logged2"></li>
+                        <li data-t="userGuide.autolog.logged3"></li>
+                        <li data-t="userGuide.autolog.logged4"></li>
+                        <li data-t="userGuide.autolog.logged5"></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong data-t="userGuide.autolog.internalNoteTitle"></strong> <span data-t="userGuide.autolog.internalNoteDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.autolog.multipleTitle"></h3>
+                    <p data-t="userGuide.autolog.multipleDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.autolog.multiple1"></li>
+                        <li data-t="userGuide.autolog.multiple2"></li>
+                        <li data-t="userGuide.autolog.multiple3"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.autolog.managingTitle"></h3>
+                    <h4 data-t="userGuide.autolog.fromSidebarTitle"></h4>
+                    <p data-t="userGuide.autolog.fromSidebarDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.autolog.fromSidebar1"></li>
+                        <li data-t="userGuide.autolog.fromSidebar2"></li>
+                        <li data-t="userGuide.autolog.fromSidebar3"></li>
+                    </ul>
+                    <h4 data-t="userGuide.autolog.fromSettingsTitle"></h4>
+                    <p data-t="userGuide.autolog.fromSettingsDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.autolog.fromSettings1"></li>
+                        <li data-t="userGuide.autolog.fromSettings2"></li>
+                        <li data-t="userGuide.autolog.fromSettings3"></li>
+                        <li data-t="userGuide.autolog.fromSettings4"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.autolog.limitsTitle"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.autolog.limit1Label"></strong>: <span data-t="userGuide.autolog.limit1Desc"></span></li>
+                        <li><strong data-t="userGuide.autolog.limit2Label"></strong>: <span data-t="userGuide.autolog.limit2Desc"></span></li>
+                        <li><strong data-t="userGuide.autolog.limit3Label"></strong>: <span data-t="userGuide.autolog.limit3Desc"></span></li>
+                        <li><strong data-t="userGuide.autolog.limit4Label"></strong>: <span data-t="userGuide.autolog.limit4Desc"></span></li>
+                    </ul>
+                </section>
+
+                <!-- Related Contacts Section -->
+                <section id="related-contacts" class="guide-section">
+                    <h2><span class="material-symbols-outlined">groups</span> <span data-t="userGuide.relatedContacts.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.relatedContacts.intro"></p>
+
+                    <h3 data-t="userGuide.relatedContacts.openInOdooTitle"></h3>
+                    <p data-t="userGuide.relatedContacts.openInOdooDesc"></p>
+
+                    <h3 data-t="userGuide.relatedContacts.composeTitle"></h3>
+                    <p data-t="userGuide.relatedContacts.composeDesc"></p>
+
+                    <h3 data-t="userGuide.relatedContacts.addRecipientTitle"></h3>
+                    <p data-t="userGuide.relatedContacts.addRecipientDesc"></p>
+
+                    <h3 data-t="userGuide.relatedContacts.copyTitle"></h3>
+                    <p data-t="userGuide.relatedContacts.copyDesc"></p>
+
+                    <h3 data-t="userGuide.relatedContacts.callTitle"></h3>
+                    <p data-t="userGuide.relatedContacts.callDesc"></p>
+                </section>
+
+                <!-- Recent Activities Section -->
+                <section id="recent-activities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">history</span> <span data-t="userGuide.recentActivities.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.recentActivities.intro"></p>
+
+                    <h3 data-t="userGuide.recentActivities.timestampTitle"></h3>
+                    <p data-t="userGuide.recentActivities.timestampDesc"></p>
+
+                    <h3 data-t="userGuide.recentActivities.jumpTitle"></h3>
+                    <p data-t="userGuide.recentActivities.jumpDesc"></p>
+                </section>
+
+                <!-- Opportunities Section -->
+                <section id="opportunities" class="guide-section">
+                    <h2><span class="material-symbols-outlined">handshake</span> <span data-t="userGuide.opportunities.title"></span></h2>
+                    <h3 data-t="userGuide.opportunities.viewingOpportunities"></h3>
+                    <h4 data-t="userGuide.opportunities.whatRecordsShown"></h4>
+                    <ul>
+                        <li data-t="userGuide.opportunities.leadRecords1"></li>
+                        <li data-t="userGuide.opportunities.leadRecords2"></li>
+                    </ul>
+                    <h3 data-t="userGuide.opportunities.creatingLeads"></h3>
+                    <p data-t="userGuide.opportunities.creatingLeadsIntro"></p>
+                    <ol class="steps-list">
+                        <li data-t="userGuide.opportunities.step1"></li>
+                        <li data-t="userGuide.opportunities.step2"></li>
+                        <li data-t="userGuide.opportunities.step3"></li>
+                        <li data-t="userGuide.opportunities.step4"></li>
+                    </ol>
+                    <h4 data-t="userGuide.opportunities.whatHappens"></h4>
+                    <ul>
+                        <li data-t="userGuide.opportunities.happens1"></li>
+                        <li data-t="userGuide.opportunities.happens2"></li>
+                        <li data-t="userGuide.opportunities.happens3"></li>
+                        <li data-t="userGuide.opportunities.happens4"></li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong data-t="userGuide.opportunities.importantTitle"></strong> <span data-t="userGuide.opportunities.importantDesc"></span>
+                    </div>
+                </section>
+
+                <!-- Tasks & Tickets Section -->
+                <section id="tasks-tickets" class="guide-section">
+                    <h2><span class="material-symbols-outlined">task</span> <span data-t="userGuide.tasksTickets.title"></span></h2>
+                    <h3 data-t="userGuide.tasksTickets.managingTasks"></h3>
+                    <p><strong data-t="userGuide.tasksTickets.requirementsLabel"></strong> <span data-t="userGuide.tasksTickets.taskRequirements"></span></p>
+                    <h4 data-t="userGuide.tasksTickets.whatRecordsShown"></h4>
+                    <ul>
+                        <li data-t="userGuide.tasksTickets.taskRecords1"></li>
+                        <li data-t="userGuide.tasksTickets.taskRecords2"></li>
+                        <li data-t="userGuide.tasksTickets.taskRecords3"></li>
+                    </ul>
+                    <h3 data-t="userGuide.tasksTickets.managingTickets"></h3>
+                    <p><strong data-t="userGuide.tasksTickets.requirementsLabel"></strong> <span data-t="userGuide.tasksTickets.ticketRequirements"></span></p>
+                </section>
+
+                <!-- Notification Organization Section -->
+                <section id="notifications" class="guide-section">
+                    <h2><span class="material-symbols-outlined">notifications</span> <span data-t="userGuide.notifications.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.notifications.intro"></p>
+
+                    <h3 data-t="userGuide.notifications.prerequisiteTitle"></h3>
+                    <p data-t="userGuide.notifications.prerequisiteDesc"></p>
+                    <ol>
+                        <li data-t="userGuide.notifications.prerequisiteStep1"></li>
+                        <li data-t="userGuide.notifications.prerequisiteStep2"></li>
+                        <li data-t="userGuide.notifications.prerequisiteStep3"></li>
+                    </ol>
+                    <div class="info-box">
+                        <span data-t="userGuide.notifications.prerequisiteNote"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.notifications.setupTitle"></h3>
+                    <ol class="steps-list">
+                        <li><strong data-t="userGuide.notifications.setupStep1Title"></strong><br><span data-t="userGuide.notifications.setupStep1Desc"></span></li>
+                        <li><strong data-t="userGuide.notifications.setupStep2Title"></strong><br><span data-t="userGuide.notifications.setupStep2Desc"></span></li>
+                        <li><strong data-t="userGuide.notifications.setupStep3Title"></strong><br><span data-t="userGuide.notifications.setupStep3Desc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.notifications.setupNoteTitle"></strong> <span data-t="userGuide.notifications.setupNoteDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.notifications.moduleBadgesTitle"></h3>
+                    <p data-t="userGuide.notifications.moduleBadgesDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.notifications.moduleBadge1"></li>
+                        <li data-t="userGuide.notifications.moduleBadge2"></li>
+                        <li data-t="userGuide.notifications.moduleBadge3"></li>
+                        <li data-t="userGuide.notifications.moduleBadge4"></li>
+                        <li data-t="userGuide.notifications.moduleBadge5"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.notifications.mentionBadgesTitle"></h3>
+                    <p data-t="userGuide.notifications.mentionBadgesDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.notifications.mentionUnreadLabel"></strong>: <span data-t="userGuide.notifications.mentionUnreadDesc"></span></li>
+                        <li><strong data-t="userGuide.notifications.mentionReadLabel"></strong>: <span data-t="userGuide.notifications.mentionReadDesc"></span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong data-t="userGuide.notifications.mentionHowItWorksTitle"></strong> <span data-t="userGuide.notifications.mentionHowItWorksDesc"></span>
+                        <ul style="margin-top: 0.5rem;">
+                            <li data-t="userGuide.notifications.mentionHowItWorks1"></li>
+                            <li data-t="userGuide.notifications.mentionHowItWorks2"></li>
+                        </ul>
+                    </div>
+
+                    <h3 data-t="userGuide.notifications.shortcutTitle"></h3>
+                    <p data-t="userGuide.notifications.shortcutDesc"></p>
+                    <div class="info-box">
+                        <strong data-t="userGuide.notifications.shortcutNoteTitle"></strong> <span data-t="userGuide.notifications.shortcutNoteDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.notifications.customizationTitle"></h3>
+                    <p data-t="userGuide.notifications.customizationDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.notifications.customToggle1"></li>
+                        <li data-t="userGuide.notifications.customToggle2"></li>
+                        <li data-t="userGuide.notifications.customToggle3"></li>
+                    </ul>
+                </section>
+
+                <!-- Multi-Company Section -->
+                <section id="multi-company" class="guide-section">
+                    <h2><span class="material-symbols-outlined">business</span> <span data-t="userGuide.multiCompany.title"></span> <span class="feature-badge badge-plus" data-t="userGuide.features.plusBadge"></span></h2>
+                    <p data-t="userGuide.multiCompany.intro"></p>
+
+                    <h3 data-t="userGuide.multiCompany.requirementsTitle"></h3>
+                    <ul>
+                        <li data-t="userGuide.multiCompany.requirement1"></li>
+                        <li data-t="userGuide.multiCompany.requirement2"></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.multiCompany.selectorTitle"></h3>
+                    <p data-t="userGuide.multiCompany.selectorDesc"></p>
+                    <ul>
+                        <li data-t="userGuide.multiCompany.selector1"></li>
+                        <li data-t="userGuide.multiCompany.selector2"></li>
+                        <li data-t="userGuide.multiCompany.selector3"></li>
+                        <li data-t="userGuide.multiCompany.selector4"></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong data-t="userGuide.multiCompany.persistTitle"></strong> <span data-t="userGuide.multiCompany.persistDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.multiCompany.affectsTitle"></h3>
+                    <p data-t="userGuide.multiCompany.affectsDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.multiCompany.affects1Label"></strong>: <span data-t="userGuide.multiCompany.affects1Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.affects2Label"></strong>: <span data-t="userGuide.multiCompany.affects2Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.affects3Label"></strong>: <span data-t="userGuide.multiCompany.affects3Desc"></span></li>
+                    </ul>
+
+                    <h3 data-t="userGuide.multiCompany.crossLookupTitle"></h3>
+                    <p data-t="userGuide.multiCompany.crossLookupIntro"></p>
+                    <h4 data-t="userGuide.multiCompany.crossContactTitle"></h4>
+                    <p data-t="userGuide.multiCompany.crossContactDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.multiCompany.crossContactAction1Label"></strong>: <span data-t="userGuide.multiCompany.crossContactAction1Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.crossContactAction2Label"></strong>: <span data-t="userGuide.multiCompany.crossContactAction2Desc"></span></li>
+                    </ul>
+                    <h4 data-t="userGuide.multiCompany.crossParentTitle"></h4>
+                    <p data-t="userGuide.multiCompany.crossParentDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.multiCompany.crossParentAction1Label"></strong>: <span data-t="userGuide.multiCompany.crossParentAction1Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.crossParentAction2Label"></strong>: <span data-t="userGuide.multiCompany.crossParentAction2Desc"></span></li>
+                    </ul>
+                    <div class="info-box warning">
+                        <strong data-t="userGuide.multiCompany.shareWarningTitle"></strong> <span data-t="userGuide.multiCompany.shareWarningDesc"></span>
+                    </div>
+
+                    <h3 data-t="userGuide.multiCompany.autologTitle"></h3>
+                    <p data-t="userGuide.multiCompany.autologDesc"></p>
+
+                    <h3 data-t="userGuide.multiCompany.freePlanTitle"></h3>
+                    <p data-t="userGuide.multiCompany.freePlanDesc"></p>
+
+                    <h3 data-t="userGuide.multiCompany.limitsTitle"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.multiCompany.limit1Label"></strong>: <span data-t="userGuide.multiCompany.limit1Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.limit2Label"></strong>: <span data-t="userGuide.multiCompany.limit2Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.limit3Label"></strong>: <span data-t="userGuide.multiCompany.limit3Desc"></span></li>
+                        <li><strong data-t="userGuide.multiCompany.limit4Label"></strong>: <span data-t="userGuide.multiCompany.limit4Desc"></span></li>
+                    </ul>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="guide-section">
+                    <h2><span class="material-symbols-outlined">help</span> <span data-t="userGuide.troubleshooting.title"></span></h2>
+                    <h3 data-t="userGuide.troubleshooting.notAppearing"></h3>
+                    <ol>
+                        <li><strong data-t="userGuide.troubleshooting.checkEnabled"></strong>: <span data-t="userGuide.troubleshooting.checkEnabledDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.refreshGmail"></strong>: <span data-t="userGuide.troubleshooting.refreshGmailDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.reloadExtension"></strong>: <span data-t="userGuide.troubleshooting.reloadExtensionDesc"></span></li>
+                    </ol>
+                    <h3 data-t="userGuide.troubleshooting.contactNotFound"></h3>
+                    <ul>
+                        <li><strong data-t="userGuide.troubleshooting.emailNotInOdoo"></strong>: <span data-t="userGuide.troubleshooting.emailNotInOdooDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.emailMismatch"></strong>: <span data-t="userGuide.troubleshooting.emailMismatchDesc"></span></li>
+                    </ul>
+                    <h3 data-t="userGuide.troubleshooting.authFailed"></h3>
+                    <ol>
+                        <li data-t="userGuide.troubleshooting.authStep1"></li>
+                        <li data-t="userGuide.troubleshooting.authStep2"></li>
+                        <li data-t="userGuide.troubleshooting.authStep3"></li>
+                    </ol>
+                    <h3 data-t="userGuide.troubleshooting.selfHostedPermissions"></h3>
+                    <p data-t="userGuide.troubleshooting.selfHostedIntro"></p>
+                    <ol>
+                        <li><strong data-t="userGuide.troubleshooting.permissionPopup"></strong>: <span data-t="userGuide.troubleshooting.permissionPopupDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.extensionConflict"></strong>: <span data-t="userGuide.troubleshooting.extensionConflictDesc"></span></li>
+                        <li><strong data-t="userGuide.troubleshooting.temporaryDisable"></strong>: <span data-t="userGuide.troubleshooting.temporaryDisableDesc"></span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong data-t="userGuide.troubleshooting.selfHostedNoteTitle"></strong> <span data-t="userGuide.troubleshooting.selfHostedNoteDesc"></span>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="guide-section">
+                    <h2><span class="material-symbols-outlined">quiz</span> <span data-t="userGuide.faq.title"></span></h2>
+                    <h3 data-t="userGuide.faq.generalTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q1"></h4>
+                        <p data-t="userGuide.faq.a1"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q2"></h4>
+                        <p data-t="userGuide.faq.a2"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q3"></h4>
+                        <p data-t="userGuide.faq.a3"></p>
+                    </div>
+                    <h3 data-t="userGuide.faq.subscriptionTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q4"></h4>
+                        <p data-t="userGuide.faq.a4"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q5"></h4>
+                        <p data-t="userGuide.faq.a5"></p>
+                    </div>
+                    <h3 data-t="userGuide.faq.privacyTitle"></h3>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q6"></h4>
+                        <p data-t="userGuide.faq.a6"></p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 data-t="userGuide.faq.q7"></h4>
+                        <p data-t="userGuide.faq.a7"></p>
+                    </div>
+                </section>
+
+                <!-- Getting Help Section -->
+                <section class="guide-section">
+                    <h2><span class="material-symbols-outlined">support</span> <span data-t="userGuide.help.title"></span></h2>
+                    <h3 data-t="userGuide.help.contactSupport"></h3>
+                    <p data-t="userGuide.help.contactDesc"></p>
+                    <ul>
+                        <li><strong data-t="userGuide.help.emailLabel"></strong>: <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></li>
+                        <li data-t="userGuide.help.includeVersion"></li>
+                        <li data-t="userGuide.help.includeScreenshots"></li>
+                    </ul>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.resources"></h4>
+                    <ul>
+                        <li><a href="./" data-t="footer.home"></a></li>
+                        <li><a href="pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="comparison.html" data-t="footer.comparison"></a></li>
+                        <li><a href="blog.html" data-t="footer.blog"></a></li>
+                        <li><a href="privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-t="footer.copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+
+    <!-- Section highlight on scroll -->
+    <script>
+    (function() {
+        var sections = document.querySelectorAll('.guide-section[id]');
+        var navLinks = document.querySelectorAll('.guide-nav a[href^="#"]');
+        if (!sections.length || !navLinks.length) return;
+
+        var ticking = false;
+        var offset = 120; // header height + margin
+
+        function highlightCurrentSection() {
+            var current = null;
+            var scrollY = window.scrollY;
+
+            // Find the section closest to the top of the viewport
+            sections.forEach(function(section) {
+                var rect = section.getBoundingClientRect();
+                var sectionTop = rect.top + scrollY - offset;
+                if (scrollY >= sectionTop) {
+                    current = section;
+                }
+            });
+
+            if (current) {
+                var id = current.getAttribute('id');
+                navLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    highlightCurrentSection();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Initial highlight
+        highlightCurrentSection();
+    })();
+    </script>
+</body>
+</html>

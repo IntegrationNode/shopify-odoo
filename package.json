@@ -1,0 +1,14 @@
+{
+  "name": "odoo-shopify-docs",
+  "version": "1.0.0",
+  "description": "Marketing & documentation website for the Odoo–Shopify order comparator Chrome extension",
+  "scripts": {
+    "build:i18n": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -i nl -i pl -o dist --localesPath locales src",
+    "build": "npm run build:i18n && node scripts/patch-schemas.js && node scripts/generate-sitemap.js && cp -r dist/* .",
+    "watch": "static-i18n -l en -i en -i es -i fr -i de -i it -i pt -i nl -i pl -o dist src --watch",
+    "optimize:assets": "bash scripts/optimize-assets.sh"
+  },
+  "devDependencies": {
+    "static-i18n": "^0.2.10"
+  }
+}

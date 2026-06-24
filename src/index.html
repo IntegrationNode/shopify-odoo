@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html data-attr-t="lang" lang-t="meta.lang">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" data-attr-t content-t="meta.index.description">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="TODO_SEARCH_CONSOLE" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" data-attr-t="href" href-t="meta.index.canonical">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" data-attr-t="content" content-t="meta.index.canonical">
+    <meta property="og:title" data-attr-t content-t="meta.index.ogTitle">
+    <meta property="og:description" data-attr-t content-t="meta.index.ogDescription">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-attr-t content-t="meta.index.twitterTitle">
+    <meta name="twitter:description" data-attr-t content-t="meta.index.twitterDescription">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title data-t="meta.index.title"></title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Preload LCP hero image (mobile LCP element) -->
+    <link rel="preload" as="image" href="assets/hero-screenshot.webp" fetchpriority="high">
+    <!-- Preload icon font (8 KB subset) so icons render at final size on first paint → no CLS -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/material-symbols-outlined.woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/outlined.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Hide prices until regional pricing JS processes them -->
+    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://integrationnode.com/shopify-odoo/#software",
+                "name": "Odoo–Shopify Order Check",
+                "description": "Read-only Chrome extension that compares any order between Odoo and Shopify field by field, with a global verdict based on the net invoiced amount and a clear discrepancy breakdown.",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": "E-commerce Integration",
+                "operatingSystem": "Chrome Browser",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "downloadUrl": "https://integrationnode.com/shopify-odoo/",
+                "installUrl": "https://integrationnode.com/shopify-odoo/",
+                "image": "https://integrationnode.com/shopify-odoo/assets/og-image.png",
+                "screenshot": "https://integrationnode.com/shopify-odoo/assets/hero-screenshot.png",
+                "featureList": [
+                    "Field-by-field order comparison between Odoo and Shopify",
+                    "Global match/mismatch verdict",
+                    "Verdict based on the net invoiced amount (invoices minus refunds)",
+                    "Discrepancy breakdown: totals, taxes, quantities, line items, addresses",
+                    "Refunds, returns and order edits shown in context",
+                    "Cancelled order detection",
+                    "Zero-config Odoo instance autodetection",
+                    "Read-only — never writes to Odoo or Shopify"
+                ],
+                "offers": {
+                    "@type": "Offer",
+                    "name": "14-day free trial",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "description": "Full functionality for 14 days. Paid Solo and Agency plans available after the trial."
+                },
+                "author": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://integrationnode.com/shopify-odoo/#organization",
+                "name": "IntegrationNode",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "email": "odoointegrations.team@gmail.com",
+                "description": "Developer of productivity tools for Odoo ERP users"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://integrationnode.com/shopify-odoo/#website",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "name": "Odoo–Shopify Order Check",
+                "description": "Official website for the Odoo–Shopify Order Check Chrome extension",
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://integrationnode.com/shopify-odoo/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What does Odoo–Shopify Order Check do?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "When you open an order in Odoo or Shopify, the extension compares both systems field by field — totals, taxes, quantities, line items and addresses — and shows a global match/mismatch verdict with a breakdown of any discrepancies."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does it change anything in Odoo or Shopify?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. The extension is strictly read-only. It never creates, edits or deletes data in Odoo or Shopify — it only reads, so it is safe to run on production."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do I need to configure anything?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No setup is required. The extension auto-detects your Odoo instance and database from your active session. There are no instances to register, no API keys and no options page."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why compare against the invoiced amount instead of the order?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "When an order is invoiced, the connector freezes the sale order, so comparing the original order produces false positives. The extension compares Shopify's current order against Odoo's net invoiced amount (invoices minus refunds), so partial invoices and refunds don't look like errors."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is there a free trial?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Every install includes a 14-day free trial with full functionality. After the trial, Solo (1 device) and Agency (up to 5 devices) plans are available."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.com/shopify-odoo/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./" class="logo" data-t="nav.logo"></a>
+                <div class="nav-links">
+                    <a href="./#features" data-t="nav.features"></a>
+                    <a href="pricing.html" data-t="nav.pricing"></a>
+                    <a href="user-guide.html" data-t="nav.userGuide"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current" data-t="nav.currentLang"></span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-t="hero.title"></h1>
+                <p class="subtitle" data-t="hero.subtitle"></p>
+                <p class="hero-badge" data-t="hero.badge"></p>
+                <div class="cta-buttons">
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_hero" target="_blank" class="btn btn-primary" data-t="hero.getExtension"></a>
+                    <a href="#features" class="btn btn-secondary" data-t="hero.learnMore"></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="browser-frame">
+                    <div class="browser-toolbar">
+                        <span class="browser-dot" style="background:#FF5F57"></span>
+                        <span class="browser-dot" style="background:#FEBC2E"></span>
+                        <span class="browser-dot" style="background:#28C840"></span>
+                        <span class="browser-address">yourcompany.odoo.com</span>
+                    </div>
+                    <img src="assets/hero-screenshot.webp" alt="Odoo–Shopify Order Check — comparison panel showing the verdict and field-by-field breakdown for an order" loading="eager" fetchpriority="high" width="1418" height="952">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Compatibility Bar -->
+    <section class="compatibility">
+        <div class="container">
+            <p class="compatibility-title" data-t="compatibility.title"></p>
+            <div class="compatibility-badges">
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span data-t="compatibility.odooVersions"></span>
+                </span>
+                <span class="compat-divider"></span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">groups</span>
+                    <span data-t="compatibility.community"></span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">workspace_premium</span>
+                    <span data-t="compatibility.enterprise"></span>
+                </span>
+                <span class="compat-divider"></span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">language</span>
+                    <span><span data-t="compatibility.online"></span> <span class="compat-note" data-t="compatibility.onlineNote"></span></span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">cloud</span>
+                    <span data-t="compatibility.odooSh"></span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">dns</span>
+                    <span data-t="compatibility.selfHosted"></span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-t="features.title"></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <h3 data-t="features.instant.title"></h3>
+                    <p data-t="features.instant.description"></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">dashboard</span>
+                    </div>
+                    <h3 data-t="features.records.title"></h3>
+                    <p data-t="features.records.description"></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <h3 data-t="features.emailLogging.title"></h3>
+                    <p data-t="features.emailLogging.description"></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">sync</span>
+                    </div>
+                    <h3 data-t="features.autoLogging.title"></h3>
+                    <p data-t="features.autoLogging.description"></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">business</span>
+                    </div>
+                    <h3 data-t="features.multiCompany.title"></h3>
+                    <p data-t="features.multiCompany.description"></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">bolt</span>
+                    </div>
+                    <h3 data-t="features.fast.title"></h3>
+                    <p data-t="features.fast.description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demos Section -->
+    <section class="demos" id="demo">
+        <div class="container">
+            <h2 data-t="demos.title"></h2>
+            <p class="section-subtitle" data-t="demos.subtitle"></p>
+
+            <!-- Carousel Container -->
+            <div class="demo-carousel">
+                <!-- Previous Button -->
+                <button class="carousel-btn carousel-prev" aria-label="Previous demos">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+
+                <!-- Carousel Track Container -->
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+
+                        <!-- Demo 1: Initial Setup -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/setup-initial-thumb.webp"
+                                    alt="Initial setup demo"
+                                    loading="eager">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Initial setup animation">
+                                    <source src="assets/demos/setup-initial.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">settings</span> <span data-t="demos.setup.title"></span></h3>
+                                <p data-t="demos.setup.description"></p>
+                                <span class="demo-badge" data-t="demos.setup.badge"></span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 2: Recent Activities -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/recent-activities-thumb.webp"
+                                    alt="Recent activities demo"
+                                    loading="lazy">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Recent activities animation">
+                                    <source src="assets/demos/recent-activities.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">history</span> <span data-t="demos.recentActivities.title"></span></h3>
+                                <p data-t="demos.recentActivities.description"></p>
+                                <span class="demo-badge plus" data-t="demos.recentActivities.badge"></span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 3: Real-time Search -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/search-and-log-thumb.webp"
+                                    alt="Real-time search demo"
+                                    loading="lazy">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Real-time search animation">
+                                    <source src="assets/demos/search-and-log.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">search</span> <span data-t="demos.search.title"></span></h3>
+                                <p data-t="demos.search.description"></p>
+                                <span class="demo-badge plus" data-t="demos.search.badge"></span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 4: Contact & Company Tabs -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/contact-company-tabs-thumb.webp"
+                                    alt="Contact and company tabs demo"
+                                    loading="lazy">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Contact and company tabs animation">
+                                    <source src="assets/demos/contact-company-tabs.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">tab</span> <span data-t="demos.companyTabs.title"></span></h3>
+                                <p data-t="demos.companyTabs.description"></p>
+                                <span class="demo-badge plus" data-t="demos.companyTabs.badge"></span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 5: Switch Between Contacts -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/switch-between-contacts-in-email-thumb.webp"
+                                    alt="Switch between contacts demo"
+                                    loading="lazy">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Switch between contacts animation">
+                                    <source src="assets/demos/switch-between-contacts-in-email.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">swap_horiz</span> <span data-t="demos.switchContacts.title"></span></h3>
+                                <p data-t="demos.switchContacts.description"></p>
+                                <span class="demo-badge plus" data-t="demos.switchContacts.badge"></span>
+                            </div>
+                        </div>
+
+                        <!-- Demo 6: Create Contact -->
+                        <div class="demo-card">
+                            <div class="demo-media">
+                                <img
+                                    class="demo-still"
+                                    src="assets/demos/create-contact-thumb.webp"
+                                    alt="Create contact demo"
+                                    loading="lazy">
+                                <video
+                                    class="demo-gif"
+                                    muted loop playsinline preload="none"
+                                    aria-label="Create contact animation">
+                                    <source src="assets/demos/create-contact.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="demo-info">
+                                <h3><span class="material-symbols-outlined">person_add</span> <span data-t="demos.createContact.title"></span></h3>
+                                <p data-t="demos.createContact.description"></p>
+                                <span class="demo-badge" data-t="demos.createContact.badge"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Next Button -->
+                <button class="carousel-btn carousel-next" aria-label="Next demos">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 data-t="howItWorks.title"></h2>
+            <p class="section-subtitle" data-t="howItWorks.subtitle"></p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">download</span>
+                    </div>
+                    <h3 data-t="howItWorks.step1.title"></h3>
+                    <p data-t="howItWorks.step1.description"></p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">link</span>
+                    </div>
+                    <h3 data-t="howItWorks.step2.title"></h3>
+                    <p data-t="howItWorks.step2.description"></p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">inbox</span>
+                    </div>
+                    <h3 data-t="howItWorks.step3.title"></h3>
+                    <p data-t="howItWorks.step3.description"></p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_howitworks" target="_blank" class="btn btn-primary" data-t="howItWorks.cta"></a>
+            </div>
+            <p class="how-it-works-note" data-t="howItWorks.sessionNote"></p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-headline" data-t="socialProof.headline"></p>
+            <!-- TODO(009): mostrar stats de la Chrome Web Store cuando exista la ficha del comparador (research R6).
+                 Reactivar el bloque .social-proof-stats y el workflow de cws-stats.json con el extension ID propio. -->
+        </div>
+    </section>
+
+    <!-- TODO(009): testimonials section removed in v1 — do not reuse reviews from the sibling product.
+         Reintroduce with real Odoo-Shopify comparator reviews (Chrome Web Store) once available. -->
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 data-t="pricing.title"></h2>
+            <p class="section-subtitle" data-t="pricing.subtitle"></p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-t="pricing.free.name"></h3>
+                    <div class="price"><span data-t="pricing.trialNote"></span></div>
+                    <ul class="features-list">
+                        <li data-t="pricing.free.feature1"></li>
+                        <li data-t="pricing.free.feature2"></li>
+                        <li data-t="pricing.free.feature3"></li>
+                        <li data-t="pricing.free.feature4"></li>
+                        <li data-t="pricing.free.feature5"></li>
+                        <li data-t="pricing.free.feature6"></li>
+                    </ul>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_free" target="_blank" class="btn btn-outline" data-t="pricing.free.cta"></a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge" data-t="pricing.plus.badge"></div>
+                    <h3 data-t="pricing.plus.name"></h3>
+                    <div class="price"><span data-t="pricing.trialNote"></span></div>
+                    <ul class="features-list">
+                        <li data-t="pricing.plus.feature1"></li>
+                        <li data-t="pricing.plus.feature2"></li>
+                        <li data-t="pricing.plus.feature3"></li>
+                        <li data-t="pricing.plus.feature4"></li>
+                        <li data-t="pricing.plus.feature5"></li>
+                        <li data-t="pricing.plus.feature6"></li>
+                        <li data-t="pricing.plus.feature7"></li>
+                        <li data-t="pricing.plus.feature8"></li>
+                        <li data-t="pricing.plus.feature9"></li>
+                    </ul>
+                    <a href="pricing.html#full-comparison" class="see-full-comparison" data-t="pricing.plus.seeFullComparison"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_plus" target="_blank" class="btn btn-primary" data-t="pricing.plus.cta"></a>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p><span data-t="pricing.teamQuestion"></span> <a href="pricing.html" data-t="pricing.viewPlans"></a> <span data-t="pricing.or"></span> <a href="mailto:odoointegrations.team@gmail.com" data-t="pricing.contactUs"></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-t="footer.title"></h4>
+                    <p><span data-t="footer.builtBy"></span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.resources"></h4>
+                    <ul>
+                        <li><a href="./" data-t="footer.home"></a></li>
+                        <li><a href="pricing.html" data-t="footer.pricing"></a></li>
+                        <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
+                        <li><a href="changelog.html" data-t="footer.changelog"></a></li>
+                        <li><a href="privacy.html" data-t="footer.privacy"></a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.legal"></h4>
+                    <p class="small-text" data-t="footer.notAffiliated"></p>
+                    <p class="small-text" data-t="footer.odooTrademark"></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-t="footer.copyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Lightbox -->
+    <div id="demo-lightbox" class="demo-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="demo-lightbox-backdrop"></div>
+        <div class="demo-lightbox-content">
+            <video class="demo-lightbox-image" controls loop muted playsinline></video>
+        </div>
+    </div>
+
+    <!-- Demo Carousel Script -->
+    <script src="carousel.js"></script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+    <!-- Social Proof -->
+    <script src="social-proof.js"></script>
+    <!-- Regional Pricing Detection -->
+    <script src="regional-pricing.js"></script>
+    <!-- Scroll Animations -->
+    <script>
+    (function() {
+        var steps = document.querySelector('.steps');
+        if (!steps) return;
+        new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('in-view'); }
+            });
+        }, { threshold: 0.3 }).observe(steps);
+    })();
+    </script>
+</body>
+</html>
