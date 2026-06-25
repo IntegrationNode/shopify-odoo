@@ -451,7 +451,8 @@
       "subtitle": "Démarrez votre essai gratuit de 14 jours et voyez Odoo et Shopify côte à côte. Passez à Agency quand votre équipe grandit.",
       "getStarted": "Démarrer l'essai gratuit",
       "upgrade": "Obtenir le plan Agency"
-    }
+    },
+    "perMonth": "/mois"
   },
   "privacyPage": {
     "title": "Politique de confidentialité",

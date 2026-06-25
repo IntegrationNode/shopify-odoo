@@ -451,7 +451,8 @@
       "subtitle": "Start your 14-day free trial and see Odoo and Shopify side by side. Upgrade to Agency when your team grows.",
       "getStarted": "Start free trial",
       "upgrade": "Get the Agency plan"
-    }
+    },
+    "perMonth": "/month"
   },
   "privacyPage": {
     "title": "Privacy Policy",

@@ -52,7 +52,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Hide prices until regional pricing JS processes them -->
     <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
-    <style>.price-large .amount.trial { font-size: 1.75rem; line-height: 1.25; color: var(--color-primary); }</style>
+    <style>.price-large .period { font-size: 1.125rem; }
+        .trial-note-line { font-size: 0.95rem; font-weight: 600; color: var(--color-primary); margin-top: 0.35rem; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -201,9 +202,9 @@
                     <div class="plan-header">
                         <h3 data-t="pricingPage.free.name"></h3>
                         <div class="price-large">
-                            <!-- TODO(009): final Solo/Agency prices (research R3) -->
-                            <span class="amount trial" data-t="pricingPage.trialNote"></span>
+                            <span class="amount">€19</span><span class="period" data-t="pricingPage.perMonth"></span>
                         </div>
+                        <p class="trial-note-line" data-t="pricingPage.trialNote"></p>
                         <p class="plan-description" data-t="pricingPage.free.description"></p>
                     </div>
                     <div class="plan-features">
@@ -226,9 +227,9 @@
                     <div class="plan-header">
                         <h3 data-t="pricingPage.plus.name"></h3>
                         <div class="price-large">
-                            <!-- TODO(009): final Solo/Agency prices (research R3) -->
-                            <span class="amount trial" data-t="pricingPage.trialNote"></span>
+                            <span class="amount">€79</span><span class="period" data-t="pricingPage.perMonth"></span>
                         </div>
+                        <p class="trial-note-line" data-t="pricingPage.trialNote"></p>
                         <p class="plan-description" data-t="pricingPage.plus.description"></p>
                     </div>
                     <div class="plan-features">

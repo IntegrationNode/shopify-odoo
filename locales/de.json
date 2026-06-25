@@ -451,7 +451,8 @@
       "subtitle": "Starten Sie Ihre 14-tägige kostenlose Testphase und sehen Sie Odoo und Shopify nebeneinander. Upgraden Sie auf Agency, wenn Ihr Team wächst.",
       "getStarted": "Kostenlos testen",
       "upgrade": "Agency-Plan holen"
-    }
+    },
+    "perMonth": "/Monat"
   },
   "privacyPage": {
     "title": "Datenschutzrichtlinie",

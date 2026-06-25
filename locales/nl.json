@@ -451,7 +451,8 @@
       "subtitle": "Start je gratis proefperiode van 14 dagen en zie Odoo en Shopify zij aan zij. Upgrade naar Agency wanneer je team groeit.",
       "getStarted": "Gratis proefperiode starten",
       "upgrade": "Agency-abonnement nemen"
-    }
+    },
+    "perMonth": "/maand"
   },
   "privacyPage": {
     "title": "Privacybeleid",

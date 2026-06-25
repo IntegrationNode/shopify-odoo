@@ -311,164 +311,8 @@
     </section>
 
     <!-- Interactive Demos Section -->
-    <section class="demos" id="demo">
-        <div class="container">
-            <h2 data-t="demos.title"></h2>
-            <p class="section-subtitle" data-t="demos.subtitle"></p>
-
-            <!-- Carousel Container -->
-            <div class="demo-carousel">
-                <!-- Previous Button -->
-                <button class="carousel-btn carousel-prev" aria-label="Previous demos">
-                    <span class="material-symbols-outlined">chevron_left</span>
-                </button>
-
-                <!-- Carousel Track Container -->
-                <div class="carousel-track-container">
-                    <div class="carousel-track">
-
-                        <!-- Demo 1: Initial Setup -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/setup-initial-thumb.webp"
-                                    alt="Initial setup demo"
-                                    loading="eager">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Initial setup animation">
-                                    <source src="assets/demos/setup-initial.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">settings</span> <span data-t="demos.setup.title"></span></h3>
-                                <p data-t="demos.setup.description"></p>
-                                <span class="demo-badge" data-t="demos.setup.badge"></span>
-                            </div>
-                        </div>
-
-                        <!-- Demo 2: Recent Activities -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/recent-activities-thumb.webp"
-                                    alt="Recent activities demo"
-                                    loading="lazy">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Recent activities animation">
-                                    <source src="assets/demos/recent-activities.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">history</span> <span data-t="demos.recentActivities.title"></span></h3>
-                                <p data-t="demos.recentActivities.description"></p>
-                                <span class="demo-badge plus" data-t="demos.recentActivities.badge"></span>
-                            </div>
-                        </div>
-
-                        <!-- Demo 3: Real-time Search -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/search-and-log-thumb.webp"
-                                    alt="Real-time search demo"
-                                    loading="lazy">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Real-time search animation">
-                                    <source src="assets/demos/search-and-log.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">search</span> <span data-t="demos.search.title"></span></h3>
-                                <p data-t="demos.search.description"></p>
-                                <span class="demo-badge plus" data-t="demos.search.badge"></span>
-                            </div>
-                        </div>
-
-                        <!-- Demo 4: Contact & Company Tabs -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/contact-company-tabs-thumb.webp"
-                                    alt="Contact and company tabs demo"
-                                    loading="lazy">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Contact and company tabs animation">
-                                    <source src="assets/demos/contact-company-tabs.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">tab</span> <span data-t="demos.companyTabs.title"></span></h3>
-                                <p data-t="demos.companyTabs.description"></p>
-                                <span class="demo-badge plus" data-t="demos.companyTabs.badge"></span>
-                            </div>
-                        </div>
-
-                        <!-- Demo 5: Switch Between Contacts -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/switch-between-contacts-in-email-thumb.webp"
-                                    alt="Switch between contacts demo"
-                                    loading="lazy">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Switch between contacts animation">
-                                    <source src="assets/demos/switch-between-contacts-in-email.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">swap_horiz</span> <span data-t="demos.switchContacts.title"></span></h3>
-                                <p data-t="demos.switchContacts.description"></p>
-                                <span class="demo-badge plus" data-t="demos.switchContacts.badge"></span>
-                            </div>
-                        </div>
-
-                        <!-- Demo 6: Create Contact -->
-                        <div class="demo-card">
-                            <div class="demo-media">
-                                <img
-                                    class="demo-still"
-                                    src="assets/demos/create-contact-thumb.webp"
-                                    alt="Create contact demo"
-                                    loading="lazy">
-                                <video
-                                    class="demo-gif"
-                                    muted loop playsinline preload="none"
-                                    aria-label="Create contact animation">
-                                    <source src="assets/demos/create-contact.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="demo-info">
-                                <h3><span class="material-symbols-outlined">person_add</span> <span data-t="demos.createContact.title"></span></h3>
-                                <p data-t="demos.createContact.description"></p>
-                                <span class="demo-badge" data-t="demos.createContact.badge"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Next Button -->
-                <button class="carousel-btn carousel-next" aria-label="Next demos">
-                    <span class="material-symbols-outlined">chevron_right</span>
-                </button>
-            </div>
-        </div>
-    </section>
+    <!-- TODO(009): "See It In Action" demos hidden in v1 (no real media yet — see T014).
+         Restore with real comparator screen recordings; demo copy lives in the "demos" locale keys. -->
 
     <!-- How It Works -->
     <section class="how-it-works">
@@ -534,7 +378,7 @@
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3 data-t="pricing.free.name"></h3>
-                    <div class="price"><span data-t="pricing.trialNote"></span></div>
+                    <div class="price">€19<span data-t="pricing.perMonth"></span></div>
                     <ul class="features-list">
                         <li data-t="pricing.free.feature1"></li>
                         <li data-t="pricing.free.feature2"></li>
@@ -548,7 +392,7 @@
                 <div class="pricing-card featured">
                     <div class="badge" data-t="pricing.plus.badge"></div>
                     <h3 data-t="pricing.plus.name"></h3>
-                    <div class="price"><span data-t="pricing.trialNote"></span></div>
+                    <div class="price">€79<span data-t="pricing.perMonth"></span></div>
                     <ul class="features-list">
                         <li data-t="pricing.plus.feature1"></li>
                         <li data-t="pricing.plus.feature2"></li>
