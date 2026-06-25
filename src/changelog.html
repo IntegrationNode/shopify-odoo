@@ -38,7 +38,7 @@
     <meta property="og:title" data-attr-t content-t="meta.changelog.ogTitle">
     <meta property="og:description" data-attr-t content-t="meta.changelog.ogDescription">
     <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
-    <meta property="og:site_name" content="Odoo Integration for Gmail">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -47,6 +47,28 @@
     <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
 
     <title data-t="meta.changelog.title"></title>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Changelog — Odoo–Shopify Order Check",
+        "description": "Release history for the Odoo–Shopify Order Check Chrome extension.",
+        "url": "https://integrationnode.com/shopify-odoo/changelog.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Odoo–Shopify Order Check",
+            "url": "https://integrationnode.com/shopify-odoo/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IntegrationNode",
+            "url": "https://integrationnode.com/shopify-odoo/"
+        }
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="fonts/outlined.css">
     <link rel="stylesheet" href="style.css">
@@ -236,7 +258,6 @@
                     <a href="./#features" data-t="nav.features"></a>
                     <a href="pricing.html" data-t="nav.pricing"></a>
                     <a href="user-guide.html" data-t="nav.userGuide"></a>
-                    <a href="blog.html" data-t="nav.blog"></a>
                     <a href="changelog.html" class="active" data-t="changelogPage.navChangelog"></a>
                     <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=changelog_navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
                     <div class="lang-dropdown" id="lang-dropdown">
@@ -261,723 +282,37 @@
             </div>
 
             <div class="release-list">
-                <!-- Version 0.6.0.2 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.6.0.2
-                        </div>
-                        <div class="release-date">June 14, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0602.odoo17Tasks"></strong> - <span data-t="changelogPage.v0602.odoo17TasksDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0602.versionDisplay"></strong> - <span data-t="changelogPage.v0602.versionDisplayDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.6.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.6.0.0
-                        </div>
-                        <div class="release-date">June 4, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0600.cookieAuth"></strong> - <span data-t="changelogPage.v0600.cookieAuthDesc"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">thumb_up</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0600.apiKeyInSettings"></strong> - <span data-t="changelogPage.v0600.apiKeyInSettingsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0600.smartContact"></strong> - <span data-t="changelogPage.v0600.smartContactDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0600.hideSections"></strong> - <span data-t="changelogPage.v0600.hideSectionsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.2.1 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.2.1
-                        </div>
-                        <div class="release-date">May 25, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0521.odoo16Financial"></strong> - <span data-t="changelogPage.v0521.odoo16FinancialDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.2.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.2.0
-                        </div>
-                        <div class="release-date">May 24, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0520.overdueBlock"></strong> - <span data-t="changelogPage.v0520.overdueBlockDesc"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">thumb_up</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0520.financialLabels"></strong> - <span data-t="changelogPage.v0520.financialLabelsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0520.multiTenantSetup"></strong> - <span data-t="changelogPage.v0520.multiTenantSetupDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.1.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.1.0
-                        </div>
-                        <div class="release-date">May 10, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0510.quickContactActions"></strong> - <span data-t="changelogPage.v0510.quickContactActionsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0510.activityTimestamps"></strong> - <span data-t="changelogPage.v0510.activityTimestampsDesc"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">thumb_up</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0510.clearerSetupErrors"></strong> - <span data-t="changelogPage.v0510.clearerSetupErrorsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.0.2 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.0.2
-                        </div>
-                        <div class="release-date">May 2, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0502.financialOdoo16"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.0.1 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.0.1
-                        </div>
-                        <div class="release-date">April 28, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">thumb_up</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0501.dedupCrossFlow"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.5.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.5.0.0
-                        </div>
-                        <div class="release-date">April 27, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0500.autoLogging"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0500.autoLoggingDesc"></span>
-                                <ul>
-                                    <li><span data-t="changelogPage.v0500.autoLoggingThread"></span></li>
-                                    <li><span data-t="changelogPage.v0500.autoLoggingMultiple"></span></li>
-                                    <li><span data-t="changelogPage.v0500.autoLoggingDistinguish"></span></li>
-                                    <li><span data-t="changelogPage.v0500.autoLoggingVisibility"></span></li>
-                                    <li><span data-t="changelogPage.v0500.autoLoggingHealth"></span></li>
-                                </ul>
-                            </li>
-                            <li><strong data-t="changelogPage.v0500.multiCompany"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0500.multiCompanyDesc"></span>
-                                <ul>
-                                    <li><span data-t="changelogPage.v0500.multiCompanySwitch"></span></li>
-                                    <li><span data-t="changelogPage.v0500.multiCompanyCorrect"></span></li>
-                                    <li><span data-t="changelogPage.v0500.multiCompanyDuplicates"></span></li>
-                                    <li><span data-t="changelogPage.v0500.multiCompanyOptions"></span></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.9 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.9
-                        </div>
-                        <div class="release-date">April 16, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">thumb_up</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0409.errorDetails"></strong> — <span data-t="changelogPage.v0409.errorDetailsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.8 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.8
-                        </div>
-                        <div class="release-date">April 15, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0408.contactNameFix"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.6 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.6
-                        </div>
-                        <div class="release-date">April 2, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0406.financialFieldsFix"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.5 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.5
-                        </div>
-                        <div class="release-date">April 1, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0405.errorClassification"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.4 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.4
-                        </div>
-                        <div class="release-date">March 31, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0404.errorMessages"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.3 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.3
-                        </div>
-                        <div class="release-date">March 21, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0403.setupGuide"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.2 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.2
-                        </div>
-                        <div class="release-date">March 21, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0402.bugFixes"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.1 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.1
-                        </div>
-                        <div class="release-date">March 6, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0401.bugFixes"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.4.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.4.0.0
-                        </div>
-                        <div class="release-date">March 4, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0400.notificationOrganization"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0400.notificationOrganizationDesc"></span>
-                                <ul>
-                                    <li><span data-t="changelogPage.v0400.moduleBadges"></span></li>
-                                    <li><span data-t="changelogPage.v0400.mentionedBadge"></span></li>
-                                    <li><span data-t="changelogPage.v0400.sidebarShortcut"></span></li>
-                                    <li><span data-t="changelogPage.v0400.configurable"></span></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0400.generalImprovements"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0400.settingsScrollFix"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.3.1.3 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.3.1.3
-                        </div>
-                        <div class="release-date">February 22, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><span data-t="changelogPage.v0313.minorImprovements"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.3.1.2 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.3.1.2
-                        </div>
-                        <div class="release-date">February 17, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0312.attachments"></strong> - <span data-t="changelogPage.v0312.attachmentsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.3.1.1 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.3.1.1
-                        </div>
-                        <div class="release-date">February 17, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">bug_report</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0311.emailDate"></strong> - <span data-t="changelogPage.v0311.emailDateDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0311.contactDetection"></strong> - <span data-t="changelogPage.v0311.contactDetectionDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.3.1.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.3.1.0
-                        </div>
-                        <div class="release-date">February 13, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0310.duplicateDetection"></strong> - <span data-t="changelogPage.v0310.duplicateDetectionDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0310.emailLogging"></strong> - <span data-t="changelogPage.v0310.emailLoggingDesc"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">bug_report</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0310.currencySymbol"></strong> - <span data-t="changelogPage.v0310.currencySymbolDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0310.odoo19Api"></strong> - <span data-t="changelogPage.v0310.odoo19ApiDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.3.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.3.0.0
-                        </div>
-                        <div class="release-date">February 8, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0300.globalSidebar"></strong> - <span data-t="changelogPage.v0300.globalSidebarDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0300.grouping"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0300.groupingDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0300.emailParticipants"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0300.emailParticipantsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0300.recentActivities"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0300.recentActivitiesDesc"></span></li>
-                        </ul>
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0300.uiRefresh"></strong> - <span data-t="changelogPage.v0300.uiRefreshDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.2.2.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.2.2.0
-                        </div>
-                        <div class="release-date">January 31, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0220.selfHosted"></strong> - <span data-t="changelogPage.v0220.selfHostedDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0220.security"></strong> - <span data-t="changelogPage.v0220.securityDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.2.1.1 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.2.1.1
-                        </div>
-                        <div class="release-date">January 26, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">bug_report</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0211.attachments"></strong> - <span data-t="changelogPage.v0211.attachmentsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.2.1.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.2.1.0
-                        </div>
-                        <div class="release-date">January 25, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0210.odoo191"></strong> - <span data-t="changelogPage.v0210.odoo191Desc"></span></li>
-                            <li><strong data-t="changelogPage.v0210.dutch"></strong> - <span data-t="changelogPage.v0210.dutchDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0210.analytics"></strong> - <span data-t="changelogPage.v0210.analyticsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.2.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.2.0.0
-                        </div>
-                        <div class="release-date">January 16, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0200.freeTrial"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0200.freeTrialDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0200.regionalPricing"></strong> - <span data-t="changelogPage.v0200.regionalPricingDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0200.newLanguages"></strong> - <span data-t="changelogPage.v0200.newLanguagesDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.1.2.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.1.2.0
-                        </div>
-                        <div class="release-date">January 7, 2026</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0120.versionDisplay"></strong> - <span data-t="changelogPage.v0120.versionDisplayDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0120.localizedUserGuide"></strong> - <span data-t="changelogPage.v0120.localizedUserGuideDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0120.feedbackButton"></strong> - <span data-t="changelogPage.v0120.feedbackButtonDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">bug_report</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0120.toRecipientFix"></strong> - <span data-t="changelogPage.v0120.toRecipientFixDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.1.1.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.1.1.0
-                        </div>
-                        <div class="release-date">December 24, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0110.visualIndicator"></strong> - <span data-t="changelogPage.v0110.visualIndicatorDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0110.quoteLevels"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0110.quoteLevelsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.1.0.0 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.1.0.0
-                        </div>
-                        <div class="release-date">December 6, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0100.multiLanguage"></strong> - <span data-t="changelogPage.v0100.multiLanguageDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0100.accessibility"></strong> - <span data-t="changelogPage.v0100.accessibilityDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0100.toastNotifications"></strong> - <span data-t="changelogPage.v0100.toastNotificationsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0100.rateLimiting"></strong> - <span data-t="changelogPage.v0100.rateLimitingDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">code</span> <span data-t="changelogPage.sections.technical"></span></h3>
-                        <ul>
-                            <li data-t="changelogPage.v0100.typescript"></li>
-                            <li data-t="changelogPage.v0100.jest"></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.6 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.6
-                        </div>
-                        <div class="release-date">November 30, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0006.gmailFix"></strong> - <span data-t="changelogPage.v0006.gmailFixDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">update</span> <span data-t="changelogPage.sections.dependencies"></span></h3>
-                        <ul>
-                            <li data-t="changelogPage.v0006.inboxsdk"></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.5 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.5
-                        </div>
-                        <div class="release-date">November 16, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0005.emailHeaders"></strong> - <span data-t="changelogPage.v0005.emailHeadersDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0005.duplicateDetection"></strong> - <span data-t="changelogPage.v0005.duplicateDetectionDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0005.relatedContacts"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0005.relatedContactsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0005.conditionalTooltips"></strong> - <span data-t="changelogPage.v0005.conditionalTooltipsDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0005.headerFix"></strong> - <span data-t="changelogPage.v0005.headerFixDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.4 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.4
-                        </div>
-                        <div class="release-date">November 12, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0004.odoo19"></strong> - <span data-t="changelogPage.v0004.odoo19Desc"></span></li>
-                            <li><strong data-t="changelogPage.v0004.settingsExp"></strong> - <span data-t="changelogPage.v0004.settingsExpDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0004.searchBehavior"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0004.searchBehaviorDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0004.setupInstructions"></strong> - <span data-t="changelogPage.v0004.setupInstructionsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.3 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.3
-                        </div>
-                        <div class="release-date">November 10, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">build</span> <span data-t="changelogPage.sections.bugFixes"></span></h3>
-                        <ul>
-                            <li data-t="changelogPage.v0003.minorFixes"></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.2 -->
-                <div class="release">
-                    <div class="release-header">
-                        <div class="version-badge">
-                            <span class="material-symbols-outlined">new_releases</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.2
-                        </div>
-                        <div class="release-date">November 6, 2025</div>
-                    </div>
-                    <div class="release-content">
-                        <h3><span class="material-symbols-outlined">star</span> <span data-t="changelogPage.sections.newFeatures"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0002.financialInsights"></strong><span class="badge-new">PLUS</span> - <span data-t="changelogPage.v0002.financialInsightsDesc"></span></li>
-                        </ul>
-
-                        <h3><span class="material-symbols-outlined">auto_awesome</span> <span data-t="changelogPage.sections.improvements"></span></h3>
-                        <ul>
-                            <li><strong data-t="changelogPage.v0002.visualEnhancements"></strong> - <span data-t="changelogPage.v0002.visualEnhancementsDesc"></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 0.0.0.1 -->
+                <!-- Version 1.0.0 -->
                 <div class="release">
                     <div class="release-header">
                         <div class="version-badge">
                             <span class="material-symbols-outlined">rocket_launch</span>
-                            <span data-t="changelogPage.version"></span> 0.0.0.1
+                            <span data-t="changelogPage.version"></span> 1.0.0
                         </div>
-                        <div class="release-date">November 2, 2025</div>
+                        <div class="release-date" data-t="changelogPage.v100.date"></div>
                     </div>
                     <div class="release-content">
                         <h3><span class="material-symbols-outlined">celebration</span> <span data-t="changelogPage.sections.initialRelease"></span></h3>
                         <ul>
-                            <li><strong data-t="changelogPage.v0001.contactCompany"></strong> - <span data-t="changelogPage.v0001.contactCompanyDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.crmOpportunities"></strong> - <span data-t="changelogPage.v0001.crmOpportunitiesDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.projectTasks"></strong> - <span data-t="changelogPage.v0001.projectTasksDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.helpdeskTickets"></strong> - <span data-t="changelogPage.v0001.helpdeskTicketsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.emailLogging"></strong> - <span data-t="changelogPage.v0001.emailLoggingDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.fieldByField"></strong> - <span data-t="changelogPage.v100.fieldByFieldDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.verdict"></strong> - <span data-t="changelogPage.v100.verdictDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.invoiced"></strong> - <span data-t="changelogPage.v100.invoicedDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.breakdown"></strong> - <span data-t="changelogPage.v100.breakdownDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.context"></strong> - <span data-t="changelogPage.v100.contextDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.autodetect"></strong> - <span data-t="changelogPage.v100.autodetectDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.settings"></strong> - <span data-t="changelogPage.v100.settingsDesc"></span></li>
                         </ul>
-
-                        <h3><span class="material-symbols-outlined">workspace_premium</span> <span data-t="changelogPage.sections.plusFeatures"></span></h3>
+                        <h3><span class="material-symbols-outlined">workspace_premium</span> <span data-t="changelogPage.sections.licensing"></span></h3>
                         <ul>
-                            <li><strong data-t="changelogPage.v0001.advancedSearch"></strong> - <span data-t="changelogPage.v0001.advancedSearchDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.extendedViews"></strong> - <span data-t="changelogPage.v0001.extendedViewsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.relatedContacts"></strong> - <span data-t="changelogPage.v0001.relatedContactsDesc"></span></li>
-                            <li><strong data-t="changelogPage.v0001.customization"></strong> - <span data-t="changelogPage.v0001.customizationDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.trial"></strong> - <span data-t="changelogPage.v100.trialDesc"></span></li>
+                            <li><strong data-t="changelogPage.v100.plans"></strong> - <span data-t="changelogPage.v100.plansDesc"></span></li>
                         </ul>
-                        <div class="subscription-notice">
-                            <strong data-t="changelogPage.subscriptionRequired"></strong> <span data-t="changelogPage.subscriptionRequiredDesc"></span>
-                        </div>
                     </div>
+                </div>
+
+                <!-- Coming soon -->
+                <div class="subscription-notice">
+                    <strong data-t="changelogPage.comingSoon.label"></strong> <span data-t="changelogPage.comingSoon.text"></span>
                 </div>
             </div>
 
@@ -1010,8 +345,6 @@
                         <li><a href="pricing.html" data-t="footer.pricing"></a></li>
                         <li><a href="user-guide.html" data-t="footer.userGuide"></a></li>
                         <li><a href="changelog.html" data-t="footer.changelog"></a></li>
-                        <li><a href="comparison.html" data-t="footer.comparison"></a></li>
-                        <li><a href="blog.html" data-t="footer.blog"></a></li>
                         <li><a href="privacy.html" data-t="footer.privacy"></a></li>
                         <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
                     </ul>
