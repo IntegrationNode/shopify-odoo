@@ -304,7 +304,7 @@ a:hover {
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 1418 / 952; /* reserve space before load → avoids CLS */
+    aspect-ratio: 1920 / 992; /* reserve space before load → avoids CLS */
 }
 
 @media (max-width: 768px) {
