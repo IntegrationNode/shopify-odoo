@@ -50,8 +50,6 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="fonts/outlined.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
     <style>.price-large .period { font-size: 1.125rem; }
         .trial-note-line { font-size: 0.95rem; font-weight: 600; color: var(--color-primary); margin-top: 0.35rem; }</style>
 
@@ -81,17 +79,30 @@
                     },
                     {
                         "@type": "Offer",
-                        "name": "Solo",
+                        "name": "Starter",
+                        "price": "19",
+                        "priceCurrency": "USD",
                         "availability": "https://schema.org/InStock",
                         "itemCondition": "https://schema.org/NewCondition",
-                        "description": "Paid license for a single device. Full field-by-field order comparison after the trial."
+                        "description": "Company-wide plan covering 1 Odoo instance and 1 Shopify store, with no per-user limit. $19/month or $190/year."
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Growth",
+                        "price": "39",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock",
+                        "itemCondition": "https://schema.org/NewCondition",
+                        "description": "Company-wide plan covering 1 Odoo instance and unlimited Shopify stores. $39/month or $390/year."
                     },
                     {
                         "@type": "Offer",
                         "name": "Agency",
+                        "price": "79",
+                        "priceCurrency": "USD",
                         "availability": "https://schema.org/InStock",
                         "itemCondition": "https://schema.org/NewCondition",
-                        "description": "Paid license for up to 5 devices, with seat management via the Polar customer portal."
+                        "description": "Company-wide plan covering unlimited Odoo instances and Shopify stores, with no scope restrictions. $79/month or $790/year."
                     }
                 ]
             },
@@ -108,10 +119,10 @@
                     },
                     {
                         "@type": "Question",
-                        "name": "What's the difference between Solo and Agency?",
+                        "name": "Which plan should I choose: Starter, Growth or Agency?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Both tiers include the full extension — field-by-field order comparison, the verdict based on the net invoiced amount, refunds and returns shown in context, zero-config instance autodetection and read-only operation. Solo activates on a single device; Agency activates on up to 5 devices with seat management from the Polar customer portal."
+                            "text": "All three plans include the full extension — field-by-field order comparison, the verdict based on the net invoiced amount, refunds and returns shown in context, zero-config instance autodetection and read-only operation — and cover your whole team with no per-user limit. They differ only in scope: Starter covers 1 Odoo instance and 1 Shopify store, Growth covers 1 Odoo instance and unlimited Shopify stores, and Agency covers unlimited Odoo instances and Shopify stores."
                         }
                     },
                     {
@@ -119,7 +130,7 @@
                         "name": "How does activation work?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "After the trial you activate a paid license with a license key from Polar. There is no backend and no account to create inside the extension — you paste the key and it unlocks on that device."
+                            "text": "After the trial you activate a paid license with a license key from Polar. There is no backend and no account to create inside the extension — you paste the key and the extension unlocks for your whole team."
                         }
                     },
                     {
@@ -127,7 +138,7 @@
                         "name": "Can I cancel or change my plan anytime?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. Subscriptions, invoices, seat management and cancellation are all handled in Polar's hosted customer portal. You can cancel or change your plan at any time."
+                            "text": "Yes. Subscriptions, invoices and cancellation are all handled in Polar's hosted customer portal. You can cancel or change your plan at any time."
                         }
                     },
                     {
@@ -196,55 +207,81 @@
     <!-- Pricing Plans -->
     <section class="pricing-plans">
         <div class="container">
-            <div class="pricing-grid-extended">
-                <!-- SOLO Plan -->
+            <!-- Billing period switch -->
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+                <button type="button" class="billing-option active" data-billing="monthly" aria-pressed="true" data-t="pricingPage.billingMonthly"></button>
+                <button type="button" class="billing-option" data-billing="annual" aria-pressed="false" data-t="pricingPage.billingAnnual"></button>
+                <span class="two-months-free" data-t="pricingPage.twoMonthsFree" hidden></span>
+            </div>
+            <div class="pricing-grid-extended pricing-grid-3">
+                <!-- STARTER Plan -->
                 <div class="pricing-card-extended">
                     <div class="plan-header">
-                        <h3 data-t="pricingPage.free.name"></h3>
+                        <h3 data-t="pricingPage.starter.name"></h3>
                         <div class="price-large">
-                            <span class="amount">€19</span><span class="period" data-t="pricingPage.perMonth"></span>
+                            <span class="amount" data-monthly="$19" data-annual="$190">$19</span><span class="period period-month" data-t="pricingPage.perMonth"></span><span class="period period-year" data-t="pricingPage.perYear" hidden></span>
                         </div>
                         <p class="trial-note-line" data-t="pricingPage.trialNote"></p>
-                        <p class="plan-description" data-t="pricingPage.free.description"></p>
+                        <p class="plan-description" data-t="pricingPage.starter.description"></p>
                     </div>
                     <div class="plan-features">
                         <h4 data-t="pricingPage.featuresIncluded"></h4>
                         <ul>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature1"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature2"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature3"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature4"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature5"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.free.feature6"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature3"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature4"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature5"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.starter.feature6"></span></li>
                         </ul>
                     </div>
-                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_free" target="_blank" class="btn btn-outline btn-block" data-t="pricingPage.free.cta"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_starter" target="_blank" class="btn btn-outline btn-block" data-t="pricingPage.starter.cta"></a>
                 </div>
 
-                <!-- AGENCY Plan (Featured) -->
+                <!-- GROWTH Plan (Featured) -->
                 <div class="pricing-card-extended featured">
-                    <div class="badge-top" data-t="pricingPage.plus.badge"></div>
+                    <div class="badge-top" data-t="pricingPage.growth.badge"></div>
                     <div class="plan-header">
-                        <h3 data-t="pricingPage.plus.name"></h3>
+                        <h3 data-t="pricingPage.growth.name"></h3>
                         <div class="price-large">
-                            <span class="amount">€79</span><span class="period" data-t="pricingPage.perMonth"></span>
+                            <span class="amount" data-monthly="$39" data-annual="$390">$39</span><span class="period period-month" data-t="pricingPage.perMonth"></span><span class="period period-year" data-t="pricingPage.perYear" hidden></span>
                         </div>
                         <p class="trial-note-line" data-t="pricingPage.trialNote"></p>
-                        <p class="plan-description" data-t="pricingPage.plus.description"></p>
+                        <p class="plan-description" data-t="pricingPage.growth.description"></p>
                     </div>
                     <div class="plan-features">
-                        <h4 data-t="pricingPage.plus.everythingInFree"></h4>
+                        <h4 data-t="pricingPage.growth.everythingInStarter"></h4>
                         <ul>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature1"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature2"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature3"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature4"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature5"></span></li>
-                            <li><span class="check">✓</span> <span data-t="pricingPage.plus.feature6"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.growth.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.growth.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.growth.feature3"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.growth.feature4"></span></li>
                         </ul>
-                        <a href="#full-comparison" class="see-full-comparison" data-t="pricingPage.plus.seeFullComparison"></a>
+                        <a href="#full-comparison" class="see-full-comparison" data-t="pricingPage.growth.seeFullComparison"></a>
                     </div>
-                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_plus" target="_blank" class="btn btn-primary btn-block" data-t="pricingPage.plus.cta"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_growth" target="_blank" class="btn btn-primary btn-block" data-t="pricingPage.growth.cta"></a>
+                </div>
+
+                <!-- AGENCY Plan -->
+                <div class="pricing-card-extended">
+                    <div class="plan-header">
+                        <h3 data-t="pricingPage.agency.name"></h3>
+                        <div class="price-large">
+                            <span class="amount" data-monthly="$79" data-annual="$790">$79</span><span class="period period-month" data-t="pricingPage.perMonth"></span><span class="period period-year" data-t="pricingPage.perYear" hidden></span>
+                        </div>
+                        <p class="trial-note-line" data-t="pricingPage.trialNote"></p>
+                        <p class="plan-description" data-t="pricingPage.agency.description"></p>
+                    </div>
+                    <div class="plan-features">
+                        <h4 data-t="pricingPage.agency.everythingInGrowth"></h4>
+                        <ul>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.agency.feature1"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.agency.feature2"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.agency.feature3"></span></li>
+                            <li><span class="check">✓</span> <span data-t="pricingPage.agency.feature4"></span></li>
+                        </ul>
+                    </div>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=pricing_agency" target="_blank" class="btn btn-outline btn-block" data-t="pricingPage.agency.cta"></a>
                 </div>
             </div>
             <p class="comparison-note" data-t="pricingPage.priceNote"></p>
@@ -260,16 +297,39 @@
                     <thead>
                         <tr>
                             <th data-t="pricingPage.comparison.feature"></th>
-                            <th data-t="pricingPage.free.name"></th>
-                            <th class="featured-col" data-t="pricingPage.plus.name"></th>
+                            <th data-t="pricingPage.starter.name"></th>
+                            <th class="featured-col" data-t="pricingPage.growth.name"></th>
+                            <th data-t="pricingPage.agency.name"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="section-header">
-                            <td colspan="3"><strong data-t="pricingPage.comparison.coreFeatures"></strong></td>
+                            <td colspan="4"><strong data-t="pricingPage.comparison.scope"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.odooInstances"></td>
+                            <td><strong>1</strong></td>
+                            <td><strong>1</strong></td>
+                            <td><strong data-t="pricingPage.comparison.unlimited"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.shopifyStores"></td>
+                            <td><strong>1</strong></td>
+                            <td><strong data-t="pricingPage.comparison.unlimited"></strong></td>
+                            <td><strong data-t="pricingPage.comparison.unlimited"></strong></td>
+                        </tr>
+                        <tr>
+                            <td data-t="pricingPage.comparison.companyWide"></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
+                        </tr>
+                        <tr class="section-header">
+                            <td colspan="4"><strong data-t="pricingPage.comparison.coreFeatures"></strong></td>
                         </tr>
                         <tr>
                             <td data-t="pricingPage.comparison.fieldByField"></td>
+                            <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                         </tr>
@@ -277,9 +337,11 @@
                             <td data-t="pricingPage.comparison.globalVerdict"></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
                         </tr>
                         <tr>
                             <td data-t="pricingPage.comparison.invoicedVerdict"></td>
+                            <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                         </tr>
@@ -287,12 +349,14 @@
                             <td data-t="pricingPage.comparison.refundContext"></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
                         </tr>
                         <tr class="section-header">
-                            <td colspan="3"><strong data-t="pricingPage.comparison.setupSafety"></strong></td>
+                            <td colspan="4"><strong data-t="pricingPage.comparison.setupSafety"></strong></td>
                         </tr>
                         <tr>
                             <td data-t="pricingPage.comparison.zeroConfig"></td>
+                            <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
                         </tr>
@@ -300,28 +364,12 @@
                             <td data-t="pricingPage.comparison.readOnly"></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
+                            <td><span class="check-green">✓</span></td>
                         </tr>
                         <tr>
                             <td data-t="pricingPage.comparison.cancelledDetection"></td>
                             <td><span class="check-green">✓</span></td>
                             <td><span class="check-green">✓</span></td>
-                        </tr>
-                        <tr class="section-header">
-                            <td colspan="3"><strong data-t="pricingPage.comparison.licensing"></strong></td>
-                        </tr>
-                        <tr>
-                            <td data-t="pricingPage.comparison.devices"></td>
-                            <td><strong>1</strong></td>
-                            <td><strong>5</strong></td>
-                        </tr>
-                        <tr>
-                            <td data-t="pricingPage.comparison.seatManagement"></td>
-                            <td><span class="cross-red">✗</span></td>
-                            <td><span class="check-green">✓</span></td>
-                        </tr>
-                        <tr>
-                            <td data-t="pricingPage.comparison.prioritySupport"></td>
-                            <td><span class="cross-red">✗</span></td>
                             <td><span class="check-green">✓</span></td>
                         </tr>
                     </tbody>
@@ -435,7 +483,7 @@
         });
     })();
     </script>
-    <!-- Regional Pricing Detection -->
-    <script src="regional-pricing.js"></script>
+    <!-- Monthly/annual billing toggle -->
+    <script src="pricing-toggle.js"></script>
 </body>
 </html>

@@ -55,8 +55,6 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/material-symbols-outlined.woff2" crossorigin>
     <link rel="stylesheet" href="fonts/outlined.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Hide prices until regional pricing JS processes them -->
-    <style id="regional-pricing-hide">[data-plan][data-price] { opacity: 0; }</style>
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -91,7 +89,7 @@
                     "name": "14-day free trial",
                     "price": "0",
                     "priceCurrency": "USD",
-                    "description": "Full functionality for 14 days. Paid Solo and Agency plans available after the trial."
+                    "description": "Full functionality for 14 days. Paid Starter, Growth and Agency plans available after the trial."
                 },
                 "author": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
                 "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" }
@@ -154,7 +152,7 @@
                         "name": "Is there a free trial?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. Every install includes a 14-day free trial with full functionality. After the trial, Solo (1 device) and Agency (up to 5 devices) plans are available."
+                            "text": "Yes. Every install includes a 14-day free trial with full functionality. After the trial, the Starter, Growth and Agency plans are available — each covers your whole team and is scoped by how many Odoo instances and Shopify stores it includes."
                         }
                     }
                 ]
@@ -375,37 +373,54 @@
         <div class="container">
             <h2 data-t="pricing.title"></h2>
             <p class="section-subtitle" data-t="pricing.subtitle"></p>
-            <div class="pricing-grid">
+            <!-- Billing period switch -->
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+                <button type="button" class="billing-option active" data-billing="monthly" aria-pressed="true" data-t="pricing.billingMonthly"></button>
+                <button type="button" class="billing-option" data-billing="annual" aria-pressed="false" data-t="pricing.billingAnnual"></button>
+                <span class="two-months-free" data-t="pricing.twoMonthsFree" hidden></span>
+            </div>
+            <div class="pricing-grid pricing-grid-3">
                 <div class="pricing-card">
-                    <h3 data-t="pricing.free.name"></h3>
-                    <div class="price">€19<span data-t="pricing.perMonth"></span></div>
+                    <h3 data-t="pricing.starter.name"></h3>
+                    <div class="price"><span class="amount" data-monthly="$19" data-annual="$190">$19</span><span class="period period-month" data-t="pricing.perMonth"></span><span class="period period-year" data-t="pricing.perYear" hidden></span></div>
                     <ul class="features-list">
-                        <li data-t="pricing.free.feature1"></li>
-                        <li data-t="pricing.free.feature2"></li>
-                        <li data-t="pricing.free.feature3"></li>
-                        <li data-t="pricing.free.feature4"></li>
-                        <li data-t="pricing.free.feature5"></li>
-                        <li data-t="pricing.free.feature6"></li>
+                        <li data-t="pricing.starter.feature1"></li>
+                        <li data-t="pricing.starter.feature2"></li>
+                        <li data-t="pricing.starter.feature3"></li>
+                        <li data-t="pricing.starter.feature4"></li>
+                        <li data-t="pricing.starter.feature5"></li>
+                        <li data-t="pricing.starter.feature6"></li>
                     </ul>
-                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_free" target="_blank" class="btn btn-outline" data-t="pricing.free.cta"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_starter" target="_blank" class="btn btn-outline" data-t="pricing.starter.cta"></a>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="badge" data-t="pricing.plus.badge"></div>
-                    <h3 data-t="pricing.plus.name"></h3>
-                    <div class="price">€79<span data-t="pricing.perMonth"></span></div>
+                    <div class="badge" data-t="pricing.growth.badge"></div>
+                    <h3 data-t="pricing.growth.name"></h3>
+                    <div class="price"><span class="amount" data-monthly="$39" data-annual="$390">$39</span><span class="period period-month" data-t="pricing.perMonth"></span><span class="period period-year" data-t="pricing.perYear" hidden></span></div>
                     <ul class="features-list">
-                        <li data-t="pricing.plus.feature1"></li>
-                        <li data-t="pricing.plus.feature2"></li>
-                        <li data-t="pricing.plus.feature3"></li>
-                        <li data-t="pricing.plus.feature4"></li>
-                        <li data-t="pricing.plus.feature5"></li>
-                        <li data-t="pricing.plus.feature6"></li>
-                        <li data-t="pricing.plus.feature7"></li>
-                        <li data-t="pricing.plus.feature8"></li>
-                        <li data-t="pricing.plus.feature9"></li>
+                        <li data-t="pricing.growth.feature1"></li>
+                        <li data-t="pricing.growth.feature2"></li>
+                        <li data-t="pricing.growth.feature3"></li>
+                        <li data-t="pricing.growth.feature4"></li>
+                        <li data-t="pricing.growth.feature5"></li>
+                        <li data-t="pricing.growth.feature6"></li>
+                        <li data-t="pricing.growth.feature7"></li>
                     </ul>
-                    <a href="pricing.html#full-comparison" class="see-full-comparison" data-t="pricing.plus.seeFullComparison"></a>
-                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_plus" target="_blank" class="btn btn-primary" data-t="pricing.plus.cta"></a>
+                    <a href="pricing.html#full-comparison" class="see-full-comparison" data-t="pricing.growth.seeFullComparison"></a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_growth" target="_blank" class="btn btn-primary" data-t="pricing.growth.cta"></a>
+                </div>
+                <div class="pricing-card">
+                    <h3 data-t="pricing.agency.name"></h3>
+                    <div class="price"><span class="amount" data-monthly="$79" data-annual="$790">$79</span><span class="period period-month" data-t="pricing.perMonth"></span><span class="period period-year" data-t="pricing.perYear" hidden></span></div>
+                    <ul class="features-list">
+                        <li data-t="pricing.agency.feature1"></li>
+                        <li data-t="pricing.agency.feature2"></li>
+                        <li data-t="pricing.agency.feature3"></li>
+                        <li data-t="pricing.agency.feature4"></li>
+                        <li data-t="pricing.agency.feature5"></li>
+                        <li data-t="pricing.agency.feature6"></li>
+                    </ul>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_agency" target="_blank" class="btn btn-outline" data-t="pricing.agency.cta"></a>
                 </div>
             </div>
             <div class="pricing-footer">
@@ -519,8 +534,8 @@
     </script>
     <!-- Social Proof -->
     <script src="social-proof.js"></script>
-    <!-- Regional Pricing Detection -->
-    <script src="regional-pricing.js"></script>
+    <!-- Monthly/annual billing toggle -->
+    <script src="pricing-toggle.js"></script>
     <!-- Scroll Animations -->
     <script>
     (function() {
