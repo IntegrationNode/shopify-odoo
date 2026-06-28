@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Releasegeschiedenis van de Odoo–Shopify Order Check Chrome-extensie. Volg nieuwe functies, verbeteringen en bugfixes.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/changelog.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/changelog.html">
+    <meta property="og:title" content="Wijzigingslogboek - Odoo–Shopify Order Check">
+    <meta property="og:description" content="Releasegeschiedenis en updates voor Odoo–Shopify Order Check.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wijzigingslogboek - Odoo–Shopify Order Check">
+    <meta name="twitter:description" content="Releasegeschiedenis en updates voor Odoo–Shopify Order Check.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Wijzigingslogboek - Odoo–Shopify Order Check</title>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Changelog — Odoo–Shopify Order Check",
+        "description": "Release history for the Odoo–Shopify Order Check Chrome extension.",
+        "url": "https://integrationnode.com/shopify-odoo/changelog.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Odoo–Shopify Order Check",
+            "url": "https://integrationnode.com/shopify-odoo/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IntegrationNode",
+            "url": "https://integrationnode.com/shopify-odoo/"
+        }
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../fonts/outlined.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .changelog-page {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-bg);
+            min-height: 70vh;
+        }
+
+        .changelog-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .changelog-header h1 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .changelog-header p {
+            color: var(--color-text-light);
+            font-size: 1.125rem;
+        }
+
+        .release-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .release {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+        }
+
+        .release:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .release-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-sm);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .version-badge .material-symbols-outlined {
+            font-size: 20px;
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 20;
+        }
+
+        .release-date {
+            color: var(--color-text-light);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .release-content h3 {
+            color: var(--color-primary);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .release-content h3 .material-symbols-outlined {
+            font-size: 20px;
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 20;
+        }
+
+        .release-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .release-content li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .release-content li strong {
+            color: var(--color-text);
+        }
+
+        .badge-new {
+            display: inline-block;
+            background: var(--color-badge);
+            color: var(--color-badge-text);
+            padding: 0.125rem 0.5rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .badge-fixed {
+            display: inline-block;
+            background: #DCFCE7;
+            color: #166534;
+            padding: 0.125rem 0.5rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .badge-improved {
+            display: inline-block;
+            background: #FEF3C7;
+            color: #92400E;
+            padding: 0.125rem 0.5rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .subscription-notice {
+            background: var(--color-bg-highlight);
+            border-left: 4px solid var(--color-primary);
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            margin-top: var(--spacing-xs);
+            font-size: 0.875rem;
+            color: var(--color-text-light);
+        }
+
+        .subscription-notice strong {
+            color: var(--color-primary);
+        }
+
+        @media (max-width: 768px) {
+            .release-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-xs);
+            }
+
+            .changelog-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="brand-home">IntegrationNode</a>
+                <a href="./" class="logo">Odoo–Shopify Order Check</a>
+                <div class="nav-links">
+                    <a href="./#features">Functies</a>
+                    <a href="pricing.html">Prijzen</a>
+                    <a href="user-guide.html">Handleiding</a>
+                    <a href="changelog.html" class="active">Wijzigingslogboek</a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=changelog_navbar" target="_blank" class="btn btn-sm btn-primary">Extensie downloaden</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Producten</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <span class="product-item is-current" aria-current="true">Shopify-integratie</span>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Gmail-integratie</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">NL</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Changelog Content -->
+    <section class="changelog-page">
+        <div class="container">
+            <div class="changelog-header">
+                <h1>Releasegeschiedenis</h1>
+                <p>Volg nieuwe functies, verbeteringen en bugfixes in elke versie</p>
+            </div>
+
+            <div class="release-list">
+                <!-- Version 1.0.0 -->
+                <div class="release">
+                    <div class="release-header">
+                        <div class="version-badge">
+                            <span class="material-symbols-outlined">rocket_launch</span>
+                            <span>Versie</span> 1.0.0
+                        </div>
+                        <div class="release-date">Eerste release</div>
+                    </div>
+                    <div class="release-content">
+                        <h3><span class="material-symbols-outlined">celebration</span> <span>Eerste release</span></h3>
+                        <ul>
+                            <li><strong>Veld-voor-veld vergelijking</strong> - <span>Vergelijk elk order tussen Odoo en Shopify, veld voor veld, precies waar je werkt.</span></li>
+                            <li><strong>Globaal verdicto</strong> - <span>Een duidelijk overeenkomst- of afwijkingsverdicto voor het hele order in één oogopslag.</span></li>
+                            <li><strong>Netto gefactureerd bedrag</strong> - <span>Het verdicto is gebaseerd op het netto gefactureerde bedrag van Odoo (facturen minus terugbetalingen), zodat gedeeltelijke facturen en terugbetalingen er niet als fouten uitzien.</span></li>
+                            <li><strong>Afwijkingsoverzicht</strong> - <span>Gedetailleerde verschillen over totalen, btw, aantallen, orderregels en adressen.</span></li>
+                            <li><strong>Context voor wijzigingen</strong> - <span>Terugbetalingen, retouren en orderwijzigingen worden in context getoond, met detectie van geannuleerde orders.</span></li>
+                            <li><strong>Nul-configuratie autodetectie</strong> - <span>De Odoo-instantie en database worden automatisch gedetecteerd uit je actieve sessie — niets te registreren.</span></li>
+                            <li><strong>Instellingenpagina</strong> - <span>Een icoonpopup en een tandwiel in het paneel laten je een licentie activeren, kopen, je abonnement beheren en alleen-lezen diagnostiek bekijken.</span></li>
+                        </ul>
+                        <h3><span class="material-symbols-outlined">workspace_premium</span> <span>Proefperiode & licenties</span></h3>
+                        <ul>
+                            <li><strong>14 dagen gratis proefperiode</strong> - <span>Elke installatie bevat een gratis proefperiode van 14 dagen met volledige functionaliteit.</span></li>
+                            <li><strong>Abonnementen Starter, Growth en Agency</strong> - <span>Kies na de proefperiode Starter, Growth of Agency: bedrijfsbrede abonnementen bepaald per Odoo-instantie en Shopify-winkels, gelicentieerd via Polar.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coming soon -->
+                <div class="subscription-notice">
+                    <strong>Binnenkort:</strong> <span>Meer connectors en aanvullende vergelijkingsassen staan op de roadmap. Deze pagina wordt bij elke release bijgewerkt.</span>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="pricing-cta" style="margin-top: var(--spacing-xl); border-radius: var(--radius-lg);">
+                <div class="container">
+                    <h2>Klaar om je orders te controleren?</h2>
+                    <p>Installeer de extensie en start je gratis proefperiode van 14 dagen.</p>
+                    <div class="cta-buttons">
+                        <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=changelog_cta" target="_blank" class="btn btn-primary btn-lg">Extensie installeren</a>
+                        <a href="pricing.html" class="btn btn-secondary btn-lg">Prijzen bekijken</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Gebouwd door</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bronnen</h4>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="pricing.html">Prijzen</a></li>
+                        <li><a href="user-guide.html">Handleiding</a></li>
+                        <li><a href="changelog.html">Wijzigingslogboek</a></li>
+                        <li><a href="privacy.html">Privacybeleid</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Ondersteuning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Meer integraties</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Gmail-integratie</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Shopify-integratie</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Juridisch</h4>
+                    <p class="small-text">Niet gelieerd aan Odoo S.A. of Shopify Inc.</p>
+                    <p class="small-text">Odoo is een handelsmerk van Odoo S.A.; Shopify is een handelsmerk van Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

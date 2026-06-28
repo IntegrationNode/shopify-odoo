@@ -2,18 +2,3 @@ node_modules/
 dist/
 .env
 .DS_Store
-
-# Salidas generadas por `npm run build` (cp dist/* .) — se publican pero no se versionan aquí:
-/index.html
-/pricing.html
-/user-guide.html
-/changelog.html
-/privacy.html
-/sitemap.xml
-/es/
-/fr/
-/de/
-/it/
-/nl/
-/pl/
-/pt/

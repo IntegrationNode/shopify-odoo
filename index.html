@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odoo–Shopify Order Check - Compare any order between Odoo and Shopify field by field, get an instant verdict and a clear discrepancy breakdown. Read-only Chrome extension.">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="TODO_SEARCH_CONSOLE">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/">
+    <meta property="og:title" content="Odoo–Shopify Order Check">
+    <meta property="og:description" content="Catch order mismatches between Odoo and Shopify before they cost you. Field-by-field comparison, a verdict based on what's invoiced, and a discrepancy breakdown — read-only.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odoo–Shopify Order Check">
+    <meta name="twitter:description" content="Field-by-field order comparison between Odoo and Shopify, with an instant verdict and discrepancy breakdown. Read-only.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Odoo–Shopify Order Check</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Preload LCP hero image (mobile LCP element) -->
+    <link rel="preload" as="image" href="assets/hero-screenshot.webp" fetchpriority="high">
+    <!-- Preload icon font (8 KB subset) so icons render at final size on first paint → no CLS -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/material-symbols-outlined.woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/outlined.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://integrationnode.com/shopify-odoo/#software",
+                "name": "Odoo–Shopify Order Check",
+                "description": "Read-only Chrome extension that compares any order between Odoo and Shopify field by field, with a global verdict based on the net invoiced amount and a clear discrepancy breakdown.",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": "E-commerce Integration",
+                "operatingSystem": "Chrome Browser",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "downloadUrl": "https://integrationnode.com/shopify-odoo/",
+                "installUrl": "https://integrationnode.com/shopify-odoo/",
+                "image": "https://integrationnode.com/shopify-odoo/assets/og-image.png",
+                "screenshot": "https://integrationnode.com/shopify-odoo/assets/hero-screenshot.png",
+                "featureList": [
+                    "Field-by-field order comparison between Odoo and Shopify",
+                    "Global match/mismatch verdict",
+                    "Verdict based on the net invoiced amount (invoices minus refunds)",
+                    "Discrepancy breakdown: totals, taxes, quantities, line items, addresses",
+                    "Refunds, returns and order edits shown in context",
+                    "Cancelled order detection",
+                    "Zero-config Odoo instance autodetection",
+                    "Read-only — never writes to Odoo or Shopify"
+                ],
+                "offers": {
+                    "@type": "Offer",
+                    "name": "14-day free trial",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "description": "Full functionality for 14 days. Paid Starter, Growth and Agency plans available after the trial."
+                },
+                "author": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://integrationnode.com/shopify-odoo/#organization",
+                "name": "IntegrationNode",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "email": "odoointegrations.team@gmail.com",
+                "description": "Developer of productivity tools for Odoo ERP users"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://integrationnode.com/shopify-odoo/#website",
+                "url": "https://integrationnode.com/shopify-odoo/",
+                "name": "Odoo–Shopify Order Check",
+                "description": "Official website for the Odoo–Shopify Order Check Chrome extension",
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://integrationnode.com/shopify-odoo/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What does Odoo–Shopify Order Check do?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "When you open an order in Odoo or Shopify, the extension compares both systems field by field — totals, taxes, quantities, line items and addresses — and shows a global match/mismatch verdict with a breakdown of any discrepancies."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does it change anything in Odoo or Shopify?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. The extension is strictly read-only. It never creates, edits or deletes data in Odoo or Shopify — it only reads, so it is safe to run on production."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do I need to configure anything?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No setup is required. The extension auto-detects your Odoo instance and database from your active session. There are no instances to register, no API keys and no options page."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why compare against the invoiced amount instead of the order?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "When an order is invoiced, the connector freezes the sale order, so comparing the original order produces false positives. The extension compares Shopify's current order against Odoo's net invoiced amount (invoices minus refunds), so partial invoices and refunds don't look like errors."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is there a free trial?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Every install includes a 14-day free trial with full functionality. After the trial, the Starter, Growth and Agency plans are available — each covers your whole team and is scoped by how many Odoo instances and Shopify stores it includes."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.com/shopify-odoo/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="brand-home">IntegrationNode</a>
+                <a href="./" class="logo">Odoo–Shopify Order Check</a>
+                <div class="nav-links">
+                    <a href="./#features">Features</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="user-guide.html">User Guide</a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_navbar" target="_blank" class="btn btn-sm btn-primary">Get Extension</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Products</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <span class="product-item is-current" aria-current="true">Shopify Integration</span>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Gmail Integration</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">EN</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Catch Odoo–Shopify order mismatches at a glance</h1>
+                <p class="subtitle">Open any order and instantly see whether Odoo and Shopify agree — field by field, with a clear verdict and a discrepancy breakdown. Read-only, no setup.</p>
+                <p class="hero-badge">Zero config — auto-detects your Odoo instance from your session. No API keys, no code.</p>
+                <div class="cta-buttons">
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_hero" target="_blank" class="btn btn-primary">Get Extension</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="browser-frame">
+                    <div class="browser-toolbar">
+                        <span class="browser-dot" style="background:#FF5F57"></span>
+                        <span class="browser-dot" style="background:#FEBC2E"></span>
+                        <span class="browser-dot" style="background:#28C840"></span>
+                        <span class="browser-address">yourcompany.odoo.com</span>
+                    </div>
+                    <img src="assets/hero-screenshot.webp" alt="Odoo–Shopify Order Check — comparison panel showing the verdict and field-by-field breakdown for an order" loading="eager" fetchpriority="high" width="1920" height="992">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Compatibility Bar -->
+    <section class="compatibility">
+        <div class="container">
+            <p class="compatibility-title">Works with</p>
+            <div class="compatibility-badges">
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Odoo 14 – 19+</span>
+                </span>
+                <span class="compat-divider"></span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">groups</span>
+                    <span>Community</span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">workspace_premium</span>
+                    <span>Enterprise</span>
+                </span>
+                <span class="compat-divider"></span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">language</span>
+                    <span><span>Online</span> <span class="compat-note">(*.odoo.com)</span></span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">cloud</span>
+                    <span>Odoo.sh</span>
+                </span>
+                <span class="compat-badge">
+                    <span class="material-symbols-outlined">dns</span>
+                    <span>+ Shopify</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <h3>Instant order verdict</h3>
+                    <p>Open an order in Odoo or Shopify and the panel appears with a global verdict — match or mismatch — before you finish reading the page.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">dashboard</span>
+                    </div>
+                    <h3>Field-by-field breakdown</h3>
+                    <p>Totals, taxes, quantities, line items and addresses compared side by side, with every discrepancy called out and explained.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <h3>Verdict based on what's invoiced</h3>
+                    <p>Compares Shopify's current order against Odoo's net invoiced amount (invoices minus refunds) — not the frozen sale order — so partial invoices and refunds don't trigger false alarms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">sync</span>
+                    </div>
+                    <h3>Refunds & returns in context</h3>
+                    <p>Refunds, returns and order edits are shown as context, never counted as discrepancies. You see why the numbers differ, not just that they do.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">business</span>
+                    </div>
+                    <h3>Zero configuration</h3>
+                    <p>Auto-detects your Odoo instance and database from your active session. No instances to register, no API keys, no options page.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-symbols-outlined">bolt</span>
+                    </div>
+                    <h3>Read-only & safe</h3>
+                    <p>The extension never creates, edits or deletes anything in Odoo or Shopify. It only reads — safe to run on production from day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demos Section -->
+    <!-- TODO(009): "See It In Action" demos hidden in v1 (no real media yet — see T014).
+         Restore with real comparator screen recordings; demo copy lives in the "demos" locale keys. -->
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Set up in under a minute — no code, no API key, no configuration required</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">download</span>
+                    </div>
+                    <h3>Install</h3>
+                    <p>Add the extension from the Chrome Web Store with one click</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">link</span>
+                    </div>
+                    <h3>Open an order</h3>
+                    <p>Open any order in Odoo or Shopify. You're already signed in, so there's nothing to configure.</p>
+                </div>
+                <div class="step-connector">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-outlined">inbox</span>
+                    </div>
+                    <h3>Read the verdict</h3>
+                    <p>The panel appears with a match/mismatch verdict and a field-by-field breakdown</p>
+                </div>
+            </div>
+            <div class="steps-cta">
+                <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_howitworks" target="_blank" class="btn btn-primary">Start free trial</a>
+            </div>
+            <p class="how-it-works-note">Uses your existing Odoo session to detect the instance automatically. If it ever expires, the extension just asks you to sign back into Odoo — nothing else to manage.</p>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-headline">Built for teams running Odoo and Shopify together through a connector</p>
+            <!-- TODO(009): mostrar stats de la Chrome Web Store cuando exista la ficha del comparador (research R6).
+                 Reactivar el bloque .social-proof-stats y el workflow de cws-stats.json con el extension ID propio. -->
+        </div>
+    </section>
+
+    <!-- TODO(009): testimonials section removed in v1 — do not reuse reviews from the sibling product.
+         Reintroduce with real Odoo-Shopify comparator reviews (Chrome Web Store) once available. -->
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Simple pricing</h2>
+            <p class="section-subtitle">Start with a 14-day free trial. No credit card to begin.</p>
+            <!-- Billing period switch -->
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+                <button type="button" class="billing-option active" data-billing="monthly" aria-pressed="true">Monthly</button>
+                <button type="button" class="billing-option" data-billing="annual" aria-pressed="false">Annual</button>
+                <span class="two-months-free" hidden>2 months free</span>
+            </div>
+            <div class="pricing-grid pricing-grid-3">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price"><span class="amount" data-monthly="$19" data-annual="$190">$19</span><span class="period period-month">/month</span><span class="period period-year" hidden>/year</span></div>
+                    <ul class="features-list">
+                        <li>1 Odoo instance + 1 Shopify store</li>
+                        <li>Company-wide — covers your whole team</li>
+                        <li>Field-by-field order comparison</li>
+                        <li>Verdict based on net invoiced amount</li>
+                        <li>Zero-config instance autodetection</li>
+                        <li>Read-only — safe on production</li>
+                    </ul>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_starter" target="_blank" class="btn btn-outline">Start free trial</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most popular</div>
+                    <h3>Growth</h3>
+                    <div class="price"><span class="amount" data-monthly="$39" data-annual="$390">$39</span><span class="period period-month">/month</span><span class="period period-year" hidden>/year</span></div>
+                    <ul class="features-list">
+                        <li>1 Odoo instance + unlimited Shopify stores</li>
+                        <li>Company-wide — covers your whole team</li>
+                        <li>Field-by-field order comparison</li>
+                        <li>Verdict based on net invoiced amount</li>
+                        <li>Refunds, returns & edits shown in context</li>
+                        <li>Zero-config instance autodetection</li>
+                        <li>Read-only — safe on production</li>
+                    </ul>
+                    <a href="pricing.html#full-comparison" class="see-full-comparison">See full comparison →</a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_growth" target="_blank" class="btn btn-primary">Start free trial</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Agency</h3>
+                    <div class="price"><span class="amount" data-monthly="$79" data-annual="$790">$79</span><span class="period period-month">/month</span><span class="period period-year" hidden>/year</span></div>
+                    <ul class="features-list">
+                        <li>Unlimited Odoo instances + Shopify stores</li>
+                        <li>Built for partners & agencies</li>
+                        <li>Company-wide — covers your whole team</li>
+                        <li>Field-by-field order comparison</li>
+                        <li>Verdict based on net invoiced amount</li>
+                        <li>Read-only — safe on production</li>
+                    </ul>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_pricing_agency" target="_blank" class="btn btn-outline">Start free trial</a>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p><span>Questions about plans?</span> <a href="pricing.html">View pricing</a> <span>or</span> <a href="mailto:odoointegrations.team@gmail.com">contact us</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Built by</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="user-guide.html">User Guide</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>More integrations</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Gmail Integration</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Shopify Integration</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p class="small-text">Not affiliated with Odoo S.A. or Shopify Inc.</p>
+                    <p class="small-text">Odoo is a trademark of Odoo S.A.; Shopify is a trademark of Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Lightbox -->
+    <div id="demo-lightbox" class="demo-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="demo-lightbox-backdrop"></div>
+        <div class="demo-lightbox-content">
+            <video class="demo-lightbox-image" controls loop muted playsinline></video>
+        </div>
+    </div>
+
+    <!-- Demo Carousel Script -->
+    <script src="carousel.js"></script>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+    <!-- Social Proof -->
+    <script src="social-proof.js"></script>
+    <!-- Monthly/annual billing toggle -->
+    <script src="pricing-toggle.js"></script>
+    <!-- Scroll Animations -->
+    <script>
+    (function() {
+        var steps = document.querySelector('.steps');
+        if (!steps) return;
+        new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) { e.target.classList.add('in-view'); }
+            });
+        }, { threshold: 0.3 }).observe(steps);
+    })();
+    </script>
+</body>
+</html>

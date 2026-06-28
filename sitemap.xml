@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- ES pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/es/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/es/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/es/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- FR pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/fr/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/fr/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/fr/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- DE pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/de/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/de/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/de/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- IT pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/it/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/it/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/it/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/it/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- PT pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pt/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pt/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pt/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pt/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- NL pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/nl/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/nl/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/nl/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/nl/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- PL pages -->
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pl/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/pricing.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pl/user-guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html" />
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pl/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/changelog.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/changelog.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://integrationnode.com/shopify-odoo/pl/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/privacy.html" />
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

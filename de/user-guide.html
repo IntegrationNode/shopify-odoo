@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vollständiges Benutzerhandbuch für Odoo–Shopify Order Check. Erfahren Sie, wie Sie die Erweiterung installieren, das Übereinstimmungs-/Abweichungsurteil lesen, warum das Urteil auf dem netto fakturierten Betrag basiert, wie Rückerstattungen und Stornierungen als Kontext angezeigt werden und wie Sie Ihr Abonnement verwalten.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/user-guide.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/user-guide.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/user-guide.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/user-guide.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/user-guide.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/user-guide.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/user-guide.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/user-guide.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/user-guide.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/user-guide.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/user-guide.html">
+    <meta property="og:title" content="Benutzerhandbuch – Odoo–Shopify Order Check">
+    <meta property="og:description" content="Installieren Sie Odoo–Shopify Order Check und lesen Sie das Urteil mit Zuversicht: Abweichungsübersicht, fakturiert vs. aktuell, Rückerstattungen und Stornierungen als Kontext sowie Abonnementverwaltung.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Benutzerhandbuch – Odoo–Shopify Order Check">
+    <meta name="twitter:description" content="Vollständige Anleitung zur Installation und Nutzung von Odoo–Shopify Order Check: Urteil, Abweichungsübersicht, fakturiert vs. aktuell und Abonnement.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Benutzerhandbuch – Odoo–Shopify Order Check</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../fonts/outlined.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .guide-page { padding: var(--spacing-xl) 0; background: var(--color-bg); min-height: 70vh; }
+        .guide-header { text-align: center; margin-bottom: var(--spacing-lg); }
+        .guide-header h1 { margin-bottom: var(--spacing-xs); }
+        .guide-header p { color: var(--color-text-light); font-size: 1.125rem; }
+        .guide-content { display: flex; gap: 2rem; max-width: 1200px; margin: 0 auto; align-items: flex-start; }
+        .guide-nav { background: white; border-radius: var(--radius-lg); padding: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); position: sticky; top: 100px; width: 240px; flex-shrink: 0; height: fit-content; }
+        .guide-nav h2 { font-size: 1.1rem; margin-bottom: var(--spacing-sm); color: var(--color-primary); }
+        .guide-nav ul { display: flex; flex-direction: column; gap: 0.25rem; list-style: none; padding: 0; margin: 0; }
+        .guide-nav a { color: var(--color-text); text-decoration: none; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; transition: all var(--transition-base); font-size: 0.9rem; }
+        .guide-nav a:hover { background: var(--color-bg-highlight); color: var(--color-primary); }
+        .guide-main { flex: 1; min-width: 0; }
+        .guide-nav .material-symbols-outlined { font-size: 18px; color: var(--color-primary); }
+        .guide-section { background: white; border-radius: var(--radius-lg); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); scroll-margin-top: 100px; }
+        .guide-nav a.active { background: var(--color-bg-highlight); color: var(--color-primary); font-weight: 500; }
+        .guide-section h2 { color: var(--color-primary); font-size: 1.5rem; margin-bottom: var(--spacing-md); padding-bottom: var(--spacing-sm); border-bottom: 2px solid var(--color-border); display: flex; align-items: center; gap: 0.5rem; }
+        .guide-section h3 { color: var(--color-text); font-size: 1.25rem; margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); }
+        .guide-section h4 { color: var(--color-text); font-size: 1rem; margin-top: var(--spacing-sm); margin-bottom: var(--spacing-xs); }
+        .guide-section p { margin-bottom: var(--spacing-sm); line-height: 1.7; }
+        .guide-section ul, .guide-section ol { margin-left: 1.5rem; margin-bottom: var(--spacing-sm); }
+        .guide-section li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .guide-section code { background: var(--color-bg-highlight); padding: 0.125rem 0.375rem; border-radius: var(--radius-sm); font-family: monospace; font-size: 0.875rem; }
+        .feature-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge-free { background: #DCFCE7; color: #166534; }
+        .badge-plus { background: var(--color-badge); color: var(--color-badge-text); }
+        .info-box { background: var(--color-bg-highlight); border-left: 4px solid var(--color-primary); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: var(--spacing-sm) 0; }
+        .info-box.warning { border-left-color: #F59E0B; background: #FEF3C7; }
+        .info-box strong { color: var(--color-primary); }
+        .info-box.warning strong { color: #92400E; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: var(--spacing-sm) 0; }
+        .comparison-table th, .comparison-table td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-border); }
+        .comparison-table th { background: var(--color-bg-highlight); font-weight: 600; }
+        .steps-list { counter-reset: step-counter; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step-counter; padding-left: 2.5rem; position: relative; margin-bottom: var(--spacing-sm); }
+        .steps-list li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; width: 1.75rem; height: 1.75rem; background: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; }
+        .faq-item { margin-bottom: var(--spacing-sm); }
+        .faq-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        @media (max-width: 1024px) { .guide-content { flex-direction: column; } .guide-nav { position: static; width: 100%; } .guide-nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.5rem; } .guide-nav a { padding: 0.5rem 1rem; } }
+        @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } .guide-section { padding: var(--spacing-md); } }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "TechArticle",
+                "@id": "https://integrationnode.com/shopify-odoo/user-guide.html#article",
+                "headline": "Odoo–Shopify Order Check — Complete User Guide",
+                "description": "Step-by-step guide to install and use Odoo–Shopify Order Check. Learn how to read the verdict, the discrepancy breakdown, why the verdict uses the net invoiced amount, how refunds and cancellations are shown as context, and how to manage your subscription.",
+                "datePublished": "2025-11-22T00:00:00+00:00",
+                "dateModified": "2026-02-22T00:00:00+00:00",
+                "author": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "publisher": { "@id": "https://integrationnode.com/shopify-odoo/#organization" },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://integrationnode.com/shopify-odoo/user-guide.html"
+                },
+                "keywords": ["odoo shopify order comparison", "odoo shopify reconciliation", "shopify odoo extension guide", "compare odoo shopify orders"],
+                "articleSection": "Documentation",
+                "inLanguage": "en",
+                "proficiencyLevel": "Beginner"
+            },
+            {
+                "@type": "HowTo",
+                "name": "How to compare an order with Odoo–Shopify Order Check",
+                "description": "Quick start guide for the Odoo–Shopify Order Check Chrome extension",
+                "totalTime": "PT1M",
+                "estimatedCost": {
+                    "@type": "MonetaryAmount",
+                    "currency": "USD",
+                    "value": "0"
+                },
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "position": 1,
+                        "name": "Install the extension",
+                        "text": "Visit the Chrome Web Store and click 'Add to Chrome' to install Odoo–Shopify Order Check.",
+                        "url": "https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO"
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 2,
+                        "name": "Sign in to Odoo",
+                        "text": "Open your Odoo instance in the same browser and sign in. The extension detects your instance and database from your active session — no API key required."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 3,
+                        "name": "Open an order",
+                        "text": "Open any order in Odoo or Shopify. The extension auto-detects it and injects a comparison panel."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "position": 4,
+                        "name": "Read the verdict",
+                        "text": "The panel shows a global match or mismatch verdict and a field-by-field breakdown of any discrepancies."
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://integrationnode.com/shopify-odoo/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "User Guide",
+                        "item": "https://integrationnode.com/shopify-odoo/user-guide.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="brand-home">IntegrationNode</a>
+                <a href="./" class="logo">Odoo–Shopify Order Check</a>
+                <div class="nav-links">
+                    <a href="./#features">Funktionen</a>
+                    <a href="pricing.html">Preise</a>
+                    <a href="user-guide.html" class="active">Benutzerhandbuch</a>
+                    <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=userguide_navbar" target="_blank" class="btn btn-sm btn-primary">Erweiterung holen</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Produkte</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <span class="product-item is-current" aria-current="true">Shopify-Integration</span>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Gmail-Integration</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">DE</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Guide Content -->
+    <section class="guide-page">
+        <div class="container">
+            <div class="guide-header">
+                <h1>Benutzerhandbuch</h1>
+                <p>Alles, was Sie brauchen, um Odoo–Shopify Order Check zu installieren und das Urteil sicher zu lesen.</p>
+            </div>
+
+            <div class="guide-content">
+                <!-- Table of Contents -->
+                <nav class="guide-nav">
+                    <h2>Schnellnavigation</h2>
+                    <ul>
+                        <li><a href="#installation"><span class="material-symbols-outlined">download</span> <span>Installation</span></a></li>
+                        <li><a href="#getting-started"><span class="material-symbols-outlined">rocket_launch</span> <span>Erste Schritte</span></a></li>
+                        <li><a href="#verdict"><span class="material-symbols-outlined">verified</span> <span>Das Urteil lesen</span></a></li>
+                        <li><a href="#breakdown"><span class="material-symbols-outlined">dashboard</span> <span>Abweichungsübersicht</span></a></li>
+                        <li><a href="#invoiced"><span class="material-symbols-outlined">swap_horiz</span> <span>Fakturiert vs. aktuell</span></a></li>
+                        <li><a href="#context"><span class="material-symbols-outlined">history</span> <span>Rückerstattungen, Retouren & Stornierungen</span></a></li>
+                        <li><a href="#from-shopify"><span class="material-symbols-outlined">business</span> <span>Start von Shopify aus</span></a></li>
+                        <li><a href="#settings"><span class="material-symbols-outlined">settings</span> <span>Einstellungen</span></a></li>
+                        <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
+                        <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Fehlerbehebung</span></a></li>
+                        <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="guide-main">
+                <!-- Installation Section -->
+                <section id="installation" class="guide-section">
+                    <h2><span class="material-symbols-outlined">download</span> <span>Installation</span></h2>
+                    <h3>Voraussetzungen</h3>
+                    <ul>
+                        <li><strong>Browser</strong>: <span>Google Chrome (oder ein beliebiger Chromium-basierter Browser) mit aktivierten Erweiterungen.</span></li>
+                        <li><strong>Odoo</strong>: <span>Odoo 14–19+, auf Odoo Online (*.odoo.com) oder Odoo.sh, mit einem Benutzerkonto, bei dem Sie sich anmelden können.</span></li>
+                        <li><strong>Shopify</strong>: <span>Ein Shopify-Shop, der über einen unterstützten Connector (derzeit Emipro) mit Odoo verbunden ist.</span></li>
+                    </ul>
+                    <h3>Erweiterung installieren</h3>
+                    <ol class="steps-list">
+                        <li><strong>Chrome Web Store-Seite öffnen</strong><br><span>Rufen Sie die Seite von Odoo–Shopify Order Check im Chrome Web Store auf.</span></li>
+                        <li><strong>Zu Chrome hinzufügen</strong><br><span>Klicken Sie auf „Zu Chrome hinzufügen“ und bestätigen Sie die Abfrage. Die Erweiterung ist in wenigen Sekunden installiert.</span></li>
+                        <li><strong>Symbol anheften (optional)</strong><br><span>Heften Sie die Erweiterung an Ihre Symbolleiste an, damit das Einstellungs-Popup jederzeit mit einem Klick erreichbar ist.</span></li>
+                        <li><strong>Bei Odoo anmelden</strong><br><span>Öffnen Sie Ihre Odoo-Instanz im selben Browser und melden Sie sich an. Das ist der einzige Schritt, bevor Sie mit dem Auftragsvergleich beginnen können.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Nur lesend und sicher.</strong> <span>Die Erweiterung schreibt niemals in Odoo oder Shopify. Sie liest ausschließlich Auftragsdaten für den Vergleich – daher ist sie auch auf Produktivsystemen unbedenklich.</span>
+                    </div>
+                </section>
+
+                <!-- Getting Started Section -->
+                <section id="getting-started" class="guide-section">
+                    <h2><span class="material-symbols-outlined">rocket_launch</span> <span>Erste Schritte</span></h2>
+                    <p>Es ist keine Konfiguration erforderlich. Sobald die Erweiterung installiert und Sie in Odoo angemeldet sind, öffnen Sie einen Auftrag – der Vergleich erscheint automatisch.</p>
+                    <ol class="steps-list">
+                        <li><strong>Bei Odoo anmelden</strong><br><span>Öffnen Sie Ihre Odoo-Instanz und melden Sie sich wie gewohnt an. Die Erweiterung liest Ihre aktive Sitzung, um Instanz und Datenbank zu erkennen – kein API-Schlüssel, keine URL-Eingabe erforderlich.</span></li>
+                        <li><strong>Auftrag öffnen</strong><br><span>Öffnen Sie einen Verkaufsauftrag in Odoo (oder den entsprechenden Auftrag in Shopify). Die Erweiterung erkennt ihn automatisch und blendet ein Vergleichspanel ein.</span></li>
+                        <li><strong>Urteil lesen</strong><br><span>Das Panel zeigt ein globales Übereinstimmungs- oder Abweichungsurteil und ermöglicht es Ihnen, die feldgenaue Analyse auf Abruf zu erweitern.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Keine Konfiguration.</strong> <span>Es müssen keine Instanzen registriert, keine API-Schlüssel eingefügt und keine Optionsseite aufgerufen werden. Instanz und Datenbank stammen direkt aus Ihrer Odoo-Browsersitzung, cookie-first.</span>
+                    </div>
+                    <div class="info-box">
+                        <strong>Netzwerkzugriff im Hintergrund.</strong> <span>Alle Netzwerkanfragen laufen im Service Worker der Erweiterung. Das Shopify-Admin-Token wird über den Connector aus Odoo gelesen, ausschließlich im Arbeitsspeicher gehalten und weder gespeichert noch der Seite zugänglich gemacht.</span>
+                    </div>
+                </section>
+
+                <!-- Reading the Verdict Section -->
+                <section id="verdict" class="guide-section">
+                    <h2><span class="material-symbols-outlined">verified</span> <span>Das Urteil lesen</span></h2>
+                    <p>Im oberen Bereich des Panels erhalten Sie auf einen Blick ein eindeutiges Urteil für den Auftrag:</p>
+                    <ul>
+                        <li><strong>Übereinstimmung</strong>: <span>Odoo und Shopify stimmen für den Auftrag überein. In den verglichenen Feldern wurden keine Abweichungen gefunden.</span></li>
+                        <li><strong>Abweichung</strong>: <span>Mindestens ein Feld unterscheidet sich zwischen den beiden Systemen. Die Übersicht zeigt genau, was und wo.</span></li>
+                        <li><strong>Vergleich nicht möglich</strong>: <span>Die Erweiterung konnte keinen Vergleich erstellen – zum Beispiel ist Ihre Odoo-Sitzung abgelaufen oder der Auftrag ist noch nicht mit Shopify verknüpft. Das Panel teilt Ihnen den nächsten Schritt mit.</span></li>
+                    </ul>
+                    <h3>Details einblenden</h3>
+                    <p>Das Urteil erscheint sofort; die Aufschlüsselung erfolgt auf Abruf. Erweitern Sie das Panel, um alle verglichenen Felder, den Wert auf jeder Seite und einen Kontextbereich für alles zu sehen, das eine Differenz erklärt, ohne ein Fehler zu sein.</p>
+                </section>
+
+                <!-- Discrepancy Breakdown Section -->
+                <section id="breakdown" class="guide-section">
+                    <h2><span class="material-symbols-outlined">dashboard</span> <span>Die Abweichungsübersicht</span></h2>
+                    <p>Bei einer Abweichung zeigt die Übersicht Feld für Feld, wo Odoo und Shopify voneinander abweichen:</p>
+                    <ul>
+                        <li><strong>Gesamtbeträge</strong>: <span>Der Auftragsbetrag, verglichen mit Odoos netto fakturiertem Betrag (warum das so ist, erklärt der nächste Abschnitt).</span></li>
+                        <li><strong>Steuern</strong>: <span>Steuerbeträge auf beiden Seiten. Bei Aufträgen, die gegen den fakturierten Gesamtbetrag verglichen werden, können Steuerbemessungsgrundlage und Steuern in dieser Version als nicht vergleichbar markiert sein.</span></li>
+                        <li><strong>Mengen</strong>: <span>Mengen pro Position. Odoos fakturierte Menge gilt als maßgeblich gegenüber der aktuellen Menge in Shopify.</span></li>
+                        <li><strong>Auftragspositionen</strong>: <span>Produkte werden per SKU abgeglichen; Connector-Artefakte (z. B. Rabatt- oder Geschenkpositionen) werden ausgeschlossen, damit sie nicht als Phantomabweichungen erscheinen.</span></li>
+                        <li><strong>Adressen</strong>: <span>Liefer- und Rechnungsadressen, verglichen anhand ihrer relevanten Bestandteile (Straße, Ort, Postleitzahl) und nicht anhand eines einzigen Anzeigenamens.</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Schweregrad.</strong> <span>Jede Abweichung wird gewichtet, sodass eine Differenz auf Rundungsebene nicht gleich bewertet wird wie eine fehlende Position oder ein falscher Gesamtbetrag. Das Urteil spiegelt die schwerwiegendste gefundene Abweichung wider.</span>
+                    </div>
+                </section>
+
+                <!-- Invoiced vs Current Section -->
+                <section id="invoiced" class="guide-section">
+                    <h2><span class="material-symbols-outlined">swap_horiz</span> <span>Fakturiert vs. aktuell</span></h2>
+                    <p>Das wirtschaftliche Urteil vergleicht den aktuellen Shopify-Auftrag mit dem tatsächlich in Odoo fakturierten Betrag – nicht mit dem ursprünglichen Verkaufsauftrag.</p>
+                    <h3>Warum der netto fakturierte Betrag?</h3>
+                    <p>Wenn ein Auftrag fakturiert wird, friert der Connector den Verkaufsauftrag ein. Den eingefrorenen Auftrag mit einem inzwischen geänderten Shopify-Auftrag zu vergleichen, erzeugt falsch-positive Ergebnisse. Stattdessen verwendet die Erweiterung Odoos netto fakturierten Betrag – gebuchte Kundenrechnungen abzüglich gebuchter Gutschriften –, der tatsächlich dem aktuellen Zustand in Shopify entspricht.</p>
+                    <h3>Wie jede Seite ausgelesen wird</h3>
+                    <ul>
+                        <li><strong>Odoo</strong>: <span>Netto fakturierter Gesamtbetrag (Summe gebuchter Kundenrechnungen abzüglich gebuchter Gutschriften) und die fakturierte Menge je Position als maßgebliche Größe.</span></li>
+                        <li><strong>Shopify</strong>: <span>Der aktuelle Auftragsbetrag und die aktuelle Menge je Position – die lebende Wahrheitsquelle für das, was der Kunde tatsächlich hat.</span></li>
+                    </ul>
+                    <div class="info-box">
+                        <strong>Noch nicht fakturiert?</strong> <span>Wenn für den Auftrag keine gebuchten Rechnungen vorliegen, fällt die Erweiterung auf den Vergleich der bestellten Beträge zurück und kennzeichnet das Urteil als vorläufig, damit Sie wissen, dass eine Rechnung es später konkretisieren wird.</span>
+                    </div>
+                </section>
+
+                <!-- Refunds, Returns & Cancellations as Context Section -->
+                <section id="context" class="guide-section">
+                    <h2><span class="material-symbols-outlined">history</span> <span>Rückerstattungen, Retouren & Stornierungen</span></h2>
+                    <p>Rückerstattungen, Retouren und Auftragsänderungen bedeuten selten, dass etwas nicht stimmt – sie gehören zum normalen Auftragslebenszyklus. Die Erweiterung zeigt sie als Kontext, getrennt von der Abweichungsliste, damit keine falschen Abweichungen ausgelöst werden:</p>
+                    <ul>
+                        <li><strong>Rückerstattungen</strong>: <span>Der ursprüngliche Betrag, die angewandten Rückerstattungen und der resultierende netto fakturierte Betrag werden gemeinsam angezeigt, damit die Rechnung transparent ist.</span></li>
+                        <li><strong>Retouren</strong>: <span>Eine laufende Retoure wird als Kontext auf der Lieferseite angezeigt und nicht als Mengenabweichung gezählt.</span></li>
+                        <li><strong>Auftragsänderungen</strong>: <span>Wenn ein Shopify-Auftrag bearbeitet wird, wird der Verlauf (Original, Rückerstattungen, Änderungen) angezeigt, damit eine legitime Änderung nicht wie ein Fehler aussieht.</span></li>
+                    </ul>
+                    <h3>Stornierte Aufträge</h3>
+                    <p>Wenn ein Auftrag storniert wird, zeigt das Panel ein deutliches Banner, damit Sie sofort verstehen, warum die Zahlen so aussehen, wie sie aussehen, anstatt die Stornierung als Abweichung zu lesen.</p>
+                    <div class="info-box">
+                        <strong>Kontext, keine Abweichungen.</strong> <span>Alles in diesem Abschnitt ist informativ. Es erklärt Unterschiede; es fließt für sich allein niemals in das Übereinstimmungs- oder Abweichungsurteil ein.</span>
+                    </div>
+                </section>
+
+                <!-- Starting from Shopify Section -->
+                <section id="from-shopify" class="guide-section">
+                    <h2><span class="material-symbols-outlined">business</span> <span>Start von Shopify aus</span></h2>
+                    <p>Sie können den Vergleich auch von einem Shopify-Auftrag aus starten – nicht nur von Odoo aus. Dazu muss die Erweiterung wissen, zu welcher Odoo-Instanz der Shop gehört, und erlernt diese Zuordnung beim ersten Mal, wenn Sie den Auftrag von Odoo aus vergleichen.</p>
+                    <h3>So funktioniert die erlernte Zuordnung</h3>
+                    <ol class="steps-list">
+                        <li>Melden Sie sich bei Odoo an und öffnen Sie den Auftrag dort einmal. Die Erweiterung löst den Shop auf und merkt sich, welcher Odoo-Instanz und Datenbank er zugeordnet ist.</li>
+                        <li>Von da an funktioniert das Öffnen des entsprechenden Auftrags in Shopify direkt – die Erweiterung weiß bereits, wo sie suchen muss.</li>
+                        <li>Die Zuordnung wird lokal in Ihrem Browser gespeichert; es werden keine Daten weitergeleitet.</li>
+                    </ol>
+                    <div class="info-box warning">
+                        <strong>Shop noch nicht erlernt?</strong> <span>Wenn Sie einen Shopify-Auftrag eines Shops öffnen, den die Erweiterung noch nicht über Odoo kennengelernt hat, fordert sie Sie auf, den Auftrag zuerst in Odoo zu öffnen, anstatt zu raten. Sobald die Zuordnung erlernt wurde, funktionieren Vergleiche direkt aus Shopify problemlos.</span>
+                    </div>
+                </section>
+
+                <!-- Settings & Subscription Section -->
+                <section id="settings" class="guide-section">
+                    <h2><span class="material-symbols-outlined">settings</span> <span>Einstellungen</span></h2>
+                    <p>Eine übersichtliche Einstellungsseite zeigt Ihren Zugangsstatus, ermöglicht die Lizenzverwaltung und zeigt einige Diagnoseinformationen – ohne die aktuelle Seite zu verlassen.</p>
+                    <h3>Wo Sie die Einstellungen finden</h3>
+                    <ul>
+                        <li><strong>Erweiterungssymbol-Popup</strong>: <span>Klicken Sie auf das Erweiterungssymbol in Ihrer Symbolleiste, um die Einstellungen von jedem Tab aus zu öffnen.</span></li>
+                        <li><strong>Zahnrad im Panel</strong>: <span>Öffnen Sie das ⚙-Zahnrad im Vergleichspanel, um dieselben Einstellungen direkt neben dem betrachteten Auftrag aufzurufen.</span></li>
+                    </ul>
+                    <h3>Was Sie tun können</h3>
+                    <ul>
+                        <li><strong>Zugangsstatus prüfen</strong>: <span>Sehen Sie, ob Sie sich in der kostenlosen Testphase oder mit einer aktiven Lizenz befinden, und wie viele Testtage noch verbleiben.</span></li>
+                        <li><strong>Lizenzschlüssel aktivieren</strong>: <span>Fügen Sie einen Polar-Lizenzschlüssel ein, um die Erweiterung jederzeit freizuschalten – während der Testphase oder danach.</span></li>
+                        <li><strong>Plan kaufen</strong>: <span>Direkt zur Kasse, um einen Starter-, Growth- oder Agency-Plan zu kaufen.</span></li>
+                        <li><strong>Abonnement verwalten</strong>: <span>Öffnen Sie das gehostete Kundenportal von Polar, um Ihr Abonnement zu ändern oder zu kündigen.</span></li>
+                    </ul>
+                    <h3>Nur lesende Diagnose</h3>
+                    <p>Das Diagnosepanel ist rein informativ und zeigt:</p>
+                    <ul>
+                        <li>Verbleibende Testtage.</li>
+                        <li>Ihren Plan und Tier.</li>
+                        <li>Die erkannte Odoo-Instanz.</li>
+                        <li>Die installierte Erweiterungsversion.</li>
+                    </ul>
+                </section>
+
+                <!-- Subscription Section -->
+                <section id="subscription" class="guide-section">
+                    <h2><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></h2>
+
+                    <h3>Ihre 14-tägige kostenlose Testphase</h3>
+                    <p>Jede Installation startet mit einer 14-tägigen kostenlosen Testphase, die die vollständige Erweiterung freischaltet. Die Testphase wird lokal auf Ihrem Gerät nach dem Ehrensystem verfolgt – keine Anmeldung und kein Netzwerkaufruf zum Starten.</p>
+
+                    <h3>Pläne</h3>
+                    <ul>
+                        <li><strong>Starter</strong>: <span>Deckt 1 Odoo-Instanz und 1 Shopify-Shop ab.</span></li>
+                        <li><strong>Growth</strong>: <span>Deckt 1 Odoo-Instanz und unbegrenzte Shopify-Shops ab.</span></li>
+                        <li><strong>Agency</strong>: <span>Deckt unbegrenzte Odoo-Instanzen und Shopify-Shops ab.</span></li>
+                    </ul>
+
+                    <h3>So kaufen Sie</h3>
+                    <ol class="steps-list">
+                        <li>Öffnen Sie die Einstellungen über das Erweiterungssymbol-Popup oder das ⚙-Zahnrad im Panel.</li>
+                        <li>Wählen Sie Kaufen und den Plan Starter, Growth oder Agency.</li>
+                        <li>Schließen Sie den Kauf ab. Sie erhalten einen Lizenzschlüssel zur Aktivierung der Erweiterung.</li>
+                    </ol>
+
+                    <h3>Lizenzschlüssel aktivieren</h3>
+                    <ol class="steps-list">
+                        <li>Öffnen Sie die Einstellungen und suchen Sie das Lizenzschlüsselfeld.</li>
+                        <li>Fügen Sie den nach dem Kauf erhaltenen Schlüssel ein.</li>
+                        <li>Aktivieren. Die vollständige Erweiterung wird sofort für Ihr gesamtes Team freigeschaltet.</li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Unternehmensweites Abonnement.</strong> <span>Ein Abonnement deckt Ihr gesamtes Unternehmen ab — derselbe Lizenzschlüssel funktioniert im ganzen Team, ohne Limit pro Nutzer. Die Pläne unterscheiden sich nur im Umfang: wie viele Odoo-Instanzen und Shopify-Shops sie abdecken.</span>
+                    </div>
+
+                    <h3>Abonnement verwalten oder kündigen</h3>
+                    <p>Abrechnung, Planänderungen und Kündigung werden im gehosteten Kundenportal von Polar abgewickelt – die Erweiterung verlinkt Sie lediglich dorthin.</p>
+                    <ol class="steps-list">
+                        <li>Öffnen Sie die Einstellungen über das Popup oder das Panelzahnrad.</li>
+                        <li>Wählen Sie „Abonnement verwalten“, um das Polar-Kundenportal zu öffnen.</li>
+                        <li>Aktualisieren Sie Ihren Plan, Ihre Zahlungsdaten oder kündigen Sie von dort aus.</li>
+                    </ol>
+                    <p>Die Erweiterung speichert niemals Ihre Zahlungsdaten. Die gesamte Abrechnung liegt im Portal von Polar.</p>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="guide-section">
+                    <h2><span class="material-symbols-outlined">help</span> <span>Fehlerbehebung</span></h2>
+
+                    <h3>Keine Odoo-Sitzung erkannt</h3>
+                    <p>Wenn Sie nicht bei Odoo angemeldet sind, kann die Erweiterung Ihre Instanz nicht erkennen und zeigt statt einer Vermutung eine handlungsorientierte Meldung „Bei Odoo anmelden“ an.</p>
+                    <ol>
+                        <li>Öffnen Sie Ihre Odoo-Instanz im selben Browser.</li>
+                        <li>Melden Sie sich wie gewohnt an.</li>
+                        <li>Kehren Sie zum Auftrag zurück – das Panel übernimmt Ihre Sitzung automatisch.</li>
+                    </ol>
+
+                    <h3>Auftrag nicht mit Shopify verknüpft</h3>
+                    <ul>
+                        <li><strong>Kein Shopify-Auftrag</strong>: <span>Wenn der Auftrag kein Shopify-Pendant hat, gibt es nichts zu vergleichen, und das Panel zieht sich still zurück.</span></li>
+                        <li><strong>Zuerst von Odoo aus öffnen</strong>: <span>Wenn Sie von einem Shopify-Shop starten, den die Erweiterung noch nicht gesehen hat, öffnen Sie den Auftrag einmal in Odoo, damit sie die Shop-zu-Instanz-Zuordnung erlernen kann.</span></li>
+                    </ul>
+
+                    <h3>Instanz nicht erkannt</h3>
+                    <ul>
+                        <li><strong>Sitzung abgelaufen</strong>: <span>Wenn Ihre Odoo-Sitzung abgelaufen ist, melden Sie sich erneut an und öffnen Sie den Auftrag erneut.</span></li>
+                        <li><strong>Nicht unterstütztes Hosting</strong>: <span>Die automatische Erkennung zielt in dieser Version auf Odoo Online (*.odoo.com) und Odoo.sh ab. Odoo auf einer vollständig eigenen Domain wird noch nicht unterstützt.</span></li>
+                    </ul>
+
+                    <h3>Das Panel erscheint nicht</h3>
+                    <ol>
+                        <li><strong>Seite neu laden</strong>: <span>Aktualisieren Sie den Auftrags-Tab, damit der Content Script erneut ausgeführt wird und den Auftrag neu erkennt.</span></li>
+                        <li><strong>Prüfen Sie, ob die Erweiterung aktiviert ist</strong>: <span>Öffnen Sie chrome://extensions und bestätigen Sie, dass Odoo–Shopify Order Check eingeschaltet ist.</span></li>
+                    </ol>
+                    <div class="info-box">
+                        <strong>Immer noch nicht gelöst?</strong> <span>Die Diagnose in den Einstellungen zeigt die erkannte Odoo-Instanz und Ihre Erweiterungsversion – praktische Details, die Sie beim Kontakt mit dem Support angeben sollten.</span>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="guide-section">
+                    <h2><span class="material-symbols-outlined">quiz</span> <span>Häufig gestellte Fragen</span></h2>
+                    <h3>Allgemein</h3>
+                    <div class="faq-item">
+                        <h4>Was macht Odoo–Shopify Order Check?</h4>
+                        <p>Wenn Sie einen Auftrag in Odoo oder Shopify öffnen, vergleicht die Erweiterung beide Systeme Feld für Feld – Gesamtbeträge, Steuern, Mengen, Positionen und Adressen – und zeigt ein globales Übereinstimmungs- oder Abweichungsurteil mit einer Aufschlüsselung aller Abweichungen.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Ändert sie etwas in Odoo oder Shopify?</h4>
+                        <p>Nein. Die Erweiterung ist ausschließlich lesend. Sie erstellt, bearbeitet oder löscht niemals Daten in einem der beiden Systeme – sie liest nur, also ist sie auch auf Produktivsystemen unbedenklich.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Muss ich etwas konfigurieren?</h4>
+                        <p>Nein. Die Erweiterung erkennt Ihre Odoo-Instanz und Datenbank automatisch aus Ihrer aktiven Sitzung. Es gibt keine zu registrierenden Instanzen, keine API-Schlüssel und keine Optionsseite.</p>
+                    </div>
+                    <h3>Abonnement</h3>
+                    <div class="faq-item">
+                        <h4>Gibt es eine kostenlose Testphase?</h4>
+                        <p>Ja. Jede Installation enthält eine 14-tägige kostenlose Testphase mit vollem Funktionsumfang. Nach der Testphase stehen die Pläne Starter, Growth und Agency zur Verfügung — jeder deckt Ihr gesamtes Team ab und richtet sich danach, wie viele Odoo-Instanzen und Shopify-Shops er umfasst.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Wie kündige ich?</h4>
+                        <p>Öffnen Sie die Einstellungen, wählen Sie „Abonnement verwalten“ und kündigen Sie im gehosteten Kundenportal von Polar. Die Erweiterung verlinkt Sie lediglich dorthin; sie speichert niemals Zahlungsdaten.</p>
+                    </div>
+                    <h3>Datenschutz & Sicherheit</h3>
+                    <div class="faq-item">
+                        <h4>Woher stammt das Shopify-Token?</h4>
+                        <p>Es wird über den Connector aus Odoo gelesen und ausschließlich im Arbeitsspeicher innerhalb des Service Workers der Erweiterung gehalten. Es wird niemals auf die Festplatte geschrieben und der von Ihnen angezeigten Seite niemals zugänglich gemacht.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Verlassen meine Auftragsdaten meinen Browser?</h4>
+                        <p>Es gibt kein Backend. Die Erweiterung liest Odoo und Shopify direkt über Ihren Browser, um den Vergleich zu erstellen, und die erlernte Shop-zu-Instanz-Zuordnung wird lokal auf Ihrem Gerät gespeichert.</p>
+                    </div>
+                </section>
+
+                <!-- Getting Help Section -->
+                <section class="guide-section">
+                    <h2><span class="material-symbols-outlined">support</span> <span>Hilfe erhalten</span></h2>
+                    <h3>Support kontaktieren</h3>
+                    <p>Wenn etwas nicht funktioniert oder Sie eine Frage haben, melden Sie sich – wir helfen Ihnen gerne:</p>
+                    <ul>
+                        <li><strong>E-Mail</strong>: <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a></li>
+                        <li>Geben Sie Ihre Erweiterungsversion an (in der Einstellungsdiagnose angezeigt).</li>
+                        <li>Screenshots des Panels und des Auftrags beschleunigen die Hilfe erheblich.</li>
+                    </ul>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Entwickelt von</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ressourcen</h4>
+                    <ul>
+                        <li><a href="./">Startseite</a></li>
+                        <li><a href="pricing.html">Preise</a></li>
+                        <li><a href="user-guide.html">Benutzerhandbuch</a></li>
+                        <li><a href="changelog.html">Versionshistorie</a></li>
+                        <li><a href="privacy.html">Datenschutzrichtlinie</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Weitere Integrationen</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Gmail-Integration</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Shopify-Integration</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <p class="small-text">Nicht verbunden mit Odoo S.A. oder Shopify Inc.</p>
+                    <p class="small-text">Odoo ist eine Marke von Odoo S.A.; Shopify ist eine Marke von Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        // Configuration: Add new languages here
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        // Detect current language
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        // Build menu
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        // Toggle dropdown
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        // Close on click outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+
+    <!-- Section highlight on scroll -->
+    <script>
+    (function() {
+        var sections = document.querySelectorAll('.guide-section[id]');
+        var navLinks = document.querySelectorAll('.guide-nav a[href^="#"]');
+        if (!sections.length || !navLinks.length) return;
+
+        var ticking = false;
+        var offset = 120; // header height + margin
+
+        function highlightCurrentSection() {
+            var current = null;
+            var scrollY = window.scrollY;
+
+            // Find the section closest to the top of the viewport
+            sections.forEach(function(section) {
+                var rect = section.getBoundingClientRect();
+                var sectionTop = rect.top + scrollY - offset;
+                if (scrollY >= sectionTop) {
+                    current = section;
+                }
+            });
+
+            if (current) {
+                var id = current.getAttribute('id');
+                navLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    highlightCurrentSection();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Initial highlight
+        highlightCurrentSection();
+    })();
+    </script>
+</body>
+</html>
