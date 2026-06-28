@@ -279,6 +279,10 @@
     "userGuide": "Benutzerhandbuch",
     "blog": "Dokumentation",
     "getExtension": "Erweiterung holen",
+    "brandHome": "IntegrationNode",
+    "productsLabel": "Produkte",
+    "productGmail": "Gmail-Integration",
+    "productShopify": "Shopify-Integration",
     "currentLang": "DE"
   },
   "hero": {
@@ -716,6 +720,7 @@
     "legal": "Rechtliches",
     "notAffiliated": "Nicht verbunden mit Odoo S.A. oder Shopify Inc.",
     "odooTrademark": "Odoo ist eine Marke von Odoo S.A.; Shopify ist eine Marke von Shopify Inc.",
+    "moreIntegrations": "Weitere Integrationen",
     "copyright": "2026 IntegrationNode. Alle Rechte vorbehalten."
   }
 }

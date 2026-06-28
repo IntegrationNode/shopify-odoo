@@ -177,12 +177,24 @@
     <header class="pricing-header">
         <div class="container">
             <nav class="nav">
+                <a href="https://integrationnode.com/" class="brand-home" data-t="nav.brandHome"></a>
                 <a href="./" class="logo" data-t="nav.logo"></a>
                 <div class="nav-links">
                     <a href="./#features" data-t="nav.features"></a>
                     <a href="pricing.html" data-t="nav.pricing"></a>
                     <a href="user-guide.html" data-t="nav.userGuide"></a>
                     <a href="https://chromewebstore.google.com/detail/CWS_EXTENSION_ID_TODO/?utm_source=landing&amp;utm_medium=web&amp;utm_campaign=site&amp;utm_content=home_navbar" target="_blank" class="btn btn-sm btn-primary" data-t="nav.getExtension"></a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span data-t="nav.productsLabel"></span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <span class="product-item is-current" aria-current="true" data-t="nav.productShopify"></span>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/" data-t="nav.productGmail"></a>
+                        </div>
+                    </div>
                     <div class="lang-dropdown" id="lang-dropdown">
                         <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
                             <span class="material-symbols-outlined">language</span>
@@ -446,6 +458,14 @@
                         <li><a href="changelog.html" data-t="footer.changelog"></a></li>
                         <li><a href="privacy.html" data-t="footer.privacy"></a></li>
                         <li><a href="mailto:odoointegrations.team@gmail.com" data-t="footer.support"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-t="footer.moreIntegrations"></h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/" data-t="nav.productGmail"></a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/" data-t="nav.productShopify"></a></li>
+                        <li><a href="https://integrationnode.com/" data-t="nav.brandHome"></a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
