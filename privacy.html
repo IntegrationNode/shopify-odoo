@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><span>Last updated</span>: April 26, 2026</p>
+            <p class="last-updated"><span>Last updated</span>: June 29, 2026</p>
 
             <section class="policy-section">
                 <h2>Overview</h2>
@@ -207,17 +207,17 @@
                 <h3>Permissions Requested</h3>
                 <ul>
                     <li><strong>storage:</strong> <span>Required to store the detected Odoo session info, the learned shop-to-instance mapping, the trial install date, and your license activation state locally</span></li>
-                    <li><strong>scripting / activeTab:</strong> <span>Required to inject the read-only comparison panel into the order page you are viewing</span></li>
-                    <li><strong>alarms:</strong> <span>Used to periodically re-validate your license in the background so your subscription state stays current</span></li>
+                    <li><strong>host_permissions (*.myshopify.com):</strong> <span>Required to read the current order from the Shopify Admin API for the comparison (read-only)</span></li>
                     <li><strong>host_permissions (*.odoo.com / Odoo.sh):</strong> <span>Required to read order and connector data from your Odoo Online or Odoo.sh instance (e.g., yourcompany.odoo.com)</span></li>
-                    <li><strong>host_permissions (*.polar.sh):</strong> <span>Required for license validation, subscription management, and the hosted checkout / customer portal</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Required for license validation, subscription management, and the hosted checkout / customer portal</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Optional — requested at runtime only if your Odoo runs on a custom domain (outside *.odoo.com)</span></li>
                 </ul>
 
                 <h3>Why These Permissions?</h3>
                 <p>Every permission maps directly to a feature you can see:</p>
                 <ul>
-                    <li>Host permissions are ONLY used to talk to your Odoo instance and to Polar for licensing</li>
-                    <li>They are NEVER used to access unrelated websites, and no Shopify host permission is requested — Shopify is reached via the connector configured in your Odoo</li>
+                    <li>Host permissions are ONLY used to read order data from your Shopify store and your Odoo instance, and to talk to Polar for licensing</li>
+                    <li>They are NEVER used to access unrelated websites; the Shopify Admin access token comes from the connector configured in your Odoo and is kept in memory only, never stored</li>
                     <li>You can revoke any permission at any time in Chrome settings, or remove the Extension entirely</li>
                 </ul>
                 <p><strong>Note:</strong> <span>The Extension only reads the order data needed to build the comparison. It never writes to Odoo or Shopify, and it sends nothing to the developer or any unrelated third party.</span></p>

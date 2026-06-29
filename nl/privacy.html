@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacybeleid</h1>
-            <p class="last-updated"><span>Laatst bijgewerkt</span>: April 26, 2026</p>
+            <p class="last-updated"><span>Laatst bijgewerkt</span>: June 29, 2026</p>
 
             <section class="policy-section">
                 <h2>Overzicht</h2>
@@ -207,17 +207,17 @@
                 <h3>Aangevraagde machtigingen</h3>
                 <ul>
                     <li><strong>storage:</strong> <span>Vereist om de gedetecteerde Odoo-sessie-informatie, de geleerde winkel-naar-instantie-koppeling, de installatiedatum van de proefperiode en je licentieactivatiestatus lokaal op te slaan</span></li>
-                    <li><strong>scripting / activeTab:</strong> <span>Vereist om het alleen-lezen vergelijkingspaneel te injecteren in de orderpagina die je bekijkt</span></li>
-                    <li><strong>alarms:</strong> <span>Gebruikt om periodiek je licentie op de achtergrond opnieuw te valideren zodat je abonnementsstatus actueel blijft</span></li>
+                    <li><strong>host_permissions (*.myshopify.com):</strong> <span>Vereist om de huidige bestelling via de Shopify Admin API te lezen voor de vergelijking (alleen-lezen)</span></li>
                     <li><strong>host_permissions (*.odoo.com / Odoo.sh):</strong> <span>Vereist om order- en connectorgegevens te lezen uit je Odoo Online- of Odoo.sh-instantie (bijv. jouwbedrijf.odoo.com)</span></li>
-                    <li><strong>host_permissions (*.polar.sh):</strong> <span>Vereist voor licentievalidatie, abonnementsbeheer en de gehoste checkout / het klantenportaal</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Vereist voor licentievalidatie, abonnementsbeheer en de gehoste checkout / het klantenportaal</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Optioneel — wordt alleen tijdens runtime gevraagd als uw Odoo op een eigen domein draait (buiten *.odoo.com)</span></li>
                 </ul>
 
                 <h3>Waarom deze machtigingen?</h3>
                 <p>Elke machtiging is direct gekoppeld aan een functie die je kunt zien:</p>
                 <ul>
-                    <li>Hostmachtigingen worden ALLEEN gebruikt om te communiceren met je Odoo-instantie en met Polar voor licenties</li>
-                    <li>Ze worden NOOIT gebruikt om toegang te krijgen tot niet-gerelateerde websites, en er wordt geen Shopify-hostmachtiging aangevraagd — Shopify wordt bereikt via de connector geconfigureerd in je Odoo</li>
+                    <li>Host-machtigingen worden UITSLUITEND gebruikt om bestelgegevens uit uw Shopify-winkel en uw Odoo-instantie te lezen en om met Polar te communiceren voor licentiebeheer</li>
+                    <li>Ze worden NOOIT gebruikt om toegang te krijgen tot niet-gerelateerde websites; het Shopify Admin-toegangstoken komt van de connector die in uw Odoo is geconfigureerd en wordt alleen in het geheugen bewaard, nooit opgeslagen</li>
                     <li>Je kunt elke machtiging op elk moment intrekken in de Chrome-instellingen, of de Extensie volledig verwijderen</li>
                 </ul>
                 <p><strong>Opmerking:</strong> <span>De Extensie leest alleen de ordergegevens die nodig zijn voor de vergelijking. Ze schrijft nooit naar Odoo of Shopify en stuurt niets naar de ontwikkelaar of onbetrokken derden.</span></p>

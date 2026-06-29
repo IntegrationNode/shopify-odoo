@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Polityka prywatności</h1>
-            <p class="last-updated"><span>Ostatnia aktualizacja</span>: April 26, 2026</p>
+            <p class="last-updated"><span>Ostatnia aktualizacja</span>: June 29, 2026</p>
 
             <section class="policy-section">
                 <h2>Przegląd</h2>
@@ -207,17 +207,17 @@
                 <h3>Żądane uprawnienia</h3>
                 <ul>
                     <li><strong>storage:</strong> <span>Wymagane do lokalnego przechowywania wykrytych informacji o sesji Odoo, wyuczonego mapowania sklep–instancja, daty instalacji okresu próbnego i stanu aktywacji licencji</span></li>
-                    <li><strong>scripting / activeTab:</strong> <span>Wymagane do wstrzyknięcia panelu porównania tylko do odczytu na stronę zamówienia, którą przeglądasz</span></li>
-                    <li><strong>alarms:</strong> <span>Używane do okresowej rewalidacji licencji w tle, aby stan subskrypcji był aktualny</span></li>
+                    <li><strong>host_permissions (*.myshopify.com):</strong> <span>Wymagane do odczytu bieżącego zamówienia przez interfejs Shopify Admin API na potrzeby porównania (tylko do odczytu)</span></li>
                     <li><strong>host_permissions (*.odoo.com / Odoo.sh):</strong> <span>Wymagane do odczytywania danych zamówień i konektora z instancji Odoo Online lub Odoo.sh (np. twojafirma.odoo.com)</span></li>
-                    <li><strong>host_permissions (*.polar.sh):</strong> <span>Wymagane do walidacji licencji, zarządzania subskrypcją i hostowanej kasy / portalu klienta</span></li>
+                    <li><strong>host_permissions (api.polar.sh):</strong> <span>Wymagane do walidacji licencji, zarządzania subskrypcją i hostowanej kasy / portalu klienta</span></li>
+                    <li><strong>optional_host_permissions (https://*/*):</strong> <span>Opcjonalne — żądane w czasie działania tylko wtedy, gdy Twoje Odoo działa we własnej domenie (poza *.odoo.com)</span></li>
                 </ul>
 
                 <h3>Dlaczego te uprawnienia?</h3>
                 <p>Każde uprawnienie bezpośrednio odpowiada funkcji, którą możesz zobaczyć:</p>
                 <ul>
-                    <li>Uprawnienia hosta są używane WYŁĄCZNIE do komunikacji z Twoją instancją Odoo i Polar do licencjonowania</li>
-                    <li>Nigdy NIE są używane do dostępu do niezwiązanych stron internetowych, a żadne uprawnienie hosta Shopify nie jest żądane — Shopify jest osiągany przez konektor skonfigurowany w Twoim Odoo</li>
+                    <li>Uprawnienia hosta są używane WYŁĄCZNIE do odczytu danych zamówień z Twojego sklepu Shopify i instancji Odoo oraz do komunikacji z Polar w celu zarządzania licencjami</li>
+                    <li>NIGDY nie są używane do uzyskiwania dostępu do niepowiązanych witryn; token dostępu Shopify Admin pochodzi z konektora skonfigurowanego w Twoim Odoo i jest przechowywany wyłącznie w pamięci, nigdy nie jest zapisywany</li>
                     <li>Możesz cofnąć dowolne uprawnienie w dowolnym momencie w ustawieniach Chrome lub całkowicie usunąć Rozszerzenie</li>
                 </ul>
                 <p><strong>Uwaga:</strong> <span>Rozszerzenie odczytuje wyłącznie dane zamówienia niezbędne do porównania. Nigdy nie zapisuje danych w Odoo ani Shopify i nie wysyła niczego do dewelopera ani niepowiązanych podmiotów trzecich.</span></p>
