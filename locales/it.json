@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Rilascio Iniziale",
-      "licensing": "Prova e Licenze"
+      "licensing": "Prova e Licenze",
+      "newFeatures": "Nuove Funzionalità",
+      "bugFixes": "Correzioni Bug"
     },
     "v100": {
       "date": "Rilascio iniziale",
@@ -658,6 +660,15 @@
       "trialDesc": "Ogni installazione include una prova gratuita di 14 giorni con funzionalità complete.",
       "plans": "Piani Starter, Growth e Agency",
       "plansDesc": "Dopo la prova, scegli Starter, Growth o Agency: piani per tutta l’azienda definiti per istanza Odoo e negozi Shopify, con licenza tramite Polar."
+    },
+    "v110": {
+      "date": "3 luglio 2026",
+      "basisLabel": "Vedi su cosa si basa il verdetto",
+      "basisLabelDesc": "Il pannello ora indica se il confronto usa gli importi fatturati o l'ordine originale, così i verdetti provvisori sono chiaramente segnalati.",
+      "giftCard": "Le vendite di carte regalo vengono abbinate correttamente",
+      "giftCardDesc": "L'acquisto di una carta regalo non mostra più due righe discordanti per una sola carta e non degrada più il verdetto.",
+      "delivery": "Nessuna falsa discrepanza di consegna sugli articoli digitali",
+      "deliveryDesc": "Le righe che non richiedono spedizione (carte regalo digitali, servizi) sono escluse dal controllo di consegna."
     },
     "comingSoon": {
       "label": "Prossimamente:",

@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Pierwsze wydanie",
-      "licensing": "Okres próbny i licencjonowanie"
+      "licensing": "Okres próbny i licencjonowanie",
+      "newFeatures": "Nowe funkcje",
+      "bugFixes": "Poprawki błędów"
     },
     "v100": {
       "date": "Pierwsze wydanie",
@@ -658,6 +660,15 @@
       "trialDesc": "Każda instalacja zawiera 14-dniowy bezpłatny okres próbny z pełną funkcjonalnością.",
       "plans": "Plany Starter, Growth i Agency",
       "plansDesc": "Po okresie próbnym wybierz Starter, Growth lub Agency: plany dla całej firmy określone według instancji Odoo i sklepów Shopify, licencjonowane przez Polar."
+    },
+    "v110": {
+      "date": "3 lipca 2026",
+      "basisLabel": "Zobacz, na czym opiera się werdykt",
+      "basisLabelDesc": "Panel oznacza teraz, czy porównanie opiera się na kwotach zafakturowanych, czy na pierwotnym zamówieniu, dzięki czemu werdykty tymczasowe są wyraźnie oznaczone.",
+      "giftCard": "Sprzedaż kart podarunkowych jest poprawnie dopasowywana",
+      "giftCardDesc": "Zakup karty podarunkowej nie pokazuje już dwóch niezgodnych wierszy dla jednej karty i nie obniża werdyktu.",
+      "delivery": "Brak fałszywej niezgodności dostawy dla produktów cyfrowych",
+      "deliveryDesc": "Pozycje niewymagające wysyłki (cyfrowe karty podarunkowe, usługi) są wyłączone z kontroli dostawy."
     },
     "comingSoon": {
       "label": "Wkrótce:",

@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Erstveröffentlichung",
-      "licensing": "Testphase & Lizenzierung"
+      "licensing": "Testphase & Lizenzierung",
+      "newFeatures": "Neue Funktionen",
+      "bugFixes": "Fehlerbehebungen"
     },
     "v100": {
       "date": "Erstveröffentlichung",
@@ -658,6 +660,15 @@
       "trialDesc": "Jede Installation enthält eine 14-tägige kostenlose Testphase mit vollem Funktionsumfang.",
       "plans": "Pläne Starter, Growth und Agency",
       "plansDesc": "Wählen Sie nach der Testphase Starter, Growth oder Agency: unternehmensweite Pläne nach Odoo-Instanz und Shopify-Shops, lizenziert über Polar."
+    },
+    "v110": {
+      "date": "3. Juli 2026",
+      "basisLabel": "Sehen Sie, worauf das Urteil basiert",
+      "basisLabelDesc": "Das Panel kennzeichnet jetzt, ob der Vergleich die fakturierten Beträge oder die ursprüngliche Bestellung verwendet, sodass vorläufige Urteile klar markiert sind.",
+      "giftCard": "Geschenkkarten-Verkäufe werden korrekt zugeordnet",
+      "giftCardDesc": "Der Kauf einer Geschenkkarte zeigt nicht mehr zwei abweichende Zeilen für eine einzige Karte und verschlechtert das Urteil nicht mehr.",
+      "delivery": "Keine falsche Lieferabweichung bei digitalen Artikeln",
+      "deliveryDesc": "Positionen ohne Versand (digitale Geschenkkarten, Dienstleistungen) werden von der Lieferprüfung ausgenommen."
     },
     "comingSoon": {
       "label": "Demnächst:",

@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Version initiale",
-      "licensing": "Essai et licences"
+      "licensing": "Essai et licences",
+      "newFeatures": "Nouvelles fonctionnalités",
+      "bugFixes": "Corrections de bugs"
     },
     "v100": {
       "date": "Version initiale",
@@ -658,6 +660,15 @@
       "trialDesc": "Chaque installation inclut un essai gratuit de 14 jours avec toutes les fonctionnalités.",
       "plans": "Plans Starter, Growth et Agency",
       "plansDesc": "Après l’essai, choisissez Starter, Growth ou Agency : des plans pour toute l’entreprise définis par instance Odoo et boutiques Shopify, sous licence via Polar."
+    },
+    "v110": {
+      "date": "3 juillet 2026",
+      "basisLabel": "Voyez sur quoi repose le verdict",
+      "basisLabelDesc": "Le panneau indique désormais si la comparaison utilise les montants facturés ou la commande d'origine, afin que les verdicts provisoires soient clairement signalés.",
+      "giftCard": "Les ventes de cartes cadeaux sont correctement appariées",
+      "giftCardDesc": "L'achat d'une carte cadeau n'affiche plus deux lignes discordantes pour une seule carte et ne dégrade plus le verdict.",
+      "delivery": "Plus de fausse discordance de livraison sur les articles numériques",
+      "deliveryDesc": "Les lignes ne nécessitant pas d'expédition (cartes cadeaux numériques, services) sont exclues du contrôle de livraison."
     },
     "comingSoon": {
       "label": "Prochainement :",

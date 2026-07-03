@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Eerste release",
-      "licensing": "Proefperiode & licenties"
+      "licensing": "Proefperiode & licenties",
+      "newFeatures": "Nieuwe Functies",
+      "bugFixes": "Bugfixes"
     },
     "v100": {
       "date": "Eerste release",
@@ -658,6 +660,15 @@
       "trialDesc": "Elke installatie bevat een gratis proefperiode van 14 dagen met volledige functionaliteit.",
       "plans": "Abonnementen Starter, Growth en Agency",
       "plansDesc": "Kies na de proefperiode Starter, Growth of Agency: bedrijfsbrede abonnementen bepaald per Odoo-instantie en Shopify-winkels, gelicentieerd via Polar."
+    },
+    "v110": {
+      "date": "3 juli 2026",
+      "basisLabel": "Zie waarop het verdicto is gebaseerd",
+      "basisLabelDesc": "Het paneel geeft nu aan of de vergelijking de gefactureerde bedragen of de oorspronkelijke bestelling gebruikt, zodat voorlopige verdicto’s duidelijk gemarkeerd zijn.",
+      "giftCard": "Cadeaubonverkopen worden correct gekoppeld",
+      "giftCardDesc": "De aankoop van een cadeaubon toont niet langer twee afwijkende regels voor één kaart en verlaagt het verdicto niet meer.",
+      "delivery": "Geen valse leveringsafwijking bij digitale artikelen",
+      "deliveryDesc": "Regels die geen verzending vereisen (digitale cadeaubonnen, diensten) worden uitgesloten van de leveringscontrole."
     },
     "comingSoon": {
       "label": "Binnenkort:",

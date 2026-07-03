@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Lançamento Inicial",
-      "licensing": "Período de Teste e Licenciamento"
+      "licensing": "Período de Teste e Licenciamento",
+      "newFeatures": "Novos Recursos",
+      "bugFixes": "Correções de Bugs"
     },
     "v100": {
       "date": "Lançamento inicial",
@@ -658,6 +660,15 @@
       "trialDesc": "Cada instalação inclui um período de teste gratuito de 14 dias com funcionalidade completa.",
       "plans": "Planos Starter, Growth e Agency",
       "plansDesc": "Após o teste, escolha Starter, Growth ou Agency: planos para toda a empresa definidos por instância Odoo e lojas Shopify, licenciados via Polar."
+    },
+    "v110": {
+      "date": "3 de julho de 2026",
+      "basisLabel": "Veja em que se baseia o veredicto",
+      "basisLabelDesc": "O painel agora indica se a comparação usa os valores faturados ou o pedido original, para que os veredictos provisórios fiquem claramente assinalados.",
+      "giftCard": "As vendas de cartões-presente são emparelhadas corretamente",
+      "giftCardDesc": "A compra de um cartão-presente já não mostra duas linhas divergentes para um único cartão nem degrada o veredicto.",
+      "delivery": "Sem falsas divergências de entrega em artigos digitais",
+      "deliveryDesc": "As linhas que não requerem envio (cartões-presente digitais, serviços) são excluídas da verificação de entrega."
     },
     "comingSoon": {
       "label": "Em breve:",

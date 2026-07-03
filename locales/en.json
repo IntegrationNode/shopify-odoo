@@ -636,7 +636,9 @@
     },
     "sections": {
       "initialRelease": "Initial Release",
-      "licensing": "Trial & Licensing"
+      "licensing": "Trial & Licensing",
+      "newFeatures": "New Features",
+      "bugFixes": "Bug Fixes"
     },
     "v100": {
       "date": "Initial release",
@@ -658,6 +660,15 @@
       "trialDesc": "Every install includes a 14-day free trial with full functionality.",
       "plans": "Starter, Growth and Agency plans",
       "plansDesc": "After the trial, choose Starter, Growth or Agency — company-wide plans scoped by Odoo instance and Shopify stores, licensed via Polar."
+    },
+    "v110": {
+      "date": "July 3, 2026",
+      "basisLabel": "See what the verdict is based on",
+      "basisLabelDesc": "The panel now labels whether the comparison uses invoiced amounts or the original order, so provisional verdicts are clearly marked.",
+      "giftCard": "Gift card sales match correctly",
+      "giftCardDesc": "A gift card purchase no longer shows two mismatched rows for a single card and no longer degrades the verdict.",
+      "delivery": "No false delivery mismatch on digital items",
+      "deliveryDesc": "Lines that don't require shipping (digital gift cards, services) are excluded from the delivery check."
     },
     "comingSoon": {
       "label": "Coming soon:",
