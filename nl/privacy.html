@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacybeleid</h1>
-            <p class="last-updated"><span>Laatst bijgewerkt</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Laatst bijgewerkt</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Overzicht</h2>
@@ -181,16 +181,28 @@
                 <p>Licentieactivatie maakt gebruik van de openbare licentie-endpoints van Polar (validate / activate / deactivate). Je licentiesleutel is je eigen geheim — je voert hem in via de UI van de Extensie, en hij wordt alleen door de service worker verwerkt. Er is geen organisatiegeheim gebundeld in de Extensie.</p>
                 <p><strong>Polar-privacybeleid:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Belangrijk:</strong> <span>Betalingsgegevens worden volledig afgehandeld door Polar en Stripe. De Extensie ontvangt of slaat nooit je creditcardgegevens op.</span></p>
+
+                <h3>PostHog (<span>Analytics</span>)</h3>
+                <p>De Extensie gebruikt PostHog (https://posthog.com/), gehost in de EU, voor anonieme gebruiksanalyses. PostHog helpt ons te begrijpen hoe de extensie wordt gebruikt en problemen te identificeren. Verzamelde gegevens omvatten:</p>
+                <ul>
+                    <li>Anonieme gebruikers-ID (willekeurige UUID, niet gekoppeld aan uw identiteit)</li>
+                    <li>Functiegebruik-gebeurtenissen (bijv. “order vergeleken” en de uitkomst als code) met basale technische omgevingsinformatie (Odoo-versie en connectortype)</li>
+                    <li>Abonnementsgebeurtenissen (proef- en licentiestatus — nooit de licentiesleutel)</li>
+                    <li>Foutrapporten voor debugging (geen persoonsgegevens of orderinhoud)</li>
+                </ul>
+                <p><strong>PostHog Privacybeleid:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Uitschakelen:</strong> <span>U kunt gebruiksanalyses op elk moment uitschakelen in de instellingen van de Extensie (het tandwielpictogram in het paneel of de popup in de werkbalk). Foutrapporten en integriteitssignalen van de gratis proefperiode blijven actief; ze bevatten geen persoons- of bedrijfsgegevens.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Gegevens delen met derden</h2>
-                <p><strong>We delen je gegevens NIET met derden voor reclame, analyse of gegevensmakelaardij.</strong></p>
+                <p><strong>Wij verkopen uw gegevens NIET en delen ze NIET met derden voor reclame of gegevensmakelaardij.</strong></p>
                 <p>De Extensie communiceert alleen met:</p>
                 <ul>
                     <li><strong>Je Odoo-instantie:</strong> <span>De Extensie leest order-, facturerings- en connectorgegevens uit de Odoo-instantie waarbij je bent ingelogd</span></li>
                     <li><strong>Je Shopify-winkel:</strong> <span>De Extensie leest het bijbehorende order uit je eigen Shopify-winkel via de Admin API, met behulp van het token verkregen uit je Odoo-connector</span></li>
                     <li><strong>Polar:</strong> <span>Alleen voor abonnementsbeheer en licentievalidatie (e-mail, abonnementsstatus, betalingsverwerking)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Anonieme gebruiksstatistieken (vergelijkingsresultaten als codes, fouten). Geen PII en geen order-/Odoo-/Shopify-inhoud. Uit te schakelen in de instellingen van de Extensie.</span></li>
                 </ul>
                 <p>De Extensie doet NIET:</p>
                 <ul>

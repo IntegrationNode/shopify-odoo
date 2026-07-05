@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Política de Privacidade</h1>
-            <p class="last-updated"><span>Última atualização</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Última atualização</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Visão Geral</h2>
@@ -181,16 +181,28 @@
                 <p>A ativação de licença usa os endpoints públicos de licenças do Polar (validar / ativar / desativar). A sua chave de licença é o seu próprio segredo — introduz-a na interface da Extensão e é tratada apenas pelo service worker. Nenhum segredo de organização está incluído na Extensão.</p>
                 <p><strong>Política de Privacidade do Polar:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Importante:</strong> <span>Os dados de pagamento são tratados inteiramente pelo Polar e pelo Stripe. A Extensão nunca recebe nem armazena os dados do seu cartão de crédito.</span></p>
+
+                <h3>PostHog (<span>Análises</span>)</h3>
+                <p>A Extensão usa PostHog (https://posthog.com/), hospedado na UE, para análises de uso anônimas. O PostHog nos ajuda a entender como a extensão é usada e identificar problemas. Os dados coletados incluem:</p>
+                <ul>
+                    <li>ID de usuário anônimo (UUID aleatório, não vinculado à sua identidade)</li>
+                    <li>Eventos de uso de recursos (p. ex., “pedido comparado” e seu resultado como código) com informações técnicas básicas do ambiente (versão do Odoo e tipo de conector)</li>
+                    <li>Eventos do ciclo de assinatura (status do teste e da licença — nunca a chave de licença)</li>
+                    <li>Relatórios de erros para depuração (sem dados pessoais ou conteúdo de pedidos)</li>
+                </ul>
+                <p><strong>Política de Privacidade do PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Desativar:</strong> <span>Você pode desativar as análises de uso a qualquer momento nas configurações da Extensão (o ícone de engrenagem no painel ou o popup da barra de ferramentas). Relatórios de erros e sinais de integridade do teste gratuito permanecem ativos; não contêm dados pessoais nem de negócio.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Partilha de Dados com Terceiros</h2>
-                <p><strong>NÃO partilhamos os seus dados com terceiros para fins de publicidade, análise ou corretagem de dados.</strong></p>
+                <p><strong>NÃO vendemos seus dados nem os compartilhamos com terceiros para publicidade ou corretagem de dados.</strong></p>
                 <p>A Extensão apenas comunica com:</p>
                 <ul>
                     <li><strong>A Sua Instância Odoo:</strong> <span>A Extensão lê dados de pedidos, faturação e conector da instância Odoo em que tem sessão iniciada</span></li>
                     <li><strong>A Sua Loja Shopify:</strong> <span>A Extensão lê o pedido correspondente da sua própria loja Shopify via Admin API, usando o token obtido do seu conector Odoo</span></li>
                     <li><strong>Polar:</strong> <span>Apenas para gestão de subscrições e validação de licença (e-mail, estado de subscrição, processamento de pagamentos)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Estatísticas de uso anônimas (resultados de comparação como códigos, erros). Sem PII ou conteúdo de pedidos/Odoo/Shopify. Você pode desativar nas configurações da Extensão.</span></li>
                 </ul>
                 <p>A Extensão NÃO:</p>
                 <ul>

@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Politique de confidentialité</h1>
-            <p class="last-updated"><span>Dernière mise à jour</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Dernière mise à jour</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Aperçu</h2>
@@ -181,16 +181,28 @@
                 <p>L'activation de la licence utilise les endpoints publics de licence de Polar (validate / activate / deactivate). Votre clé de licence est votre propre secret — vous la saisissez dans l'interface de l'Extension, et elle n'est traitée que par le service worker. Aucun secret d'organisation n'est intégré dans l'Extension.</p>
                 <p><strong>Politique de confidentialité de Polar :</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Important :</strong> <span>Les données de paiement sont entièrement gérées par Polar et Stripe. L'Extension ne reçoit ni ne stocke jamais vos informations de carte bancaire.</span></p>
+
+                <h3>PostHog (<span>Analytiques</span>)</h3>
+                <p>L'Extension utilise PostHog (https://posthog.com/), hébergé dans l'UE, pour des analyses d'utilisation anonymes. PostHog nous aide à comprendre comment l'extension est utilisée et à identifier les problèmes. Les données collectées incluent:</p>
+                <ul>
+                    <li>ID utilisateur anonyme (UUID aléatoire, non lié à votre identité)</li>
+                    <li>Événements d'utilisation des fonctionnalités (p. ex. « commande comparée » et son résultat sous forme de code) avec des informations techniques de base sur l'environnement (version d'Odoo et type de connecteur)</li>
+                    <li>Événements du cycle d'abonnement (statut de l'essai et de la licence — jamais la clé de licence)</li>
+                    <li>Rapports d'erreurs pour le débogage (aucune donnée personnelle ni contenu de commande)</li>
+                </ul>
+                <p><strong>Politique de Confidentialité de PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Désactiver:</strong> <span>Vous pouvez désactiver les analyses d'utilisation à tout moment dans les paramètres de l'Extension (l'icône d'engrenage du panneau ou le popup de la barre d'outils). Les rapports d'erreurs et les signaux d'intégrité de l'essai gratuit restent actifs ; ils ne contiennent aucune donnée personnelle ou commerciale.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Partage de données avec des tiers</h2>
-                <p><strong>Nous ne partageons PAS vos données avec des tiers à des fins publicitaires, analytiques ou de courtage de données.</strong></p>
+                <p><strong>Nous NE vendons PAS vos données et NE les partageons PAS avec des tiers à des fins publicitaires ou de courtage de données.</strong></p>
                 <p>L'Extension ne communique qu'avec :</p>
                 <ul>
                     <li><strong>Votre instance Odoo :</strong> <span>L'Extension lit les données de commande, de facturation et de connecteur depuis l'instance Odoo à laquelle vous êtes connecté</span></li>
                     <li><strong>Votre boutique Shopify :</strong> <span>L'Extension lit la commande correspondante depuis votre propre boutique Shopify via l'API Admin, en utilisant le token obtenu depuis votre connecteur Odoo</span></li>
                     <li><strong>Polar:</strong> <span>Uniquement pour la gestion des abonnements et la validation de licence (e-mail, statut de l'abonnement, traitement des paiements)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Statistiques d'utilisation anonymes (résultats de comparaison sous forme de codes, erreurs). Aucune PII ni contenu de commande/Odoo/Shopify. Désactivable dans les paramètres de l'Extension.</span></li>
                 </ul>
                 <p>L'Extension ne :</p>
                 <ul>

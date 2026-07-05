@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="last-updated"><span>Last updated</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Last updated</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Overview</h2>
@@ -181,16 +181,28 @@
                 <p>License activation uses Polar's public license endpoints (validate / activate / deactivate). Your license key is your own secret — you enter it in the Extension's UI, and it is handled only by the service worker. No organization secret is bundled in the Extension.</p>
                 <p><strong>Polar Privacy Policy:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Important:</strong> <span>Payment data is handled entirely by Polar and Stripe. The Extension never receives or stores your credit card information.</span></p>
+
+                <h3>PostHog (<span>Analytics</span>)</h3>
+                <p>The Extension uses PostHog (https://posthog.com/), hosted in the EU, for anonymous usage analytics. PostHog helps us understand how the extension is used and identify issues. Data collected includes:</p>
+                <ul>
+                    <li>Anonymous user ID (random UUID, not linked to your identity)</li>
+                    <li>Feature usage events (e.g., "order compared" and its outcome as a code) with basic technical environment info (Odoo version and connector type)</li>
+                    <li>Subscription lifecycle events (trial and license status — never the license key)</li>
+                    <li>Error reports for debugging (no personal data or order content)</li>
+                </ul>
+                <p><strong>PostHog Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Opt-out:</strong> <span>You can disable usage analytics at any time in the Extension's settings (the gear icon in the panel, or the toolbar popup). Error reports and free-trial integrity signals remain active; they contain no personal or business data.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Third-Party Data Sharing</h2>
-                <p><strong>We do NOT share your data with any third parties for advertising, analytics, or data brokering purposes.</strong></p>
+                <p><strong>We do NOT sell your data, and we do NOT share it with any third parties for advertising or data brokering.</strong></p>
                 <p>The Extension only communicates with:</p>
                 <ul>
                     <li><strong>Your Odoo Instance:</strong> <span>The Extension reads order, invoicing, and connector data from the Odoo instance you are signed in to</span></li>
                     <li><strong>Your Shopify Store:</strong> <span>The Extension reads the matching order from your own Shopify store via the Admin API, using the token obtained from your Odoo connector</span></li>
                     <li><strong>Polar:</strong> <span>Only for subscription management and license validation (email, subscription status, payment processing)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Anonymous usage statistics (comparison outcomes as codes, errors). No PII and no order/Odoo/Shopify content. You can opt out in the Extension's settings.</span></li>
                 </ul>
                 <p>The Extension does NOT:</p>
                 <ul>

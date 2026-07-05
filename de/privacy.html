@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Datenschutzrichtlinie</h1>
-            <p class="last-updated"><span>Zuletzt aktualisiert</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Zuletzt aktualisiert</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Übersicht</h2>
@@ -181,16 +181,28 @@
                 <p>Die Lizenzaktivierung nutzt die öffentlichen Lizenz-Endpunkte von Polar (validate / activate / deactivate). Ihr Lizenzschlüssel ist Ihr eigenes Geheimnis – Sie geben ihn in der Benutzeroberfläche der Erweiterung ein, und er wird ausschließlich vom Service Worker verarbeitet. Kein Organisationsgeheimnis ist in der Erweiterung gebündelt.</p>
                 <p><strong>Datenschutzrichtlinie von Polar:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Wichtig:</strong> <span>Zahlungsdaten werden vollständig von Polar und Stripe verarbeitet. Die Erweiterung empfängt oder speichert niemals Ihre Kreditkarteninformationen.</span></p>
+
+                <h3>PostHog (<span>Analytik</span>)</h3>
+                <p>Die Erweiterung verwendet PostHog (https://posthog.com/), gehostet in der EU, für anonyme Nutzungsanalysen. PostHog hilft uns zu verstehen, wie die Erweiterung verwendet wird, und Probleme zu identifizieren. Gesammelte Daten umfassen:</p>
+                <ul>
+                    <li>Anonyme Benutzer-ID (zufällige UUID, nicht mit Ihrer Identität verknüpft)</li>
+                    <li>Funktionsnutzungs-Ereignisse (z. B. „Bestellung verglichen“ und ihr Ergebnis als Code) mit grundlegenden technischen Umgebungsinformationen (Odoo-Version und Konnektor-Typ)</li>
+                    <li>Abonnement-Ereignisse (Test- und Lizenzstatus — niemals der Lizenzschlüssel)</li>
+                    <li>Fehlerberichte zur Fehlerbehebung (keine personenbezogenen Daten oder Bestellinhalte)</li>
+                </ul>
+                <p><strong>PostHog Datenschutzrichtlinie:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Deaktivieren:</strong> <span>Sie können die Nutzungsanalytik jederzeit in den Einstellungen der Erweiterung deaktivieren (Zahnrad-Symbol im Panel oder Popup in der Symbolleiste). Fehlerberichte und Integritätssignale der Testphase bleiben aktiv; sie enthalten keine personenbezogenen oder geschäftlichen Daten.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Weitergabe von Daten an Dritte</h2>
-                <p><strong>Wir geben Ihre Daten NICHT zu Werbe-, Analyse- oder Datenvermittlungszwecken an Dritte weiter.</strong></p>
+                <p><strong>Wir verkaufen Ihre Daten NICHT und teilen sie NICHT mit Dritten für Werbung oder Datenvermittlung.</strong></p>
                 <p>Die Erweiterung kommuniziert ausschließlich mit:</p>
                 <ul>
                     <li><strong>Ihrer Odoo-Instanz:</strong> <span>Die Erweiterung liest Auftrags-, Fakturierungs- und Connector-Daten aus der Odoo-Instanz, bei der Sie angemeldet sind</span></li>
                     <li><strong>Ihrem Shopify-Shop:</strong> <span>Die Erweiterung liest den entsprechenden Auftrag aus Ihrem eigenen Shopify-Shop über die Admin API und verwendet dafür das Token aus Ihrem Odoo-Connector</span></li>
                     <li><strong>Polar:</strong> <span>Ausschließlich für Abonnementverwaltung und Lizenzvalidierung (E-Mail, Abonnementstatus, Zahlungsabwicklung)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Anonyme Nutzungsstatistiken (Vergleichsergebnisse als Codes, Fehler). Keine personenbezogenen Daten und keine Bestell-/Odoo-/Shopify-Inhalte. Deaktivierbar in den Einstellungen der Erweiterung.</span></li>
                 </ul>
                 <p>Die Erweiterung tut NICHT Folgendes:</p>
                 <ul>

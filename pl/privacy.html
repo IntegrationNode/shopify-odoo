@@ -107,7 +107,7 @@
     <div class="privacy-page">
         <div class="container">
             <h1>Polityka prywatności</h1>
-            <p class="last-updated"><span>Ostatnia aktualizacja</span>: June 29, 2026</p>
+            <p class="last-updated"><span>Ostatnia aktualizacja</span>: July 5, 2026</p>
 
             <section class="policy-section">
                 <h2>Przegląd</h2>
@@ -181,16 +181,28 @@
                 <p>Aktywacja licencji używa publicznych endpointów licencji Polar (validate / activate / deactivate). Twój klucz licencyjny jest Twoim własnym sekretem — wprowadzasz go w UI Rozszerzenia, a obsługuje go wyłącznie service worker. W Rozszerzeniu nie są osadzone żadne sekrety organizacji.</p>
                 <p><strong>Polityka prywatności Polar:</strong> <a href="https://polar.sh/legal/privacy" target="_blank">https://polar.sh/legal/privacy</a></p>
                 <p><strong>Ważne:</strong> <span>Dane płatnicze są obsługiwane całkowicie przez Polar i Stripe. Rozszerzenie nigdy nie otrzymuje ani nie przechowuje informacji o Twojej karcie kredytowej.</span></p>
+
+                <h3>PostHog (<span>Analityka</span>)</h3>
+                <p>Rozszerzenie używa PostHog (https://posthog.com/), hostowanego w UE, do anonimowej analityki użytkowania. PostHog pomaga nam zrozumieć, jak rozszerzenie jest używane, i identyfikować problemy. Zbierane dane obejmują:</p>
+                <ul>
+                    <li>Anonimowy identyfikator użytkownika (losowy UUID, niepowiązany z Twoją tożsamością)</li>
+                    <li>Zdarzenia użycia funkcji (np. „porównano zamówienie” i jego wynik jako kod) z podstawowymi informacjami technicznymi o środowisku (wersja Odoo i typ konektora)</li>
+                    <li>Zdarzenia cyklu subskrypcji (status okresu próbnego i licencji — nigdy klucz licencyjny)</li>
+                    <li>Raporty błędów do debugowania (bez danych osobowych i treści zamówień)</li>
+                </ul>
+                <p><strong>Polityka prywatności PostHog:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></p>
+                <p><strong>Rezygnacja:</strong> <span>Możesz wyłączyć analitykę użytkowania w każdej chwili w ustawieniach Rozszerzenia (ikona zębatki w panelu lub popup na pasku narzędzi). Raporty błędów i sygnały integralności okresu próbnego pozostają aktywne; nie zawierają danych osobowych ani biznesowych.</span></p>
             </section>
 
             <section class="policy-section">
                 <h2>Udostępnianie danych stronom trzecim</h2>
-                <p><strong>NIE udostępniamy Twoich danych żadnym stronom trzecim w celach reklamowych, analitycznych ani handlu danymi.</strong></p>
+                <p><strong>NIE sprzedajemy Twoich danych ani NIE udostępniamy ich stronom trzecim w celach reklamowych ani handlu danymi.</strong></p>
                 <p>Rozszerzenie komunikuje się wyłącznie z:</p>
                 <ul>
                     <li><strong>Twoją instancją Odoo:</strong> <span>Rozszerzenie odczytuje dane zamówień, fakturowania i konektora z instancji Odoo, do której jesteś zalogowany</span></li>
                     <li><strong>Twoim sklepem Shopify:</strong> <span>Rozszerzenie odczytuje pasujące zamówienie z Twojego własnego sklepu Shopify przez API Admin, używając tokenu uzyskanego z Twojego konektora Odoo</span></li>
                     <li><strong>Polar:</strong> <span>Wyłącznie do zarządzania subskrypcją i walidacji licencji (e-mail, status subskrypcji, przetwarzanie płatności)</span></li>
+                    <li><strong>PostHog (EU):</strong> <span>Anonimowe statystyki użytkowania (wyniki porównań jako kody, błędy). Bez PII i bez treści zamówień/Odoo/Shopify. Można zrezygnować w ustawieniach Rozszerzenia.</span></li>
                 </ul>
                 <p>Rozszerzenie NIE:</p>
                 <ul>
