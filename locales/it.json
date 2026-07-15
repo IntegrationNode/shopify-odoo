@@ -680,6 +680,13 @@
       "delivery": "Nessuna falsa discrepanza di consegna sugli articoli digitali",
       "deliveryDesc": "Le righe che non richiedono spedizione (carte regalo digitali, servizi) sono escluse dal controllo di consegna."
     },
+    "v111": {
+      "date": "15 luglio 2026",
+      "historyColumns": "Le colonne Ordered e Refunded mostrano sempre dati Shopify",
+      "historyColumnsDesc": "Le righe presenti solo in Odoo (come i pagamenti con carta regalo) ora mostrano «—» invece di quantità prese dal connettore.",
+      "deliveryGhostRow": "Niente righe fantasma nel controllo di consegna",
+      "deliveryGhostRowDesc": "Le righe di servizio presenti solo in Odoo che non generano mai un documento di consegna (come i pagamenti con carta regalo) non compaiono più nel blocco consegna."
+    },
     "comingSoon": {
       "label": "Prossimamente:",
       "text": "Altri connettori e ulteriori assi di confronto sono nella roadmap. Questa pagina verrà aggiornata ad ogni rilascio."

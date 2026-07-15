@@ -680,6 +680,13 @@
       "delivery": "Brak fałszywej niezgodności dostawy dla produktów cyfrowych",
       "deliveryDesc": "Pozycje niewymagające wysyłki (cyfrowe karty podarunkowe, usługi) są wyłączone z kontroli dostawy."
     },
+    "v111": {
+      "date": "15 lipca 2026",
+      "historyColumns": "Kolumny Ordered i Refunded zawsze pokazują dane z Shopify",
+      "historyColumnsDesc": "Wiersze istniejące tylko w Odoo (np. płatności kartą podarunkową) pokazują teraz „—” zamiast ilości pobranych z konektora.",
+      "deliveryGhostRow": "Brak widmowych wierszy w kontroli dostawy",
+      "deliveryGhostRowDesc": "Wiersze usług istniejące tylko w Odoo, które nigdy nie generują dokumentu dostawy (np. płatności kartą podarunkową), nie pojawiają się już w bloku dostawy."
+    },
     "comingSoon": {
       "label": "Wkrótce:",
       "text": "Więcej konektorów i dodatkowe osie porównania są w planach. Ta strona będzie aktualizowana przy każdym wydaniu."

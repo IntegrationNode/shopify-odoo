@@ -680,6 +680,13 @@
       "delivery": "No false delivery mismatch on digital items",
       "deliveryDesc": "Lines that don't require shipping (digital gift cards, services) are excluded from the delivery check."
     },
+    "v111": {
+      "date": "July 15, 2026",
+      "historyColumns": "Ordered and Refunded columns always show Shopify data",
+      "historyColumnsDesc": "Rows that only exist in Odoo (such as gift card payments) now show \"—\" instead of quantities borrowed from the connector.",
+      "deliveryGhostRow": "No phantom rows in the delivery check",
+      "deliveryGhostRowDesc": "Odoo-only service lines that never produce a delivery order (such as gift card payments) no longer appear in the delivery block."
+    },
     "comingSoon": {
       "label": "Coming soon:",
       "text": "More connectors and additional comparison axes are on the roadmap. This page will be updated with each release."

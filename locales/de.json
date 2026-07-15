@@ -680,6 +680,13 @@
       "delivery": "Keine falsche Lieferabweichung bei digitalen Artikeln",
       "deliveryDesc": "Positionen ohne Versand (digitale Geschenkkarten, Dienstleistungen) werden von der Lieferprüfung ausgenommen."
     },
+    "v111": {
+      "date": "15. Juli 2026",
+      "historyColumns": "Die Spalten Ordered und Refunded zeigen immer Shopify-Daten",
+      "historyColumnsDesc": "Zeilen, die nur in Odoo existieren (z. B. Zahlungen mit Geschenkkarte), zeigen jetzt „—“ statt vom Konnektor übernommener Mengen.",
+      "deliveryGhostRow": "Keine Phantomzeilen in der Lieferprüfung",
+      "deliveryGhostRowDesc": "Nur in Odoo vorhandene Dienstleistungszeilen, die nie einen Lieferschein erzeugen (z. B. Zahlungen mit Geschenkkarte), erscheinen nicht mehr im Lieferblock."
+    },
     "comingSoon": {
       "label": "Demnächst:",
       "text": "Weitere Connectoren und zusätzliche Vergleichsachsen sind in der Entwicklung. Diese Seite wird mit jedem Release aktualisiert."

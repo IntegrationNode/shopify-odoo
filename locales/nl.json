@@ -680,6 +680,13 @@
       "delivery": "Geen valse leveringsafwijking bij digitale artikelen",
       "deliveryDesc": "Regels die geen verzending vereisen (digitale cadeaubonnen, diensten) worden uitgesloten van de leveringscontrole."
     },
+    "v111": {
+      "date": "15 juli 2026",
+      "historyColumns": "De kolommen Ordered en Refunded tonen altijd Shopify-gegevens",
+      "historyColumnsDesc": "Rijen die alleen in Odoo bestaan (zoals betalingen met een cadeaubon) tonen nu \"—\" in plaats van hoeveelheden die van de connector zijn overgenomen.",
+      "deliveryGhostRow": "Geen spookrijen meer in de leveringscontrole",
+      "deliveryGhostRowDesc": "Serviceregels die alleen in Odoo bestaan en nooit een leveringsbon genereren (zoals betalingen met een cadeaubon) verschijnen niet meer in het leveringsblok."
+    },
     "comingSoon": {
       "label": "Binnenkort:",
       "text": "Meer connectors en aanvullende vergelijkingsassen staan op de roadmap. Deze pagina wordt bij elke release bijgewerkt."

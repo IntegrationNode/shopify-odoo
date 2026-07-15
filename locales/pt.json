@@ -680,6 +680,13 @@
       "delivery": "Sem falsas divergências de entrega em artigos digitais",
       "deliveryDesc": "As linhas que não requerem envio (cartões-presente digitais, serviços) são excluídas da verificação de entrega."
     },
+    "v111": {
+      "date": "15 de julho de 2026",
+      "historyColumns": "As colunas Ordered e Refunded mostram sempre dados do Shopify",
+      "historyColumnsDesc": "As linhas que só existem no Odoo (como pagamentos com cartão-presente) agora mostram «—» em vez de quantidades retiradas do conector.",
+      "deliveryGhostRow": "Sem linhas fantasma na verificação de entrega",
+      "deliveryGhostRowDesc": "As linhas de serviço apenas do Odoo que nunca geram uma guia de entrega (como pagamentos com cartão-presente) já não aparecem no bloco de entrega."
+    },
     "comingSoon": {
       "label": "Em breve:",
       "text": "Mais conectores e eixos de comparação adicionais estão no roteiro. Esta página será atualizada a cada versão."

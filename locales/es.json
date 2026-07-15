@@ -680,6 +680,13 @@
       "delivery": "Sin falsas discrepancias de entrega en artículos digitales",
       "deliveryDesc": "Las líneas que no requieren envío (tarjetas regalo digitales, servicios) se excluyen de la comprobación de entrega."
     },
+    "v111": {
+      "date": "15 de julio de 2026",
+      "historyColumns": "Las columnas Ordered y Refunded muestran siempre datos de Shopify",
+      "historyColumnsDesc": "Las filas que solo existen en Odoo (como los pagos con tarjeta regalo) ahora muestran «—» en lugar de cantidades tomadas del conector.",
+      "deliveryGhostRow": "Sin filas fantasma en la comprobación de entrega",
+      "deliveryGhostRowDesc": "Las líneas de servicio solo de Odoo que nunca generan un albarán (como los pagos con tarjeta regalo) ya no aparecen en el bloque de entrega."
+    },
     "comingSoon": {
       "label": "Próximamente:",
       "text": "Más conectores y ejes de comparación adicionales están en el roadmap. Esta página se actualizará con cada versión."

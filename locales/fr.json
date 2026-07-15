@@ -680,6 +680,13 @@
       "delivery": "Plus de fausse discordance de livraison sur les articles numériques",
       "deliveryDesc": "Les lignes ne nécessitant pas d'expédition (cartes cadeaux numériques, services) sont exclues du contrôle de livraison."
     },
+    "v111": {
+      "date": "15 juillet 2026",
+      "historyColumns": "Les colonnes Ordered et Refunded affichent toujours les données Shopify",
+      "historyColumnsDesc": "Les lignes qui n'existent que dans Odoo (comme les paiements par carte cadeau) affichent désormais « — » au lieu de quantités empruntées au connecteur.",
+      "deliveryGhostRow": "Plus de lignes fantômes dans la vérification de livraison",
+      "deliveryGhostRowDesc": "Les lignes de service présentes uniquement dans Odoo qui ne génèrent jamais de bon de livraison (comme les paiements par carte cadeau) n'apparaissent plus dans le bloc livraison."
+    },
     "comingSoon": {
       "label": "Prochainement :",
       "text": "D'autres connecteurs et axes de comparaison supplémentaires sont prévus. Cette page sera mise à jour à chaque version."
