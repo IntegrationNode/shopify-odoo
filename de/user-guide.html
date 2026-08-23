@@ -231,6 +231,7 @@
                         <li><a href="#settings"><span class="material-symbols-outlined">settings</span> <span>Einstellungen</span></a></li>
                         <li><a href="#subscription"><span class="material-symbols-outlined">credit_card</span> <span>Abonnement</span></a></li>
                         <li><a href="#troubleshooting"><span class="material-symbols-outlined">help</span> <span>Fehlerbehebung</span></a></li>
+                        <li><a href="#report-connector"><span class="material-symbols-outlined">business</span> <span>Melde deinen Connector</span></a></li>
                         <li><a href="#faq"><span class="material-symbols-outlined">quiz</span> <span>FAQ</span></a></li>
                     </ul>
                 </nav>
@@ -451,6 +452,43 @@
                     </div>
                 </section>
 
+                <!-- Report your connector -->
+                <section id="report-connector" class="guide-section">
+                    <h2><span class="material-symbols-outlined">business</span> <span>Melde deinen Connector</span></h2>
+                    <p>Die Erweiterung liest die Verbindung zu Shopify aus dem Connector, der in deinem Odoo installiert ist. Vollständig unterstützt wird derzeit der Shopify Odoo Connector von Emipro; bei einem anderen — von einem anderen Anbieter oder einem eigens gebauten Modul — sagt es dir das Panel, statt zu vergleichen.</p>
+                    <p>Sag uns, welchen du nutzt, und wir arbeiten an der Unterstützung. Auch die manuelle Einrichtung, bei der du dein eigenes Shopify-Token angibst, ist in Vorbereitung.</p>
+
+                    <h3>Was uns am meisten hilft</h3>
+                    <ul>
+                        <li>Der technische Name des Connector-Moduls in Odoo (Einstellungen → Apps, suche nach “shopify”).</li>
+                        <li>Ob die Shopify-Bestell-ID im Verkaufsauftrag steht, und in welchem Feld.</li>
+                        <li>Deine Odoo-Version und ob sie auf Odoo Online, Odoo.sh oder deinem eigenen Server läuft.</li>
+                    </ul>
+
+                    <form id="connector-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="9741a17f-91d5-420a-85eb-4c4a988d83d9">
+                        <input type="hidden" name="subject" value="Connector report — Odoo-Shopify Order Check">
+                        <input type="hidden" name="src" value="user-guide">
+                        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="hidden" name="redirect" value="https://integrationnode.com/shopify-odoo/user-guide.html#report-connector">
+
+                        <label for="rc-name">Name</label>
+                        <input type="text" id="rc-name" name="name" required autocomplete="name">
+
+                        <label for="rc-email">E-Mail</label>
+                        <input type="email" id="rc-email" name="email" required autocomplete="email">
+
+                        <label for="rc-connector">Welchen Connector nutzt du?</label>
+                        <textarea id="rc-connector" name="connector" rows="5" required></textarea>
+                        <p class="small-text">Beispiel: ein eigenes Modul unseres Integrators; die Shopify-Bestell-ID steht in x_shopify_ref…</p>
+
+                        <button type="submit" class="btn btn-primary" id="rc-submit">Senden</button>
+
+                        <p class="form-status form-status-success" id="rc-success" hidden>Danke — angekommen. Wir melden uns in Kürze.</p>
+                        <p class="form-status form-status-error" id="rc-error" hidden><span>Beim Senden deiner Nachricht ist etwas schiefgegangen. Schreib uns direkt an</span> <a href="mailto:odoointegrations.team@gmail.com">odoointegrations.team@gmail.com</a>.</p>
+                    </form>
+                </section>
+
                 <!-- FAQ Section -->
                 <section id="faq" class="guide-section">
                     <h2><span class="material-symbols-outlined">quiz</span> <span>Häufig gestellte Fragen</span></h2>
@@ -653,5 +691,37 @@
         highlightCurrentSection();
     })();
     </script>
+    <!-- Connector report form -->
+    <script>
+    (function () {
+        var form = document.getElementById('connector-form');
+        if (!form) { return; }
+        var submitBtn = document.getElementById('rc-submit');
+        var successMsg = document.getElementById('rc-success');
+        var errorMsg = document.getElementById('rc-error');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            successMsg.hidden = true;
+            errorMsg.hidden = true;
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function (res) {
+                if (!res.ok) { throw new Error('HTTP ' + res.status); }
+                form.reset();
+                successMsg.hidden = false;
+            }).catch(function () {
+                errorMsg.hidden = false;
+            }).finally(function () {
+                submitBtn.disabled = false;
+            });
+        });
+    })();
+    </script>
+
 </body>
 </html>

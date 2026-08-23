@@ -64,7 +64,8 @@
       "settings": "Ustawienia",
       "subscription": "Subskrypcja",
       "troubleshooting": "Rozwiązywanie problemów",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "reportConnector": "Zgłoś swój konektor"
     },
     "installation": {
       "title": "Instalacja",
@@ -270,6 +271,22 @@
       "emailLabel": "E-mail",
       "includeVersion": "Podaj wersję rozszerzenia (widoczną w diagnostyce ustawień).",
       "includeScreenshots": "Zrzuty ekranu panelu i zamówienia znacznie przyspieszą udzielenie pomocy."
+    },
+    "reportConnector": {
+      "title": "Zgłoś swój konektor",
+      "intro": "Rozszerzenie odczytuje powiązanie ze Shopify z konektora zainstalowanego w Twoim Odoo. Obecnie w pełni obsługuje Shopify Odoo Connector firmy Emipro; przy innym — innego dostawcy albo module zrobionym na zamówienie — panel poinformuje o tym, zamiast porównywać.",
+      "intro2": "Napisz nam, którego używasz, a zajmiemy się jego obsługą. W drodze jest też konfiguracja ręczna, w której podajesz własny token Shopify.",
+      "helpsTitle": "Co pomaga nam najbardziej",
+      "helps1": "Techniczna nazwa modułu konektora w Odoo (Ustawienia → Aplikacje, wyszukaj “shopify”).",
+      "helps2": "Czy identyfikator zamówienia Shopify jest zapisywany w zamówieniu sprzedaży i w którym polu.",
+      "helps3": "Twoja wersja Odoo i czy działa na Odoo Online, Odoo.sh czy własnym serwerze.",
+      "nameLabel": "Imię",
+      "emailLabel": "E-mail",
+      "connectorLabel": "Jakiego konektora używasz?",
+      "submit": "Wyślij",
+      "success": "Dziękujemy — mamy to. Odezwiemy się wkrótce.",
+      "error": "Coś poszło nie tak przy wysyłaniu wiadomości. Napisz do nas bezpośrednio na",
+      "connectorHint": "Przykład: moduł na zamówienie od naszego integratora; identyfikator zamówienia Shopify jest w x_shopify_ref…"
     }
   },
   "nav": {

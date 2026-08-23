@@ -64,7 +64,8 @@
       "settings": "Settings",
       "subscription": "Subscription",
       "troubleshooting": "Troubleshooting",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "reportConnector": "Report your connector"
     },
     "installation": {
       "title": "Installation",
@@ -270,6 +271,22 @@
       "emailLabel": "Email",
       "includeVersion": "Include your extension version (shown in the settings diagnostics).",
       "includeScreenshots": "Screenshots of the panel and the order make it much faster to help."
+    },
+    "reportConnector": {
+      "title": "Report your connector",
+      "intro": "The extension reads the link to Shopify from the connector installed in your Odoo. Today it fully supports Emipro's Shopify Odoo Connector; with a different one — another vendor's, or a module built for you — the panel tells you so instead of comparing.",
+      "intro2": "Tell us which one you use and we'll work on supporting it. Manual setup, where you add your own Shopify token, is on the way as well.",
+      "helpsTitle": "What helps us most",
+      "helps1": "The technical name of the connector module in Odoo (Settings → Apps, search for “shopify”).",
+      "helps2": "Whether the Shopify order id is stored on the sales order, and in which field.",
+      "helps3": "Your Odoo version, and whether it runs on Odoo Online, Odoo.sh or your own server.",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "connectorLabel": "Which connector do you use?",
+      "submit": "Send",
+      "success": "Thanks — we have it. We'll get back to you shortly.",
+      "error": "Something went wrong sending your message. Please email us directly at",
+      "connectorHint": "Example: a custom module our integrator built; the Shopify order id sits in x_shopify_ref…"
     }
   },
   "nav": {

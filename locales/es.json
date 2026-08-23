@@ -64,7 +64,8 @@
       "settings": "Ajustes",
       "subscription": "Suscripción",
       "troubleshooting": "Solución de problemas",
-      "faq": "Preguntas frecuentes"
+      "faq": "Preguntas frecuentes",
+      "reportConnector": "Informa de tu conector"
     },
     "installation": {
       "title": "Instalación",
@@ -270,6 +271,22 @@
       "emailLabel": "Email",
       "includeVersion": "Incluye la versión de tu extensión (visible en el diagnóstico de los ajustes).",
       "includeScreenshots": "Las capturas del panel y del pedido ayudan a resolver el problema mucho más rápido."
+    },
+    "reportConnector": {
+      "title": "Informa de tu conector",
+      "intro": "La extensión lee el enlace con Shopify del conector instalado en tu Odoo. Hoy soporta por completo el Shopify Odoo Connector de Emipro; con otro distinto —de otro proveedor o un módulo hecho a medida— el panel te lo dice en lugar de comparar.",
+      "intro2": "Cuéntanos cuál usas y trabajaremos en soportarlo. También está en camino la configuración manual, en la que aportas tu propio token de Shopify.",
+      "helpsTitle": "Lo que más nos ayuda",
+      "helps1": "El nombre técnico del módulo del conector en Odoo (Ajustes → Aplicaciones, busca “shopify”).",
+      "helps2": "Si el id del pedido de Shopify se guarda en el pedido de venta, y en qué campo.",
+      "helps3": "Tu versión de Odoo, y si corre en Odoo Online, Odoo.sh o tu propio servidor.",
+      "nameLabel": "Nombre",
+      "emailLabel": "Correo electrónico",
+      "connectorLabel": "¿Qué conector usas?",
+      "submit": "Enviar",
+      "success": "Gracias — ya lo tenemos. Te responderemos en breve.",
+      "error": "Algo salió mal al enviar tu mensaje. Escríbenos directamente a",
+      "connectorHint": "Ejemplo: un módulo a medida que hizo nuestro integrador; el id del pedido de Shopify está en x_shopify_ref…"
     }
   },
   "nav": {

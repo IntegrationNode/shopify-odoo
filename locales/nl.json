@@ -64,7 +64,8 @@
       "settings": "Instellingen",
       "subscription": "Abonnement",
       "troubleshooting": "Probleemoplossing",
-      "faq": "Veelgestelde vragen"
+      "faq": "Veelgestelde vragen",
+      "reportConnector": "Meld je connector"
     },
     "installation": {
       "title": "Installatie",
@@ -270,6 +271,22 @@
       "emailLabel": "E-mail",
       "includeVersion": "Vermeld je extensieversie (te zien in de instellingdiagnostiek).",
       "includeScreenshots": "Screenshots van het paneel en het order maken het veel sneller om je te helpen."
+    },
+    "reportConnector": {
+      "title": "Meld je connector",
+      "intro": "De extensie leest de koppeling met Shopify uit de connector die in je Odoo is geïnstalleerd. Momenteel wordt de Shopify Odoo Connector van Emipro volledig ondersteund; bij een andere — van een andere leverancier of een module op maat — zegt het paneel dat, in plaats van te vergelijken.",
+      "intro2": "Vertel ons welke je gebruikt en we werken aan ondersteuning. Ook handmatige instelling, waarbij je je eigen Shopify-token opgeeft, is op weg.",
+      "helpsTitle": "Wat ons het meest helpt",
+      "helps1": "De technische naam van de connectormodule in Odoo (Instellingen → Apps, zoek op “shopify”).",
+      "helps2": "Of het Shopify-order-id op de verkooporder staat, en in welk veld.",
+      "helps3": "Je Odoo-versie, en of die op Odoo Online, Odoo.sh of je eigen server draait.",
+      "nameLabel": "Naam",
+      "emailLabel": "E-mail",
+      "connectorLabel": "Welke connector gebruik je?",
+      "submit": "Versturen",
+      "success": "Bedankt — we hebben het. We komen snel bij je terug.",
+      "error": "Er ging iets mis bij het versturen van je bericht. Mail ons direct op",
+      "connectorHint": "Voorbeeld: een module op maat van onze integrator; het Shopify-order-id staat in x_shopify_ref…"
     }
   },
   "nav": {

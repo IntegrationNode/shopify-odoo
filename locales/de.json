@@ -64,7 +64,8 @@
       "settings": "Einstellungen",
       "subscription": "Abonnement",
       "troubleshooting": "Fehlerbehebung",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "reportConnector": "Melde deinen Connector"
     },
     "installation": {
       "title": "Installation",
@@ -270,6 +271,22 @@
       "emailLabel": "E-Mail",
       "includeVersion": "Geben Sie Ihre Erweiterungsversion an (in der Einstellungsdiagnose angezeigt).",
       "includeScreenshots": "Screenshots des Panels und des Auftrags beschleunigen die Hilfe erheblich."
+    },
+    "reportConnector": {
+      "title": "Melde deinen Connector",
+      "intro": "Die Erweiterung liest die Verbindung zu Shopify aus dem Connector, der in deinem Odoo installiert ist. Vollständig unterstützt wird derzeit der Shopify Odoo Connector von Emipro; bei einem anderen — von einem anderen Anbieter oder einem eigens gebauten Modul — sagt es dir das Panel, statt zu vergleichen.",
+      "intro2": "Sag uns, welchen du nutzt, und wir arbeiten an der Unterstützung. Auch die manuelle Einrichtung, bei der du dein eigenes Shopify-Token angibst, ist in Vorbereitung.",
+      "helpsTitle": "Was uns am meisten hilft",
+      "helps1": "Der technische Name des Connector-Moduls in Odoo (Einstellungen → Apps, suche nach “shopify”).",
+      "helps2": "Ob die Shopify-Bestell-ID im Verkaufsauftrag steht, und in welchem Feld.",
+      "helps3": "Deine Odoo-Version und ob sie auf Odoo Online, Odoo.sh oder deinem eigenen Server läuft.",
+      "nameLabel": "Name",
+      "emailLabel": "E-Mail",
+      "connectorLabel": "Welchen Connector nutzt du?",
+      "submit": "Senden",
+      "success": "Danke — angekommen. Wir melden uns in Kürze.",
+      "error": "Beim Senden deiner Nachricht ist etwas schiefgegangen. Schreib uns direkt an",
+      "connectorHint": "Beispiel: ein eigenes Modul unseres Integrators; die Shopify-Bestell-ID steht in x_shopify_ref…"
     }
   },
   "nav": {

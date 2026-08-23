@@ -64,7 +64,8 @@
       "settings": "Paramètres",
       "subscription": "Abonnement",
       "troubleshooting": "Dépannage",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "reportConnector": "Signalez votre connecteur"
     },
     "installation": {
       "title": "Installation",
@@ -270,6 +271,22 @@
       "emailLabel": "E-mail",
       "includeVersion": "Indiquez la version de votre extension (affichée dans les diagnostics des paramètres).",
       "includeScreenshots": "Des captures d'écran du panneau et de la commande permettent de résoudre les problèmes beaucoup plus rapidement."
+    },
+    "reportConnector": {
+      "title": "Signalez votre connecteur",
+      "intro": "L'extension lit le lien vers Shopify depuis le connecteur installé dans votre Odoo. Elle prend aujourd'hui entièrement en charge le Shopify Odoo Connector d'Emipro ; avec un autre — d'un autre éditeur ou un module sur mesure — le panneau vous le signale au lieu de comparer.",
+      "intro2": "Dites-nous lequel vous utilisez et nous travaillerons à le prendre en charge. La configuration manuelle, où vous fournissez votre propre jeton Shopify, arrive également.",
+      "helpsTitle": "Ce qui nous aide le plus",
+      "helps1": "Le nom technique du module du connecteur dans Odoo (Paramètres → Applications, cherchez “shopify”).",
+      "helps2": "Si l'identifiant de commande Shopify est enregistré sur la commande client, et dans quel champ.",
+      "helps3": "Votre version d'Odoo, et si elle tourne sur Odoo Online, Odoo.sh ou votre propre serveur.",
+      "nameLabel": "Nom",
+      "emailLabel": "E-mail",
+      "connectorLabel": "Quel connecteur utilisez-vous ?",
+      "submit": "Envoyer",
+      "success": "Merci — c'est bien reçu. Nous revenons vers vous rapidement.",
+      "error": "L'envoi de votre message a échoué. Écrivez-nous directement à",
+      "connectorHint": "Exemple : un module sur mesure réalisé par notre intégrateur ; l'identifiant de commande Shopify se trouve dans x_shopify_ref…"
     }
   },
   "nav": {
