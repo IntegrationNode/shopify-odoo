@@ -2371,3 +2371,18 @@ a:hover {
 a.product-item:hover { background: var(--color-bg-lightest); color: var(--color-primary); }
 .product-item.is-current { font-weight: 700; color: var(--color-text-lighter); cursor: default; }
 @media (max-width: 768px) { .brand-home { display: none; } }
+
+/* Report your connector form (user guide) — mismo patrón que el formulario de servicios del
+   hub, adaptado a las variables de este sitio. El sitio no tenía ningún estilo de formulario
+   porque hasta ahora no tenía formularios. */
+#connector-form { display: flex; flex-direction: column; gap: 0.35rem; max-width: 480px; margin: var(--spacing-md, 1rem) 0 0; }
+#connector-form label { font-weight: 600; font-size: 0.9rem; margin-top: 0.75rem; }
+#connector-form input[type="text"], #connector-form input[type="email"], #connector-form textarea { padding: 0.7rem 0.9rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font: inherit; }
+#connector-form input:focus, #connector-form textarea:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; }
+#connector-form textarea { resize: vertical; }
+#connector-form .small-text { margin: 0.35rem 0 0; }
+#connector-form button[type="submit"] { margin-top: 1.25rem; align-self: flex-start; }
+#connector-form button[type="submit"]:disabled { opacity: 0.6; cursor: wait; }
+.form-status { margin: 0.75rem 0 0; padding: 0.75rem 1rem; border-radius: var(--radius-md); }
+.form-status-success { background: #e6f4ea; color: #1e7e34; border: 1px solid #b7e1c1; }
+.form-status-error { background: #fdecea; color: #b02a37; border: 1px solid #f5c2c7; }
