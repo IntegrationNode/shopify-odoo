@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopify noemt het ene totaal, Odoo het andere. De 8 echte redenen voor het verschil — btw, facturatie, terugbetalingen, orderwijzigingen, cadeaubonnen — en hoe je ze uit elkaar houdt.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/nl/blog/odoo-shopify-order-totals-dont-match.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/nl/blog/odoo-shopify-order-totals-dont-match.html">
+    <meta property="og:title" content="Waarom de totalen van Odoo en Shopify niet kloppen">
+    <meta property="og:description" content="Acht echte oorzaken van een bedragsverschil tussen Odoo en Shopify, elk met het symptoom dat het verraadt en het veld dat je moet controleren.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+    <meta property="article:published_time" content="2026-08-25">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Waarom de totalen van Odoo en Shopify niet kloppen">
+    <meta name="twitter:description" content="Acht echte oorzaken van een bedragsverschil tussen Odoo en Shopify, elk met het symptoom dat het verraadt en het veld dat je moet controleren.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Odoo en Shopify verschillen? 8 echte oorzaken</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/shopify-odoo/favicon.png">
+    <link rel="preload" as="font" type="font/woff2" href="https://integrationnode.com/shopify-odoo/fonts/material-symbols-outlined.woff2" crossorigin>
+    <link rel="stylesheet" href="https://integrationnode.com/shopify-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/shopify-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Odoo and Shopify order totals don't match: 8 real causes",
+        "description": "Shopify says one total, Odoo says another. The eight real reasons an Odoo–Shopify order amount differs — tax-inclusive prices, invoicing, refunds, order edits, gift cards, discount artifacts, shipping and currency — each with the symptom that identifies it and the field to check.",
+        "image": "https://integrationnode.com/shopify-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IntegrationNode",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/shopify-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-08-25T00:00:00+00:00",
+        "dateModified": "2026-08-25T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org Breadcrumb -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Odoo–Shopify Order Check", "item": "https://integrationnode.com/shopify-odoo/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://integrationnode.com/shopify-odoo/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Odoo and Shopify order totals don't match" }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="logo">IntegrationNode</a>
+                <div class="nav-links">
+                    <a href="../#features">Functies</a>
+                    <a href="../pricing.html">Prijzen</a>
+                    <a href="../user-guide.html">Handleiding</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=order-totals-mismatch&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Extensie downloaden</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Producten</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <a class="product-item is-current" aria-current="true" href="../">Shopify-integratie</a>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Gmail-integratie</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">NL</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Terug naar de blog</span>
+            </a>
+            <h1>De totalen van Odoo en Shopify kloppen niet: 8 echte oorzaken</h1>
+            <div class="article-meta">
+                <span class="article-date">25 augustus 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">Shopify zegt dat de order 128,45 is. De verkooporder in Odoo zegt 106,16. Niemand heeft iets aangeraakt, de connector meldt geen fouten, en toch spreken de twee getallen elkaar tegen. In de praktijk komt vrijwel elk bedragsverschil tussen Odoo en Shopify neer op een van acht oorzaken, en elk daarvan laat een andere vingerafdruk achter. Deze gids loopt ze alle acht langs, geeft het symptoom dat elke oorzaak verraadt en wijst aan beide kanten precies het veld aan dat je moet controleren.</p>
+                <p>Het geldt voor elke Shopify-order die in Odoo leeft, ongeacht welke connector hem heeft geïmporteerd: de Shopify Odoo Connector van Emipro, Webkul, een OCA-module of een eigen koppeling. De veldnamen hieronder komen uit de standaardmodellen van Odoo, aangevuld — waar relevant — met de instellingen die een connector doorgaans op zijn instance-record aanbiedt.</p>
+
+                <!-- Section 1: comparable numbers -->
+                <h2>
+                    <span>Zorg er eerst voor dat je vergelijkbare getallen vergelijkt</span>
+                </h2>
+                <p>Ga niet op jacht naar een bug voordat je nakijkt wát je vergelijkt. Beide systemen tonen meerdere «totalen», en die betekenen niet hetzelfde.</p>
+                <ul>
+                    <li>Huidig Shopify-totaal: wat de klant vandaag verschuldigd is, na terugbetalingen en wijzigingen. In de Admin API: currentTotalPriceSet.</li>
+                    <li>Oorspronkelijk Shopify-totaal: wat bij de afrekening is afgesproken, vóór elke latere wijziging: originalTotalPriceSet.</li>
+                    <li>Totaal van de Odoo-verkooporder: amount_total op sale.order — wat de connector heeft geïmporteerd, plus wat hij daarna nog heeft gesynchroniseerd.</li>
+                    <li>Netto gefactureerd in Odoo: geboekte klantfacturen minus geboekte creditnota's (account.move, move_type out_invoice en out_refund).</li>
+                </ul>
+                <p>Dat die vier getallen verschillen is op zich geen probleem. De enige echte vraag is welk paar zou moeten kloppen, en dat hangt af van hoe ver de order al is gekomen: een nog niet gefactureerde order vraagt om een andere vergelijking dan een order die gefactureerd, terugbetaald en gewijzigd is.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Vuistregel: zodra een order in Odoo is gefactureerd, vergelijk je het huidige Shopify-totaal met het netto gefactureerde bedrag in Odoo. Daarvóór vergelijk je met het ordertotaal en behandel je het antwoord als voorlopig.</span>
+                </div>
+
+                <!-- Section 2: tax-inclusive -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Oorzaak 1: prijzen inclusief btw</span>
+                </h2>
+                <p>Dit is het meest voorkomende loze alarm, en het makkelijkst uit te sluiten. Als je Shopify-prijzen btw bevatten en je Odoo-btw is ingesteld als «Inbegrepen in de prijs», dan meten het Shopify-subtotaal en het bedrag exclusief btw in Odoo twee verschillende dingen: de eerste is inclusief btw, de tweede exclusief.</p>
+                <p>Het symptoom is onmiskenbaar: het gat is precies het btw-tarief. 128,45 tegenover 106,16 is geen afrondingsprobleem, dat is 21 % btw.</p>
+                <p>De oplossing is een vergelijking kiezen die deze instelling overleeft. Vergelijk totalen inclusief btw — het huidige Shopify-totaal tegen amount_total in Odoo — of vergelijk aan beide kanten netto door in Odoo amount_tax van amount_total af te trekken. Wat je nooit moet doen: het Shopify-subtotaal vergelijken met amount_untaxed in Odoo, tenzij je zeker weet dat beide kanten identiek zijn ingesteld.</p>
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Een verschil door btw-inclusieve prijzen is onzichtbaar bij orders zonder btw — export, intracommunautaire verlegging, vrijgestelde klanten — dus de configuratie kan wekenlang correct lijken en dan bij de eerste binnenlandse order stukgaan.</span>
+                </div>
+
+                <!-- Section 3: invoiced vs ordered -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Oorzaak 2: de order ligt vast, de factuur gaat door</span>
+                </h2>
+                <p>Connectors importeren een Shopify-order in een sale.order. Zodra die order gefactureerd is, stoppen de meeste met het doorduwen van latere wijzigingen — terecht: een gefactureerde order is een boekhoudkundig document, geen spiegel. Vanaf dat moment legt de order vast wat er besteld is, en leggen de facturen vast wat er werkelijk in rekening is gebracht.</p>
+                <p>Komt er dus na de facturatie een terugbetaling binnen, dan daalt het huidige Shopify-totaal terwijl de Odoo-order blijft staan. Het geld is in Odoo wel degelijk bewogen, alleen ergens anders: in een creditnota, een account.move met move_type = out_refund.</p>
+                <p>Waar je moet kijken: sale.order.invoice_ids geeft je alle facturen en creditnota's bij de order. Tel de geboekte out_invoice op, trek de geboekte out_refund af, en dat nettobedrag is wat moet kloppen met het huidige Shopify-totaal. Per regel is qty_invoiced de maatgevende hoeveelheid, niet product_uom_qty.</p>
+                <p>Daarom levert het vergelijken van de verkooporder met Shopify steeds meer loze alarmen op naarmate de order ouder wordt: je vergelijkt een momentopname van het importmoment met een levend document.</p>
+
+                <!-- Section 4: refunds -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Oorzaak 3: terugbetalingen — het geld klopt altijd, de aantallen misschien niet</span>
+                </h2>
+                <p>Shopify-terugbetalingen bestaan in twee smaken, en maar één ervan raakt de voorraad. Een terugbetaling kan het geld teruggeven en de eenheden terugleggen, of het geld teruggeven en de eenheden laten waar ze zijn: beschadigd product, coulance, gedeeltelijke prijsaanpassing.</p>
+                <p>In de Admin API zit het onderscheid op elke terugbetalingsregel, in restockType: NO_RESTOCK, CANCEL, RETURN of LEGACY_RESTOCK. Voor de afstemming betekent dat: een NO_RESTOCK-terugbetaling verlaagt het bedrag zonder de levende hoeveelheid van de regel te wijzigen, dus een controle van aantallen per regel kan er fout uitzien terwijl het geld perfect klopt.</p>
+                <p>Dit is het meest verkeerd gelezen verschil van allemaal, omdat het instinct zegt aantallen meer te vertrouwen dan bedragen. Hier hebben de bedragen gelijk en vertellen de aantallen iets anders: wat er gefactureerd is tegenover wat er fysiek terug is gekomen.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Wil je weten «wat er nog leeft op deze regel», lees dan currentQuantity, niet quantity. Dat tweede is wat er bij de afrekening besteld is en verandert nooit.</span>
+                </div>
+
+                <!-- Section 5: order edits -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Oorzaak 4: de order is achteraf in Shopify gewijzigd</span>
+                </h2>
+                <p>Order editing in Shopify wijzigt een order ter plekke: regels worden toegevoegd, verwijderd of in aantal aangepast nadat de klant heeft betaald. Shopify bewaart beide cijfers — originalTotalPriceSet voor de afrekening, currentTotalPriceSet voor de gewijzigde order — en de meeste connectors synchroniseren de verkooporder opnieuw, waardoor amount_total in Odoo de wijziging volgt en niet langer overeenkomt met wat er besteld is.</p>
+                <p>Op zich is dat ongevaarlijk. De riskante variant is de wijziging die ná de facturatie binnenkomt: een regel die Odoo al gefactureerd heeft, wordt in Shopify verwijderd. Nu heeft Odoo meer gefactureerd dan Shopify ooit zal innen. Dat is geen weergavekwestie, dat is een echte overfacturatie en er hoort een creditnota bij.</p>
+                <p>Symptoom: het netto gefactureerde bedrag in Odoo is hoger dan het huidige Shopify-totaal, de order heeft geen terugbetaling, en het oorspronkelijke Shopify-totaal is hoger dan het huidige. Gelden die drie tegelijk, dan is de order na facturatie gewijzigd.</p>
+
+                <!-- Section 6: gift cards -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Oorzaak 5: cadeaubonnen, verkocht en ingewisseld</span>
+                </h2>
+                <p>Cadeaubonnen leveren twee volledig verschillende verschillen op, afhankelijk van aan welke kant van de transactie ze staan — die zijn het waard om zorgvuldig uit elkaar te houden.</p>
+                <p>Een cadeaubon verkopen. In Shopify draagt de regel de markering isGiftCard en meestal helemaal geen SKU. Connectors koppelen hem niet op SKU: ze herkennen de markering bij import en sturen de regel naar een apart product dat op de connector-instance is ingesteld (bij Emipro gift_card_product_id). Koppelt jouw afstemming regels op SKU, dan verschijnt dezelfde bon als twee halflege regels: één aan de Shopify-kant met een naam en zonder SKU, één aan de Odoo-kant met de interne referentie van het synthetische product. Met de bon is niets mis; de koppelsleutel deugt niet.</p>
+                <p>Met een cadeaubon betalen. Hier heeft Shopify helemaal geen regel: een cadeaubon die als betaalmiddel wordt gebruikt is een tender en verschijnt alleen tussen de betaalgateways van de order. Connectors die de betaling in Odoo sluitend moeten krijgen, voegen een negatieve regel toe — «Gift card for …» — die naar datzelfde synthetische product wijst. Odoo heeft dan één regel meer dan Shopify, en elke naïeve regel-voor-regelweergave toont een regel zonder tegenhanger.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Is het verschil een verdacht rond bedrag dat ook tussen de betaalmethoden van de order opduikt, zoek dan eerst naar een cadeaubon en pas daarna naar een prijsfout.</span>
+                </div>
+
+                <!-- Section 7: discounts and artifacts -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Oorzaak 6: kortingen, cadeaus en artefactproducten</span>
+                </h2>
+                <p>Shopify en Odoo modelleren hetzelfde commerciële gebaar in verschillende vormen. Een cadeau is in Shopify een tweede regel van 0,00. Een korting is een bedrag op de regel zelf. Odoo-connectors drukken beide vaak uit als een extra orderregel die naar een synthetisch product op de instance wijst: doorgaans een kortingsproduct, een correctieproduct voor terugbetalingen, een invoerrechtenproduct, een fooiproduct en een verzendproduct.</p>
+                <p>Die artefactregels hebben geen tegenhanger in de lineItems van Shopify. Regel voor regel lijken het spookregels; op het totaal zijn ze precies wat de twee bedragen laat kloppen. Ze verwijderen zou de order kapotmaken, niet repareren.</p>
+                <p>Hoe je wél goed vergelijkt: aggregeer regels op SKU voordat je ze koppelt, en sluit de producten uit die op de connector-instance als artefact zijn ingesteld. Met die twee regels op hun plek zijn de overgebleven verschillen echt.</p>
+
+                <!-- Section 8: shipping and fees -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Oorzaak 7: verzending, invoerrechten en toeslagen</span>
+                </h2>
+                <p>Verzending is in Shopify een eigen concept — een verzendregel met eigen prijs en btw — terwijl het in Odoo meestal binnenkomt als een gewone orderregel met de markering is_delivery, geprijsd vanuit het verzendproduct van de connector. Invoerrechten, fooien en betaaltoeslagen volgen hetzelfde patroon.</p>
+                <p>Het praktische gevolg is dat het aantal regels bijna nooit gelijk is, zelfs niet bij een perfect gesynchroniseerde order, en elke subtotaalvergelijking erft dat verschil. Vergelijk eerst totalen; vergelijk regels pas nadat je aan de Odoo-kant verzend- en toeslagregels hebt uitgesloten.</p>
+                <p>Hetzelfde geldt voor de leveringsas: achter een dienstregel zit geen voorraadmutatie, dus de geleverde hoeveelheid blijft voor altijd nul. Dat is correct gedrag, geen openstaande zending.</p>
+
+                <!-- Section 9: currency and rounding -->
+                <h2>
+                    <span class="section-number">8</span>
+                    <span>Oorzaak 8: valuta, presentment money en afronding</span>
+                </h2>
+                <p>Shopify geeft elk geldveld dubbel terug: shopMoney, in de valuta van je winkel, en presentmentMoney, in de valuta die de klant daadwerkelijk zag. Verkoop je in meerdere valuta's, dan heeft de connector er één geïmporteerd en lees jij mogelijk de andere.</p>
+                <p>Odoo voegt daar een eigen tweede omrekening aan toe: de order wordt in zijn eigen valuta bewaard en tegen de dagkoers omgerekend naar de bedrijfsvaluta. Een verouderde wisselkoers levert een klein verschil op dat altijd dezelfde kant op leunt — een betrouwbare aanwijzing, want echte fouten zijn zelden zo consistent.</p>
+                <p>En dan is er nog gewone afronding. Verschillen van één tot drie cent op orders met meerdere regels en procentuele kortingen per regel zijn afronding, en daarop jagen kost je een middag. Alles wat groter is heeft een van de bovenstaande oorzaken.</p>
+
+                <!-- Section 10: quick reference table -->
+                <h2>
+                    <span>Snelle referentie: van symptoom naar oorzaak</span>
+                </h2>
+                <div class="table-scroll">
+                    <table class="article-table">
+                        <thead>
+                            <tr>
+                                <th>Wat je ziet</th>
+                                <th>Meest waarschijnlijke oorzaak</th>
+                                <th>Waar te controleren</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Het gat is precies het btw-tarief</td>
+                                <td>Prijzen inclusief btw</td>
+                                <td>Odoo-btw «Inbegrepen in de prijs»; totalen inclusief btw vergelijken</td>
+                            </tr>
+                            <tr>
+                                <td>Odoo hoger dan Shopify, order heeft een terugbetaling</td>
+                                <td>Terugbetaling geboekt na de facturatie</td>
+                                <td>account.move out_refund; qty_invoiced per regel</td>
+                            </tr>
+                            <tr>
+                                <td>Odoo hoger, geen terugbetaling, Shopify origineel > huidig</td>
+                                <td>Order na facturatie gewijzigd (overfacturatie)</td>
+                                <td>originalTotalPriceSet tegenover currentTotalPriceSet</td>
+                            </tr>
+                            <tr>
+                                <td>De bedragen kloppen, het aantal van één regel niet</td>
+                                <td>Terugbetaling zonder terugname in voorraad</td>
+                                <td>refundLineItems.restockType; currentQuantity</td>
+                            </tr>
+                            <tr>
+                                <td>Eén regel extra in Odoo, rond bedragsverschil</td>
+                                <td>Cadeaubon gebruikt als betaalmiddel</td>
+                                <td>Betaalgateways van de order; negatieve regel in Odoo</td>
+                            </tr>
+                            <tr>
+                                <td>Eén cadeaubon verschijnt als twee halflege regels</td>
+                                <td>Gekoppeld op SKU in plaats van op de cadeaubonmarkering</td>
+                                <td>isGiftCard; cadeaubonproduct van de instance</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Odoo-regels met korting of invoerrechten in de naam</td>
+                                <td>Artefactproducten van de connector</td>
+                                <td>Kortings-/invoerrechten-/fooi-/verzendproduct van de instance</td>
+                            </tr>
+                            <tr>
+                                <td>Een verschil van een paar cent</td>
+                                <td>Afronding of wisselkoers</td>
+                                <td>shopMoney tegenover presentmentMoney; dagkoers in Odoo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 11: five-minute check -->
+                <h2>
+                    <span>Een controle van vijf minuten die je kunt herhalen</span>
+                </h2>
+                <p>Belandt er een verschil op je bureau, dan lost deze volgorde het sneller op dan naar beide schermen staren:</p>
+                <ol>
+                    <li>Open de Shopify-order. Noteer het huidige totaal en kijk of er terugbetalingen zijn of dat de order gewijzigd is.</li>
+                    <li>Open de Odoo-verkooporder. Noteer amount_total en bekijk invoice_status.</li>
+                    <li>Is hij gefactureerd: tel de geboekte facturen op, trek de geboekte creditnota's af en vergelijk dat cijfer — niet het ordertotaal — met het huidige Shopify-totaal.</li>
+                    <li>Is hij nog niet gefactureerd: vergelijk met amount_total en behandel het resultaat als voorlopig. Het verandert zodra de factuur geboekt is.</li>
+                    <li>Kloppen ze dan nog niet, loop dan de acht oorzaken op volgorde af: eerst btw, dan facturatie, terugbetalingen, wijzigingen, cadeaubonnen, artefacten, verzending, valuta. De eerste die past is bijna altijd het antwoord.</li>
+                </ol>
+                <p>Vijf minuten per order is prima als het twee keer per maand gebeurt. Het is niet meer prima als een klantenservicemedewerker het moet doen vóór elk «jullie hebben me het verkeerde bedrag berekend»-mailtje, of als iemand een dag aan orders steekproefsgewijs moet nalopen voor de maandafsluiting.</p>
+
+                <!-- Keep reading -->
+                <h3>Verder lezen</h3>
+                <ul>
+                    <li><a href="../user-guide.html">Handleiding</a></li>
+                    <li><a href="../pricing.html">Prijzen</a></li>
+                    <li><a href="../changelog.html">Wijzigingslogboek</a></li>
+                </ul>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Of controleer het met één klik</h3>
+                    <p>Odoo–Shopify Order Check voert deze hele vergelijking voor je uit, in de orderpagina die je toch al open hebt staan: totalen, btw, aantallen, regels, adressen en levering, met terugbetalingen en cadeaubonnen als context in plaats van als fouten. De extensie is alleen-lezen — ze schrijft nooit naar Odoo of Shopify — en vraagt geen enkele API-sleutel.</p>
+                    <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=order-totals-mismatch&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Probeer 14 dagen gratis</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Gebouwd door</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bronnen</h4>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../pricing.html">Prijzen</a></li>
+                        <li><a href="../user-guide.html">Handleiding</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../changelog.html">Wijzigingslogboek</a></li>
+                        <li><a href="../privacy.html">Privacybeleid</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Ondersteuning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Meer integraties</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Gmail-integratie</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Shopify-integratie</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                        <li><a href="https://integrationnode.com/services/?src=shopify">Adviesdiensten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Juridisch</h4>
+                    <p class="small-text">Niet gelieerd aan Odoo S.A. of Shopify Inc.</p>
+                    <p class="small-text">Odoo is een handelsmerk van Odoo S.A.; Shopify is een handelsmerk van Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script (nested page: /blog/<article>.html) -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var parts = path.split('/').filter(Boolean);
+        // Always "blog/<file>.html" for this page, whatever the base path is.
+        var page = parts.slice(-2).join('/');
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.indexOf('/' + LANGUAGES[i].path) !== -1) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // From /blog/x.html -> ../<lang>/blog/x.html ; from /<lang>/blog/x.html -> ../../<lang2>/blog/x.html
+            link.href = (currentLang.path ? '../../' : '../') + lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

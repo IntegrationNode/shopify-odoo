@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notas de campo para equipas que gerem a Shopify sobre Odoo: reconciliação de encomendas, faturado versus encomendado, reembolsos, cartões-presente e comportamento dos conectores.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/pt/blog.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/blog.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/blog.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/blog.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/blog.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/blog.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/blog.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/blog.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/blog.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/pt/blog.html">
+    <meta property="og:title" content="Blog - Odoo–Shopify Order Check">
+    <meta property="og:description" content="Guias práticos para reconciliar encomendas da Shopify com o Odoo: o que comparar, o que nunca coincide e porquê.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Odoo–Shopify Order Check">
+    <meta name="twitter:description" content="Guias práticos para reconciliar encomendas da Shopify com o Odoo: o que comparar, o que nunca coincide e porquê.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Blog - Odoo–Shopify Order Check</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preload" as="font" type="font/woff2" href="../fonts/material-symbols-outlined.woff2" crossorigin>
+    <link rel="stylesheet" href="../fonts/outlined.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="logo">IntegrationNode</a>
+                <div class="nav-links">
+                    <a href="./#features">Funcionalidades</a>
+                    <a href="pricing.html">Preços</a>
+                    <a href="user-guide.html">Guia do Utilizador</a>
+                    <a href="blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=blog_index&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Obter Extensão</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Produtos</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <a class="product-item is-current" aria-current="true" href="./">Integração com a Shopify</a>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Integração com o Gmail</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">PT</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Blog</h1>
+            <p class="subtitle">Notas de campo para equipas que gerem a Shopify sobre Odoo: reconciliação de encomendas, comportamento dos conectores e as armadilhas pelo meio.</p>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1: Odoo–Shopify order totals mismatch -->
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">25 de agosto de 2026</span>
+                        </div>
+                        <h2 class="blog-card-title">Os totais do Odoo e da Shopify não coincidem: 8 causas reais</h2>
+                        <p class="blog-card-excerpt">A Shopify diz 128,45, o Odoo diz 106,16 e não há nada avariado. Oito causas explicam quase todas as divergências de valores entre Odoo e Shopify — preços com imposto incluído, faturação, reembolsos, edições de encomenda, cartões-presente, produtos artefacto, envio e moeda — cada uma com o sintoma que a identifica e o campo a verificar.</p>
+                        <a href="blog/odoo-shopify-order-totals-dont-match.html" class="blog-card-link">
+                            <span>Ler artigo</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="blog-cta">
+        <div class="container">
+            <h2>Verifique qualquer encomenda num clique</h2>
+            <p>O Odoo–Shopify Order Check compara a encomenda que tem aberta, campo a campo, e diz-lhe se coincide. Apenas leitura, 14 dias de teste grátis.</p>
+            <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=blog_index&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Instalar a extensão</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Criado por</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="./">Início</a></li>
+                        <li><a href="pricing.html">Preços</a></li>
+                        <li><a href="user-guide.html">Guia do Utilizador</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                        <li><a href="privacy.html">Política de Privacidade</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais integrações</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Integração com o Gmail</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Integração com a Shopify</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                        <li><a href="https://integrationnode.com/services/?src=shopify">Serviços de consultoria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Aviso Legal</h4>
+                    <p class="small-text">Não afiliado com a Odoo S.A. nem com a Shopify Inc.</p>
+                    <p class="small-text">Odoo é uma marca registada da Odoo S.A.; Shopify é uma marca registada da Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var page = path.split('/').pop() || 'index.html';
+        if (page === '') page = 'index.html';
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.includes('/' + LANGUAGES[i].path)) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            link.href = currentLang.path ? '../' + lang.path + page : lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

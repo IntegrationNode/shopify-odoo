@@ -45,6 +45,24 @@
       "ogDescription": "Wie die nur lesende Erweiterung Odoo–Shopify Order Check mit Ihren Daten umgeht. Es werden keine Auftragsdaten an den Entwickler oder Dritte übermittelt.",
       "twitterTitle": "Datenschutzrichtlinie – Odoo–Shopify Order Check",
       "twitterDescription": "Wie wir mit Ihren Daten umgehen und welche Datenschutzrechte Sie haben. Nur lesend – keine Auftragsdaten verlassen Odoo oder Shopify."
+    },
+    "blog": {
+      "title": "Blog - Odoo–Shopify Order Check",
+      "description": "Praxisnotizen für Teams, die Shopify auf Odoo betreiben: Bestellabgleich, abgerechnet statt bestellt, Erstattungen, Geschenkkarten und das Verhalten der Konnektoren.",
+      "canonical": "https://integrationnode.com/shopify-odoo/de/blog.html",
+      "ogTitle": "Blog - Odoo–Shopify Order Check",
+      "ogDescription": "Praktische Anleitungen zum Abgleich von Shopify-Bestellungen mit Odoo: was man vergleicht, was nie übereinstimmt und warum.",
+      "twitterTitle": "Blog - Odoo–Shopify Order Check",
+      "twitterDescription": "Praktische Anleitungen zum Abgleich von Shopify-Bestellungen mit Odoo: was man vergleicht, was nie übereinstimmt und warum."
+    },
+    "blogTotalsMismatch": {
+      "title": "Odoo und Shopify weichen ab? 8 echte Ursachen",
+      "description": "Shopify nennt eine Summe, Odoo eine andere. Die 8 echten Gründe für die Abweichung — Steuer, Rechnung, Erstattungen, Bestelländerungen, Geschenkkarten — und wie man sie unterscheidet.",
+      "canonical": "https://integrationnode.com/shopify-odoo/de/blog/odoo-shopify-order-totals-dont-match.html",
+      "ogTitle": "Warum die Summen von Odoo und Shopify nicht übereinstimmen",
+      "ogDescription": "Acht echte Ursachen für eine Betragsabweichung zwischen Odoo und Shopify, jede mit dem Symptom, das sie verrät, und dem Feld, das man prüfen muss.",
+      "twitterTitle": "Warum die Summen von Odoo und Shopify nicht übereinstimmen",
+      "twitterDescription": "Acht echte Ursachen für eine Betragsabweichung zwischen Odoo und Shopify, jede mit dem Symptom, das sie verrät, und dem Feld, das man prüfen muss."
     }
   },
   "userGuide": {
@@ -294,7 +312,7 @@
     "features": "Funktionen",
     "pricing": "Preise",
     "userGuide": "Benutzerhandbuch",
-    "blog": "Dokumentation",
+    "blog": "Blog",
     "getExtension": "Erweiterung holen",
     "brandHome": "IntegrationNode",
     "productsLabel": "Produkte",
@@ -750,6 +768,140 @@
       }
     }
   },
+  "blogArticle": {
+    "backToBlog": "Zurück zum Blog",
+    "keepReading": "Weiterlesen"
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Praxisnotizen für Teams, die Shopify auf Odoo betreiben: Bestellabgleich, Konnektorverhalten und die Fallstricke dazwischen."
+    },
+    "readMore": "Artikel lesen",
+    "article1": {
+      "date": "25. August 2026",
+      "title": "Die Summen von Odoo und Shopify stimmen nicht überein: 8 echte Ursachen",
+      "excerpt": "Shopify sagt 128,45, Odoo sagt 106,16 – und trotzdem ist nichts kaputt. Acht Ursachen erklären fast jede Betragsabweichung zwischen Odoo und Shopify: Bruttopreise, Rechnungsstellung, Erstattungen, Bestelländerungen, Geschenkkarten, Artefaktprodukte, Versand und Währung – jeweils mit dem Symptom, das sie verrät, und dem Feld, das man prüfen muss."
+    },
+    "cta": {
+      "title": "Jede Bestellung mit einem Klick prüfen",
+      "subtitle": "Odoo–Shopify Order Check vergleicht die geöffnete Bestellung Feld für Feld und sagt Ihnen, ob sie übereinstimmt. Nur lesend, 14 Tage kostenlos testen.",
+      "button": "Erweiterung installieren"
+    }
+  },
+  "blogTotalsMismatch": {
+    "title": "Die Summen von Odoo und Shopify stimmen nicht überein: 8 echte Ursachen",
+    "date": "25. August 2026",
+    "intro": "Shopify sagt, die Bestellung beträgt 128,45. Der Verkaufsauftrag in Odoo sagt 106,16. Niemand hat etwas angefasst, der Konnektor meldet keine Fehler, und trotzdem widersprechen sich die beiden Zahlen. In der Praxis lässt sich fast jede Betragsabweichung zwischen Odoo und Shopify auf eine von acht Ursachen zurückführen – und jede hinterlässt einen anderen Fingerabdruck. Dieser Leitfaden geht alle acht durch, nennt das Symptom, das jede von ihnen verrät, und zeigt auf beiden Seiten genau das Feld, das zu prüfen ist.",
+    "intro2": "Das gilt für jede Shopify-Bestellung, die in Odoo lebt, unabhängig davon, welcher Konnektor sie importiert hat: der Shopify Odoo Connector von Emipro, Webkul, ein OCA-Modul oder eine eigene Brücke. Die Feldnamen unten stammen aus den Standardmodellen von Odoo, ergänzt – wo relevant – um die Einstellungen, die ein Konnektor üblicherweise auf seinem Instanzdatensatz bereitstellt.",
+    "section1": {
+      "title": "Zuerst: Vergleichen Sie wirklich vergleichbare Zahlen",
+      "p1": "Bevor Sie nach einem Fehler suchen, prüfen Sie, was Sie eigentlich vergleichen. Beide Systeme zeigen mehrere „Summen“, und die bedeuten nicht dasselbe.",
+      "li1": "Aktuelle Shopify-Summe: was der Kunde heute schuldet, nach Erstattungen und Bestelländerungen. In der Admin API: currentTotalPriceSet.",
+      "li2": "Ursprüngliche Shopify-Summe: was beim Checkout vereinbart wurde, vor jeder späteren Änderung: originalTotalPriceSet.",
+      "li3": "Summe des Odoo-Verkaufsauftrags: amount_total auf sale.order – was der Konnektor importiert und danach eventuell nachsynchronisiert hat.",
+      "li4": "Netto abgerechnet in Odoo: gebuchte Kundenrechnungen minus gebuchte Gutschriften (account.move, move_type out_invoice und out_refund).",
+      "p2": "Dass diese vier Zahlen auseinandergehen, ist für sich genommen kein Problem. Die einzige echte Frage lautet, welches Paar übereinstimmen sollte – und das hängt davon ab, wie weit die Bestellung gereist ist: Eine noch nicht abgerechnete Bestellung verlangt einen anderen Vergleich als eine, die abgerechnet, erstattet und geändert wurde.",
+      "tip": "Faustregel: Sobald eine Bestellung in Odoo abgerechnet ist, vergleichen Sie die aktuelle Shopify-Summe mit dem Nettobetrag der Rechnungen. Davor vergleichen Sie mit der Auftragssumme und behandeln das Ergebnis als vorläufig."
+    },
+    "section2": {
+      "title": "Ursache 1: Bruttopreise (Steuer im Preis enthalten)",
+      "p1": "Das ist der häufigste Fehlalarm und der am leichtesten auszuschließende. Wenn Ihre Shopify-Preise die Steuer enthalten und Ihre Odoo-Steuern als „Im Preis enthalten“ konfiguriert sind, messen der Shopify-Zwischensumme und der Nettobetrag in Odoo zwei verschiedene Dinge: die eine ist brutto, der andere netto.",
+      "p2": "Das Symptom ist unverkennbar: Die Lücke entspricht exakt dem Steuersatz. 128,45 gegen 106,16 ist kein Rundungsproblem, das sind 21 % Mehrwertsteuer.",
+      "p3": "Die Lösung besteht darin, einen Vergleich zu wählen, der diese Einstellung übersteht. Vergleichen Sie Bruttosummen – die aktuelle Shopify-Summe gegen amount_total in Odoo – oder Nettobeträge auf beiden Seiten, indem Sie in Odoo amount_tax von amount_total abziehen. Was Sie nie tun sollten: die Shopify-Zwischensumme mit amount_untaxed in Odoo vergleichen, außer Sie wissen sicher, dass beide Seiten gleich konfiguriert sind.",
+      "warning": "Eine Abweichung durch Bruttopreise ist bei steuerfreien Bestellungen unsichtbar – Export, innergemeinschaftliches Reverse-Charge, steuerbefreite Kunden – die Einrichtung kann also wochenlang korrekt wirken und bricht dann bei der ersten Inlandsbestellung."
+    },
+    "section3": {
+      "title": "Ursache 2: Der Auftrag ist eingefroren, die Rechnung lebt weiter",
+      "p1": "Konnektoren importieren eine Shopify-Bestellung in einen sale.order. Sobald dieser Auftrag abgerechnet ist, hören die meisten auf, spätere Änderungen hineinzuschreiben – zu Recht: Ein abgerechneter Auftrag ist ein Buchhaltungsdokument, kein Spiegel. Ab da hält der Auftrag fest, was bestellt wurde, und die Rechnungen halten fest, was tatsächlich berechnet wurde.",
+      "p2": "Kommt also nach der Rechnungsstellung eine Erstattung, sinkt die aktuelle Shopify-Summe, während der Odoo-Auftrag stehen bleibt. Das Geld hat sich in Odoo sehr wohl bewegt, nur woanders: in einer Gutschrift, einem account.move mit move_type = out_refund.",
+      "p3": "Wo Sie nachsehen: sale.order.invoice_ids liefert alle Rechnungen und Gutschriften zum Auftrag. Addieren Sie die gebuchten out_invoice, ziehen Sie die gebuchten out_refund ab – dieser Nettobetrag ist das, was zur aktuellen Shopify-Summe passen muss. Pro Zeile ist die maßgebliche Menge qty_invoiced, nicht product_uom_qty.",
+      "p4": "Deshalb liefert ein Vergleich des Verkaufsauftrags mit Shopify mit zunehmendem Alter der Bestellung immer mehr Fehlalarme: Sie vergleichen eine Momentaufnahme vom Importzeitpunkt mit einem lebenden Dokument."
+    },
+    "section4": {
+      "title": "Ursache 3: Erstattungen – das Geld stimmt immer, die Mengen nicht unbedingt",
+      "p1": "Shopify-Erstattungen gibt es in zwei Varianten, und nur eine rührt den Bestand an. Eine Erstattung kann das Geld zurückgeben und die Einheiten einlagern, oder das Geld zurückgeben und die Einheiten lassen, wo sie sind: beschädigte Ware, Kulanz, teilweise Preisanpassung.",
+      "p2": "In der Admin API steckt der Unterschied in jeder Erstattungszeile im Feld restockType: NO_RESTOCK, CANCEL, RETURN oder LEGACY_RESTOCK. Für den Abgleich heißt das: Eine NO_RESTOCK-Erstattung senkt den Betrag, ohne die lebende Menge der Zeile zu ändern – eine Mengenprüfung pro Zeile kann also falsch aussehen, obwohl das Geld perfekt stimmt.",
+      "p3": "Das ist die am häufigsten missverstandene Abweichung, weil der Instinkt sagt, man solle Mengen mehr trauen als Beträgen. Hier haben die Beträge recht, und die Mengen erzählen etwas anderes: was abgerechnet wurde gegenüber dem, was physisch zurückkam.",
+      "tip": "Wenn Sie wissen wollen, „was auf dieser Zeile noch aktiv ist“, lesen Sie currentQuantity, nicht quantity. Letzteres ist die Bestellmenge aus dem Checkout und ändert sich nie."
+    },
+    "section5": {
+      "title": "Ursache 4: Die Bestellung wurde nachträglich in Shopify bearbeitet",
+      "p1": "Shopifys Bestellbearbeitung ändert eine Bestellung an Ort und Stelle: Zeilen kommen hinzu, fallen weg oder ändern ihre Menge, nachdem der Kunde bezahlt hat. Shopify behält beide Zahlen – originalTotalPriceSet für den Checkout, currentTotalPriceSet für die bearbeitete Bestellung – und die meisten Konnektoren synchronisieren den Verkaufsauftrag nach, sodass amount_total in Odoo der Änderung folgt und nicht mehr dem entspricht, was bestellt wurde.",
+      "p2": "Das allein ist harmlos. Gefährlich wird die Variante, die nach der Rechnungsstellung eintrifft: Eine in Odoo bereits abgerechnete Zeile wird in Shopify entfernt. Jetzt hat Odoo mehr abgerechnet, als Shopify je einziehen wird. Das ist kein Anzeigeartefakt, sondern eine echte Überfakturierung – und braucht eine Gutschrift.",
+      "p3": "Symptom: Der Nettobetrag der Odoo-Rechnungen liegt über der aktuellen Shopify-Summe, die Bestellung hat keine Erstattung, und die ursprüngliche Shopify-Summe ist höher als die aktuelle. Wenn alle drei Punkte gleichzeitig zutreffen, wurde die Bestellung nach der Rechnungsstellung bearbeitet."
+    },
+    "section6": {
+      "title": "Ursache 5: Geschenkkarten – verkauft und eingelöst",
+      "p1": "Geschenkkarten erzeugen zwei völlig verschiedene Abweichungen, je nachdem, auf welcher Seite der Transaktion sie stehen – es lohnt sich, das sauber zu trennen.",
+      "p2": "Eine Geschenkkarte verkaufen. In Shopify trägt die Zeile das Kennzeichen isGiftCard und meistens gar keine SKU. Konnektoren ordnen sie nicht über die SKU zu – sie erkennen das Kennzeichen beim Import und leiten die Zeile auf ein eigenes Produkt um, das auf der Konnektor-Instanz konfiguriert ist (bei Emipro gift_card_product_id). Wenn Ihr Abgleich Zeilen über die SKU zuordnet, erscheint dieselbe Karte als zwei halbleere Zeilen: eine auf der Shopify-Seite mit Bezeichnung und ohne SKU, eine auf der Odoo-Seite mit der internen Referenz des synthetischen Produkts. Mit der Karte ist alles in Ordnung; der Zuordnungsschlüssel ist falsch.",
+      "p3": "Mit einer Geschenkkarte bezahlen. Hier hat Shopify überhaupt keine Zeile: Eine als Zahlung eingesetzte Geschenkkarte ist ein Zahlungsmittel und taucht nur unter den Zahlungsanbietern der Bestellung auf. Konnektoren, die die Zahlung in Odoo ausgleichen müssen, fügen eine negative Zeile hinzu – „Gift card for …“ –, die auf dasselbe synthetische Produkt zeigt. Odoo hat dann eine Zeile mehr als Shopify, und jede naive Zeile-für-Zeile-Ansicht zeigt eine Zeile ohne Gegenstück.",
+      "tip": "Wenn die Lücke ein verdächtig runder Betrag ist, der auch unter den Zahlungsarten der Bestellung auftaucht, suchen Sie nach einer Geschenkkarte, bevor Sie nach einem Preisfehler suchen."
+    },
+    "section7": {
+      "title": "Ursache 6: Rabatte, Gratisartikel und Artefaktprodukte",
+      "p1": "Shopify und Odoo modellieren dieselbe kaufmännische Geste unterschiedlich. Ein Gratisartikel ist in Shopify eine zweite Zeile zu 0,00. Ein Rabatt ist ein Betrag auf der Zeile selbst. Odoo-Konnektoren drücken beides häufig als zusätzliche Auftragszeile aus, die auf ein synthetisches Produkt auf der Instanz zeigt – typischerweise ein Rabattprodukt, ein Erstattungsausgleichsprodukt, ein Zollprodukt, ein Trinkgeldprodukt und ein Versandprodukt.",
+      "p2": "Diese Artefaktzeilen haben kein Gegenstück in den lineItems von Shopify. Zeile für Zeile sehen sie wie Geisterzeilen aus; in der Summe sind sie genau das, was beide Summen zur Deckung bringt. Sie zu löschen würde die Bestellung kaputt machen, nicht reparieren.",
+      "p3": "Richtig vergleichen: Aggregieren Sie Zeilen vor dem Zuordnen nach SKU und schließen Sie die Produkte aus, die auf der Konnektor-Instanz als Artefakte konfiguriert sind. Sind diese beiden Regeln gesetzt, sind die verbleibenden Unterschiede echt."
+    },
+    "section8": {
+      "title": "Ursache 7: Versand, Zölle und Gebühren",
+      "p1": "Versand ist in Shopify ein eigenes Konzept – eine Versandzeile mit eigenem Preis und eigener Steuer –, während er in Odoo meist als normale Auftragszeile mit dem Kennzeichen is_delivery ankommt, bepreist über das Versandprodukt des Konnektors. Zölle, Trinkgelder und Zahlungszuschläge folgen demselben Muster.",
+      "p2": "Praktische Folge: Die Zeilenzahl stimmt fast nie überein, selbst bei perfekt synchronisierten Bestellungen, und jeder Zwischensummen-Vergleich erbt diesen Unterschied. Vergleichen Sie zuerst Summen; Zeilen erst, nachdem Sie Versand- und Gebührenzeilen auf der Odoo-Seite ausgeschlossen haben.",
+      "p3": "Dasselbe gilt für die Lieferachse: Hinter einer Dienstleistungszeile steht keine Lagerbewegung, ihre gelieferte Menge bleibt also für immer null. Das ist korrektes Verhalten, keine offene Lieferung."
+    },
+    "section9": {
+      "title": "Ursache 8: Währung, Presentment Money und Rundung",
+      "p1": "Shopify liefert jedes Geldfeld doppelt: shopMoney in der Währung Ihres Shops und presentmentMoney in der Währung, die der Kunde tatsächlich gesehen hat. Wer über mehrere Währungen verkauft, dessen Konnektor hat eine davon importiert – und Sie lesen womöglich die andere.",
+      "p2": "Odoo fügt eine eigene zweite Umrechnung hinzu: Der Auftrag wird in seiner Währung gespeichert und zum Tageskurs in die Unternehmenswährung umgerechnet. Ein veralteter Wechselkurs erzeugt eine kleine Abweichung, die immer in dieselbe Richtung geht – ein verlässliches Indiz, denn echte Fehler sind selten so konsistent.",
+      "p3": "Und dann ist da noch schlichte Rundung. Unterschiede von ein bis drei Cent bei mehrzeiligen Bestellungen mit prozentualen Zeilenrabatten sind Rundung, und ihnen nachzujagen kostet einen Nachmittag. Alles Größere hat eine der obigen Ursachen."
+    },
+    "section10": {
+      "title": "Schnellreferenz: vom Symptom zur Ursache",
+      "thSymptom": "Was Sie sehen",
+      "thCause": "Wahrscheinlichste Ursache",
+      "thCheck": "Wo prüfen",
+      "r1s": "Die Lücke entspricht exakt dem Steuersatz",
+      "r1c": "Bruttopreise",
+      "r1k": "Odoo-Steuer „Im Preis enthalten“; Bruttosummen vergleichen",
+      "r2s": "Odoo höher als Shopify, Bestellung hat eine Erstattung",
+      "r2c": "Erstattung nach der Rechnungsstellung gebucht",
+      "r2k": "account.move out_refund; qty_invoiced pro Zeile",
+      "r3s": "Odoo höher, keine Erstattung, Shopify original > aktuell",
+      "r3c": "Nach Rechnungsstellung bearbeitet (Überfakturierung)",
+      "r3k": "originalTotalPriceSet gegen currentTotalPriceSet",
+      "r4s": "Beträge stimmen, die Menge einer Zeile nicht",
+      "r4c": "Erstattung ohne Wiedereinlagerung",
+      "r4k": "refundLineItems.restockType; currentQuantity",
+      "r5s": "Eine Zeile mehr in Odoo, runde Differenz",
+      "r5c": "Geschenkkarte als Zahlung eingesetzt",
+      "r5k": "Zahlungsanbieter der Bestellung; negative Zeile in Odoo",
+      "r6s": "Eine Geschenkkarte erscheint als zwei halbleere Zeilen",
+      "r6c": "Über SKU statt über das Geschenkkarten-Kennzeichen zugeordnet",
+      "r6k": "isGiftCard; Geschenkkartenprodukt der Instanz",
+      "r7s": "Zusätzliche Odoo-Zeilen für Rabatt oder Zoll",
+      "r7c": "Artefaktprodukte des Konnektors",
+      "r7k": "Rabatt-/Zoll-/Trinkgeld-/Versandprodukt der Instanz",
+      "r8s": "Eine Differenz von wenigen Cent",
+      "r8c": "Rundung oder Wechselkurs",
+      "r8k": "shopMoney gegen presentmentMoney; Tageskurs in Odoo"
+    },
+    "section11": {
+      "title": "Eine Fünf-Minuten-Prüfung zum Wiederholen",
+      "p1": "Wenn eine Abweichung auf Ihrem Tisch landet, löst diese Reihenfolge sie schneller, als beide Bildschirme anzustarren:",
+      "step1": "Öffnen Sie die Shopify-Bestellung. Notieren Sie die aktuelle Summe und prüfen Sie, ob sie Erstattungen trägt oder bearbeitet wurde.",
+      "step2": "Öffnen Sie den Odoo-Verkaufsauftrag. Notieren Sie amount_total und sehen Sie sich invoice_status an.",
+      "step3": "Wenn abgerechnet: Addieren Sie die gebuchten Rechnungen, ziehen Sie die gebuchten Gutschriften ab und vergleichen Sie diese Zahl – nicht die Auftragssumme – mit der aktuellen Shopify-Summe.",
+      "step4": "Wenn noch nicht abgerechnet: Vergleichen Sie mit amount_total und behandeln Sie das Ergebnis als vorläufig. Es ändert sich, sobald die Rechnung gebucht ist.",
+      "step5": "Stimmen beide weiterhin nicht überein, gehen Sie die acht Ursachen der Reihe nach durch: erst Steuern, dann Rechnungsstellung, Erstattungen, Bearbeitungen, Geschenkkarten, Artefakte, Versand, Währung. Die erste, die passt, ist fast immer die Antwort.",
+      "p2": "Fünf Minuten pro Bestellung sind in Ordnung, wenn es zweimal im Monat passiert. Sie sind es nicht mehr, wenn ein Support-Mitarbeiter das vor jeder „Sie haben mir den falschen Betrag berechnet“-E-Mail tun muss oder jemand vor dem Monatsabschluss einen Tag voller Bestellungen stichprobenartig prüfen soll."
+    },
+    "cta": {
+      "title": "Oder prüfen Sie es mit einem Klick",
+      "subtitle": "Odoo–Shopify Order Check führt diesen ganzen Vergleich für Sie aus – direkt in der Bestellseite, die Sie ohnehin offen haben: Summen, Steuern, Mengen, Zeilen, Adressen und Lieferung, wobei Erstattungen und Geschenkkarten als Kontext statt als Fehler behandelt werden. Die Erweiterung liest nur – sie schreibt nie nach Odoo oder Shopify – und braucht keine API-Schlüssel.",
+      "button": "14 Tage kostenlos testen"
+    }
+  },
   "footer": {
     "title": "Odoo–Shopify Order Check",
     "builtBy": "Entwickelt von",
@@ -759,7 +911,7 @@
     "userGuide": "Benutzerhandbuch",
     "changelog": "Versionshistorie",
     "comparison": "Vergleich",
-    "blog": "Dokumentation",
+    "blog": "Blog",
     "privacy": "Datenschutzrichtlinie",
     "support": "Support",
     "legal": "Rechtliches",

@@ -45,6 +45,24 @@
       "ogDescription": "How the read-only Odoo–Shopify Order Check extension handles your data. No order data is sent to the developer or any third party.",
       "twitterTitle": "Privacy Policy - Odoo–Shopify Order Check",
       "twitterDescription": "How we handle your data and your privacy rights. Read-only, no order data leaves your Odoo and Shopify."
+    },
+    "blog": {
+      "title": "Blog - Odoo–Shopify Order Check",
+      "description": "Field notes for teams running Shopify on Odoo: order reconciliation, invoiced vs ordered amounts, refunds, gift cards and connector behaviour.",
+      "canonical": "https://integrationnode.com/shopify-odoo/blog.html",
+      "ogTitle": "Blog - Odoo–Shopify Order Check",
+      "ogDescription": "Practical guides on reconciling Shopify orders with Odoo: what to compare, what never matches, and why.",
+      "twitterTitle": "Blog - Odoo–Shopify Order Check",
+      "twitterDescription": "Practical guides on reconciling Shopify orders with Odoo: what to compare, what never matches, and why."
+    },
+    "blogTotalsMismatch": {
+      "title": "Odoo and Shopify Totals Don't Match? 8 Real Causes",
+      "description": "Shopify says one total, Odoo says another. The 8 real reasons the amounts differ — tax, invoicing, refunds, edits, gift cards — and how to tell them apart.",
+      "canonical": "https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html",
+      "ogTitle": "Why Odoo and Shopify Order Totals Don't Match",
+      "ogDescription": "Eight real causes behind an Odoo–Shopify amount mismatch, each with the symptom that identifies it and the exact field to check.",
+      "twitterTitle": "Why Odoo and Shopify Order Totals Don't Match",
+      "twitterDescription": "Eight real causes behind an Odoo–Shopify amount mismatch, each with the symptom that identifies it and the exact field to check."
     }
   },
   "userGuide": {
@@ -294,7 +312,7 @@
     "features": "Features",
     "pricing": "Pricing",
     "userGuide": "User Guide",
-    "blog": "Docs",
+    "blog": "Blog",
     "getExtension": "Get Extension",
     "brandHome": "IntegrationNode",
     "productsLabel": "Products",
@@ -750,6 +768,140 @@
       }
     }
   },
+  "blogArticle": {
+    "backToBlog": "Back to blog",
+    "keepReading": "Keep reading"
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Field notes for teams running Shopify on Odoo — order reconciliation, connector behaviour, and the traps in between."
+    },
+    "readMore": "Read article",
+    "article1": {
+      "date": "August 25, 2026",
+      "title": "Odoo and Shopify order totals don't match: 8 real causes",
+      "excerpt": "Shopify says 128.45, Odoo says 106.16, and nothing is broken. Eight causes explain almost every Odoo–Shopify amount mismatch — tax-inclusive prices, invoicing, refunds, order edits, gift cards, discount artifacts, shipping and currency — each with the symptom that identifies it and the field to check."
+    },
+    "cta": {
+      "title": "Check any order in one click",
+      "subtitle": "Odoo–Shopify Order Check compares the order you are looking at, field by field, and tells you whether it matches. Read-only, 14-day free trial.",
+      "button": "Get the extension"
+    }
+  },
+  "blogTotalsMismatch": {
+    "title": "Odoo and Shopify order totals don't match: 8 real causes",
+    "date": "August 25, 2026",
+    "intro": "Shopify says the order is 128.45. The sale order in Odoo says 106.16. Nobody touched anything, the connector reports no errors, and yet the two numbers disagree. In practice, almost every Odoo–Shopify amount mismatch comes down to one of eight causes — and each of them leaves a different fingerprint. This guide walks through all eight, tells you the symptom that identifies each one, and points at the exact field to check on both sides.",
+    "intro2": "It applies to any Shopify order living in Odoo, whichever connector imported it: Emipro's Shopify Odoo Connector, Webkul, an OCA module or an in-house bridge. The field names below use Odoo's standard models plus, where relevant, the settings a connector typically exposes on its instance record.",
+    "section1": {
+      "title": "First, make sure you are comparing comparable numbers",
+      "p1": "Before hunting for a bug, check what you are actually comparing. Both systems display several \"totals\", and they do not mean the same thing.",
+      "li1": "Shopify current total — what the customer owes today, after refunds and order edits. In the Admin API: currentTotalPriceSet.",
+      "li2": "Shopify original total — what was agreed at checkout, before any later change: originalTotalPriceSet.",
+      "li3": "Odoo sale order total — amount_total on sale.order: what the connector imported, plus whatever it re-synced afterwards.",
+      "li4": "Odoo net invoiced — posted customer invoices minus posted credit notes (account.move, move_type out_invoice and out_refund).",
+      "p2": "Those four numbers being different is not, by itself, a problem. The only real question is which pair should match, and that depends on how far the order has travelled: an order that has not been invoiced yet is a different comparison from one that has been invoiced, refunded and edited.",
+      "tip": "Rule of thumb: once an order has been invoiced in Odoo, compare Shopify's current total against Odoo's net invoiced amount. Before that, compare it against the sale order total and treat the answer as provisional."
+    },
+    "section2": {
+      "title": "Cause 1: tax-inclusive prices",
+      "p1": "This is the most common false alarm, and the easiest to rule out. If your Shopify prices include tax and your Odoo taxes are configured as \"Included in price\", then Shopify's subtotal and Odoo's untaxed amount are measuring two different things: the first is gross of tax, the second is net of it.",
+      "p2": "The symptom is unmistakable: the gap is exactly the tax rate. 128.45 against 106.16 is not a rounding problem, it is 21% VAT.",
+      "p3": "The fix is to pick a comparison that survives the setting. Compare totals with tax — Shopify's current total against Odoo's amount_total — or compare nets on both sides, taking amount_total minus amount_tax in Odoo. What you must never do is compare Shopify's subtotal against Odoo's amount_untaxed unless you are certain both sides are configured the same way.",
+      "warning": "A tax-inclusive mismatch is invisible on zero-tax orders — exports, EU reverse charge, tax-exempt customers — so the setup can look correct for weeks and then break on the first domestic order."
+    },
+    "section3": {
+      "title": "Cause 2: the sale order is frozen, the invoice moved on",
+      "p1": "Connectors import a Shopify order into a sale.order. Once that order is invoiced, most of them stop pushing later changes into it — and rightly so: an invoiced order is an accounting document, not a mirror. From that moment, the sale order records what was ordered, and the invoices record what was actually charged.",
+      "p2": "So when a refund arrives after invoicing, Shopify's current total drops and the Odoo sale order does not move. The money did change hands in Odoo, only somewhere else: in a credit note, an account.move with move_type = out_refund.",
+      "p3": "Where to look: sale.order.invoice_ids gives you every invoice and credit note attached to the order. Add up the posted out_invoice records, subtract the posted out_refund records, and that net figure is what should match Shopify's current total. Per line, the authoritative quantity is qty_invoiced, not product_uom_qty.",
+      "p4": "This is also why comparing the sale order against Shopify gives an increasing number of false alarms as an order ages: you are comparing a snapshot taken at import time against a live document."
+    },
+    "section4": {
+      "title": "Cause 3: refunds — the money always matches, the quantities may not",
+      "p1": "Shopify refunds come in two flavours, and only one of them touches inventory. A refund can return the money and restock the units, or return the money and leave the units where they are — a damaged product, a goodwill gesture, a partial price adjustment.",
+      "p2": "In the Admin API the distinction lives on each refund line as restockType: NO_RESTOCK, CANCEL, RETURN or LEGACY_RESTOCK. The consequence for reconciliation is that a NO_RESTOCK refund lowers the amount without changing the line's live quantity, so a per-line quantity check can look wrong while the money is perfect.",
+      "p3": "This is the most misread mismatch of all, because the instinct is to trust quantities over amounts. Here the amounts are right and the quantities are telling you something else: what was invoiced versus what was physically returned.",
+      "tip": "When you want \"what is still live on this line\", read currentQuantity, not quantity. The second one is what was ordered at checkout and never changes."
+    },
+    "section5": {
+      "title": "Cause 4: the order was edited in Shopify after the fact",
+      "p1": "Shopify's order editing changes an order in place: lines get added, removed or re-quantified after the customer has paid. Shopify keeps both figures — originalTotalPriceSet for the checkout, currentTotalPriceSet for the edited order — and most connectors re-sync the sale order, so Odoo's amount_total follows the edit and stops matching what was ordered.",
+      "p2": "That, by itself, is harmless. The dangerous variant is an edit that arrives after invoicing: a line that Odoo has already invoiced is removed in Shopify. Now Odoo has invoiced more than Shopify will ever collect. That is not a display artefact, it is a real over-invoice, and it needs a credit note.",
+      "p3": "Symptom: Odoo's net invoiced is higher than Shopify's current total, there is no refund on the order, and Shopify's original total is higher than its current total. Whenever those three hold at once, the order has been edited after invoicing."
+    },
+    "section6": {
+      "title": "Cause 5: gift cards, sold and spent",
+      "p1": "Gift cards produce two completely different mismatches depending on which side of the transaction they are on, and they are worth separating carefully.",
+      "p2": "Selling a gift card. In Shopify the line item is flagged isGiftCard and usually carries no SKU at all. Connectors do not match it by SKU — they detect the flag at import and route the line to a dedicated product configured on the connector instance (in Emipro, gift_card_product_id). If your reconciliation matches lines by SKU, the same card shows up as two half-empty rows: one on the Shopify side with a name and no SKU, one on the Odoo side with the synthetic product's internal reference. The card is fine; the matching key is wrong.",
+      "p3": "Paying with a gift card. Here Shopify has no line item whatsoever: a gift card used as payment is a tender, and it only appears among the order's payment gateway names. Connectors that need the payment to balance in Odoo add a negative line — \"Gift card for …\" — pointing at that same synthetic product. Odoo then has one more line than Shopify, and any naive line-by-line view shows a row with no counterpart.",
+      "tip": "If the gap is a suspiciously round number that also appears among the order's payment methods, look for a gift card before you look for a pricing bug."
+    },
+    "section7": {
+      "title": "Cause 6: discounts, free gifts and artifact products",
+      "p1": "Shopify and Odoo model the same commercial gesture in different shapes. A free gift in Shopify is a second line at 0.00. A discount is an amount carried on the line itself. Odoo connectors frequently express both as an extra order line pointing at a synthetic product configured on the instance — typically a discount product, a refund adjustment product, a duties product, a tip product and a shipping product.",
+      "p2": "Those artifact lines have no counterpart in Shopify's lineItems. Line by line they look like phantom rows; on the total, they are precisely what makes the two totals agree. Deleting them would break the order, not fix it.",
+      "p3": "How to compare properly: aggregate lines by SKU before matching them, and exclude the products configured as artifacts on the connector instance. Once those two rules are in place, the remaining differences are real."
+    },
+    "section8": {
+      "title": "Cause 7: shipping, duties and fees",
+      "p1": "Shipping is its own concept in Shopify — a shipping line with its own price and tax — while in Odoo it usually arrives as a regular order line flagged is_delivery, priced from the connector's shipping product. Duties, tips and payment surcharges follow the same pattern.",
+      "p2": "The practical consequence is that the line count almost never matches, even on a perfectly synced order, and any subtotal comparison inherits that difference. Compare totals first; compare lines only after excluding delivery and fee lines on the Odoo side.",
+      "p3": "The same applies to the delivery axis: a service line has no stock move behind it, so its delivered quantity stays at zero forever. That is correct behaviour, not a pending shipment."
+    },
+    "section9": {
+      "title": "Cause 8: currency, presentment money and rounding",
+      "p1": "Shopify returns every monetary field twice: shopMoney, in your store's currency, and presentmentMoney, in the currency the customer actually saw. If you sell across currencies, the connector imported one of them and you may well be reading the other.",
+      "p2": "Odoo adds a second conversion of its own: the order is stored in its own currency and converted into the company currency at the rate of the day. A stale exchange rate produces a small gap that always leans the same way — a reliable tell, because genuine errors are rarely so consistent.",
+      "p3": "Then there is plain rounding. Differences of one to three cents on multi-line orders with per-line percentage discounts are rounding, and chasing them is a waste of an afternoon. Anything larger has one of the causes above behind it."
+    },
+    "section10": {
+      "title": "Quick reference: symptom to cause",
+      "thSymptom": "What you see",
+      "thCause": "Most likely cause",
+      "thCheck": "Where to check",
+      "r1s": "The gap is exactly the tax rate",
+      "r1c": "Tax-inclusive prices",
+      "r1k": "Odoo tax \"Included in price\"; compare totals with tax",
+      "r2s": "Odoo higher than Shopify, order has a refund",
+      "r2c": "Refund posted after invoicing",
+      "r2k": "account.move out_refund; qty_invoiced per line",
+      "r3s": "Odoo higher, no refund, Shopify original > current",
+      "r3c": "Order edited after invoicing (over-invoice)",
+      "r3k": "originalTotalPriceSet vs currentTotalPriceSet",
+      "r4s": "Amounts match, one line's quantity doesn't",
+      "r4c": "Refund without restock",
+      "r4k": "refundLineItems.restockType; currentQuantity",
+      "r5s": "One extra line in Odoo, round-number gap",
+      "r5c": "Gift card used as payment",
+      "r5k": "Payment gateway names; negative line in Odoo",
+      "r6s": "One gift card shown as two half-empty rows",
+      "r6c": "Matched by SKU instead of the gift-card flag",
+      "r6k": "isGiftCard; the instance's gift card product",
+      "r7s": "Extra Odoo lines named after discounts or duties",
+      "r7c": "Connector artifact products",
+      "r7k": "Discount / duties / tip / shipping product on the instance",
+      "r8s": "A difference of a few cents",
+      "r8c": "Rounding or exchange rate",
+      "r8k": "shopMoney vs presentmentMoney; Odoo rate of the day"
+    },
+    "section11": {
+      "title": "A five-minute check you can repeat",
+      "p1": "When a mismatch lands on your desk, this sequence resolves it faster than staring at both screens:",
+      "step1": "Open the Shopify order. Write down the current total, and note whether it carries refunds or has been edited.",
+      "step2": "Open the Odoo sale order. Write down amount_total and look at invoice_status.",
+      "step3": "If it is invoiced: add up the posted invoices, subtract the posted credit notes, and compare that figure — not the sale order total — against Shopify's current total.",
+      "step4": "If it is not invoiced yet: compare against amount_total, and treat the result as provisional. It will change the moment the invoice is posted.",
+      "step5": "If the two still disagree, walk the eight causes in order: tax first, then invoicing, refunds, edits, gift cards, artifacts, shipping, currency. The first one that fits is almost always the answer.",
+      "p2": "Five minutes per order is fine when it happens twice a month. It stops being fine when a customer service agent has to do it before answering every \"you charged me the wrong amount\" email, or when someone has to spot-check a day's worth of orders before closing the books."
+    },
+    "cta": {
+      "title": "Or check it in one click",
+      "subtitle": "Odoo–Shopify Order Check runs this whole comparison for you, inside the order page you already have open: totals, taxes, quantities, lines, addresses and delivery, with refunds and gift cards handled as context instead of as errors. It is read-only — it never writes to Odoo or Shopify — and it takes no API keys to set up.",
+      "button": "Try it free for 14 days"
+    }
+  },
   "footer": {
     "title": "Odoo–Shopify Order Check",
     "builtBy": "Built by",
@@ -759,7 +911,7 @@
     "userGuide": "User Guide",
     "changelog": "Changelog",
     "comparison": "Comparison",
-    "blog": "Docs",
+    "blog": "Blog",
     "privacy": "Privacy Policy",
     "support": "Support",
     "legal": "Legal",

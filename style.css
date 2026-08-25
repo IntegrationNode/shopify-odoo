@@ -2243,6 +2243,62 @@ a:hover {
     font-style: italic;
 }
 
+/* Tip box: same shape as .warning-box, informational tone (blog articles). */
+.tip-box {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    background: var(--color-bg-highlight);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin: var(--spacing-sm) 0;
+}
+
+.tip-box .material-symbols-outlined {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tip-box span:last-child {
+    color: var(--color-text);
+}
+
+/* Wide reference tables inside an article: scroll the table, never the page. */
+.table-scroll {
+    overflow-x: auto;
+    margin: var(--spacing-sm) 0;
+}
+
+.article-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    min-width: 560px;
+}
+
+.article-table th {
+    text-align: left;
+    padding: 12px 16px;
+    background: var(--color-bg-highlight);
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.article-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.article-table tbody tr:hover {
+    background: var(--color-bg-highlight);
+}
+
 .article-cta {
     margin-top: var(--spacing-lg);
     padding: var(--spacing-md);

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="TODO_AHREFS_KEY" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Shopify diz um total, o Odoo diz outro. As 8 razões reais para a diferença — impostos, faturação, reembolsos, edições, cartões-presente — e como distingui-las.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://integrationnode.com/shopify-odoo/pt/blog/odoo-shopify-order-totals-dont-match.html">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="es" href="https://integrationnode.com/shopify-odoo/es/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="fr" href="https://integrationnode.com/shopify-odoo/fr/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="de" href="https://integrationnode.com/shopify-odoo/de/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="it" href="https://integrationnode.com/shopify-odoo/it/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="pt" href="https://integrationnode.com/shopify-odoo/pt/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="nl" href="https://integrationnode.com/shopify-odoo/nl/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="pl" href="https://integrationnode.com/shopify-odoo/pl/blog/odoo-shopify-order-totals-dont-match.html">
+    <link rel="alternate" hreflang="x-default" href="https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://integrationnode.com/shopify-odoo/pt/blog/odoo-shopify-order-totals-dont-match.html">
+    <meta property="og:title" content="Porque é que os totais do Odoo e da Shopify não coincidem">
+    <meta property="og:description" content="Oito causas reais de uma divergência de valores entre Odoo e Shopify, cada uma com o sintoma que a identifica e o campo exato a verificar.">
+    <meta property="og:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+    <meta property="og:site_name" content="Odoo–Shopify Order Check">
+    <meta property="article:published_time" content="2026-08-25">
+    <meta property="article:author" content="OdooIntegrations Team">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Porque é que os totais do Odoo e da Shopify não coincidem">
+    <meta name="twitter:description" content="Oito causas reais de uma divergência de valores entre Odoo e Shopify, cada uma com o sintoma que a identifica e o campo exato a verificar.">
+    <meta name="twitter:image" content="https://integrationnode.com/shopify-odoo/assets/og-image.png">
+
+    <title>Totais do Odoo e da Shopify diferentes? 8 causas</title>
+    <link rel="icon" type="image/png" href="https://integrationnode.com/shopify-odoo/favicon.png">
+    <link rel="preload" as="font" type="font/woff2" href="https://integrationnode.com/shopify-odoo/fonts/material-symbols-outlined.woff2" crossorigin>
+    <link rel="stylesheet" href="https://integrationnode.com/shopify-odoo/fonts/outlined.css">
+    <link rel="stylesheet" href="https://integrationnode.com/shopify-odoo/style.css">
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Odoo and Shopify order totals don't match: 8 real causes",
+        "description": "Shopify says one total, Odoo says another. The eight real reasons an Odoo–Shopify order amount differs — tax-inclusive prices, invoicing, refunds, order edits, gift cards, discount artifacts, shipping and currency — each with the symptom that identifies it and the field to check.",
+        "image": "https://integrationnode.com/shopify-odoo/assets/og-image.png",
+        "author": {
+            "@type": "Organization",
+            "name": "OdooIntegrations Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IntegrationNode",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://integrationnode.com/shopify-odoo/favicon.png"
+            }
+        },
+        "datePublished": "2026-08-25T00:00:00+00:00",
+        "dateModified": "2026-08-25T00:00:00+00:00",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://integrationnode.com/shopify-odoo/blog/odoo-shopify-order-totals-dont-match.html"
+        }
+    }
+    </script>
+
+    <!-- Schema.org Breadcrumb -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Odoo–Shopify Order Check", "item": "https://integrationnode.com/shopify-odoo/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://integrationnode.com/shopify-odoo/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Odoo and Shopify order totals don't match" }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="pricing-header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://integrationnode.com/" class="logo">IntegrationNode</a>
+                <div class="nav-links">
+                    <a href="../#features">Funcionalidades</a>
+                    <a href="../pricing.html">Preços</a>
+                    <a href="../user-guide.html">Guia do Utilizador</a>
+                    <a href="../blog.html" class="active">Blog</a>
+                    <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=order-totals-mismatch&amp;utm_content=navbar" target="_blank" class="btn btn-sm btn-primary">Obter Extensão</a>
+                    <div class="product-dropdown" id="product-dropdown">
+                        <button class="product-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                            <span>Produtos</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="product-menu" role="menu">
+                            <a class="product-item is-current" aria-current="true" href="../">Integração com a Shopify</a>
+                            <a class="product-item" role="menuitem" href="https://integrationnode.com/gmail-odoo/">Integração com o Gmail</a>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-toggle" aria-expanded="false" aria-haspopup="true">
+                            <span class="material-symbols-outlined">language</span>
+                            <span class="lang-current">PT</span>
+                            <span class="material-symbols-outlined arrow">expand_more</span>
+                        </button>
+                        <div class="lang-menu" role="menu"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <a href="../blog.html" class="article-back">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>Voltar ao blog</span>
+            </a>
+            <h1>Os totais do Odoo e da Shopify não coincidem: 8 causas reais</h1>
+            <div class="article-meta">
+                <span class="article-date">25 de agosto de 2026</span>
+                <span class="article-author">OdooIntegrations Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-section">
+        <div class="container">
+            <div class="article-content">
+                <!-- Intro -->
+                <p class="article-intro">A Shopify diz que a encomenda são 128,45. A ordem de venda no Odoo diz 106,16. Ninguém tocou em nada, o conector não reporta erros e mesmo assim os dois números não batem certo. Na prática, quase todas as divergências de valores entre Odoo e Shopify se resumem a uma de oito causas, e cada uma deixa uma impressão digital diferente. Este guia percorre as oito, indica o sintoma que identifica cada uma e aponta o campo exato a verificar de cada lado.</p>
+                <p>Aplica-se a qualquer encomenda da Shopify que viva no Odoo, seja qual for o conector que a importou: o Shopify Odoo Connector da Emipro, o da Webkul, um módulo da OCA ou uma ponte feita em casa. Os nomes de campo abaixo são os dos modelos padrão do Odoo, mais — quando relevante — as definições que um conector costuma expor no seu registo de instância.</p>
+
+                <!-- Section 1: comparable numbers -->
+                <h2>
+                    <span>Primeiro: garanta que compara números comparáveis</span>
+                </h2>
+                <p>Antes de caçar um erro, veja o que está realmente a comparar. Ambos os sistemas mostram vários «totais», e não significam a mesma coisa.</p>
+                <ul>
+                    <li>Total atual da Shopify: o que o cliente deve hoje, depois de reembolsos e edições. Na Admin API: currentTotalPriceSet.</li>
+                    <li>Total original da Shopify: o que ficou acordado no checkout, antes de qualquer alteração posterior: originalTotalPriceSet.</li>
+                    <li>Total da ordem de venda no Odoo: amount_total em sale.order, ou seja, o que o conector importou mais o que voltou a sincronizar depois.</li>
+                    <li>Faturado líquido no Odoo: faturas de cliente lançadas menos notas de crédito lançadas (account.move, move_type out_invoice e out_refund).</li>
+                </ul>
+                <p>Esses quatro números serem diferentes não é, por si só, um problema. A única pergunta que interessa é qual o par que deveria coincidir, e isso depende de quão longe foi a encomenda: uma encomenda ainda não faturada pede uma comparação diferente de uma faturada, reembolsada e editada.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Regra prática: assim que uma encomenda está faturada no Odoo, compare o total atual da Shopify com o faturado líquido do Odoo. Antes disso, compare com o total da ordem de venda e trate a resposta como provisória.</span>
+                </div>
+
+                <!-- Section 2: tax-inclusive -->
+                <h2>
+                    <span class="section-number">1</span>
+                    <span>Causa 1: preços com imposto incluído</span>
+                </h2>
+                <p>É o falso alarme mais comum e o mais fácil de excluir. Se os seus preços na Shopify incluem imposto e os impostos no Odoo estão configurados como «Incluído no preço», então o subtotal da Shopify e o valor sem impostos do Odoo medem coisas diferentes: o primeiro é bruto de imposto, o segundo é líquido.</p>
+                <p>O sintoma é inconfundível: a diferença é exatamente a taxa de imposto. 128,45 contra 106,16 não é arredondamento, são 21 % de IVA.</p>
+                <p>A solução passa por escolher uma comparação que sobreviva a essa definição. Compare totais com imposto — total atual da Shopify contra amount_total do Odoo — ou compare líquidos dos dois lados, subtraindo amount_tax a amount_total no Odoo. O que nunca deve fazer é comparar o subtotal da Shopify com o amount_untaxed do Odoo sem ter a certeza de que ambos os lados estão configurados da mesma maneira.</p>
+                <div class="warning-box">
+                    <span class="material-symbols-outlined">warning</span>
+                    <span>Uma divergência por preços com imposto incluído é invisível em encomendas sem imposto — exportações, autoliquidação intracomunitária, clientes isentos — pelo que a configuração pode parecer correta durante semanas e partir na primeira encomenda nacional.</span>
+                </div>
+
+                <!-- Section 3: invoiced vs ordered -->
+                <h2>
+                    <span class="section-number">2</span>
+                    <span>Causa 2: a encomenda congela, a fatura segue viagem</span>
+                </h2>
+                <p>Os conectores importam uma encomenda da Shopify para um sale.order. Assim que essa ordem é faturada, a maioria deixa de lhe empurrar alterações posteriores — e bem: uma ordem faturada é um documento contabilístico, não um espelho. A partir daí, a ordem regista o que foi encomendado e as faturas registam o que foi efetivamente cobrado.</p>
+                <p>Por isso, quando chega um reembolso depois da faturação, o total atual da Shopify desce e a ordem no Odoo não se mexe. O dinheiro mexeu-se no Odoo, apenas noutro sítio: numa nota de crédito, um account.move com move_type = out_refund.</p>
+                <p>Onde olhar: sale.order.invoice_ids dá-lhe todas as faturas e notas de crédito ligadas à encomenda. Some as out_invoice lançadas, subtraia as out_refund lançadas, e esse valor líquido é o que deve coincidir com o total atual da Shopify. Por linha, a quantidade que manda é qty_invoiced, não product_uom_qty.</p>
+                <p>É também por isto que comparar a ordem de venda com a Shopify dá cada vez mais falsos alarmes à medida que a encomenda envelhece: está a comparar uma fotografia tirada no momento da importação com um documento vivo.</p>
+
+                <!-- Section 4: refunds -->
+                <h2>
+                    <span class="section-number">3</span>
+                    <span>Causa 3: reembolsos — o dinheiro bate sempre, as quantidades talvez não</span>
+                </h2>
+                <p>Os reembolsos da Shopify vêm em dois sabores e só um mexe no inventário. Um reembolso pode devolver o dinheiro e repor as unidades, ou devolver o dinheiro e deixar as unidades onde estão: produto danificado, gesto comercial, ajuste parcial de preço.</p>
+                <p>Na Admin API a distinção vive em cada linha de reembolso, em restockType: NO_RESTOCK, CANCEL, RETURN ou LEGACY_RESTOCK. A consequência para a reconciliação é que um reembolso NO_RESTOCK baixa o valor sem mudar a quantidade viva da linha, pelo que uma verificação de quantidades linha a linha pode parecer errada enquanto o dinheiro está perfeito.</p>
+                <p>É a divergência mais mal lida de todas, porque o instinto manda confiar nas quantidades e não nos valores. Aqui os valores têm razão e as quantidades estão a contar outra coisa: o que foi faturado versus o que voltou fisicamente.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Quando quiser saber «o que continua vivo nesta linha», leia currentQuantity, não quantity. O segundo é o que foi encomendado no checkout e nunca muda.</span>
+                </div>
+
+                <!-- Section 5: order edits -->
+                <h2>
+                    <span class="section-number">4</span>
+                    <span>Causa 4: a encomenda foi editada na Shopify depois do facto</span>
+                </h2>
+                <p>A edição de encomendas da Shopify altera a encomenda no lugar: linhas adicionadas, removidas ou requantificadas depois de o cliente ter pago. A Shopify guarda os dois números — originalTotalPriceSet para o checkout, currentTotalPriceSet para a encomenda editada — e a maioria dos conectores volta a sincronizar a ordem de venda, pelo que o amount_total no Odoo segue a edição e deixa de corresponder ao que foi encomendado.</p>
+                <p>Isso, por si só, é inofensivo. A variante perigosa é a edição que chega depois da faturação: uma linha já faturada no Odoo é removida na Shopify. Agora o Odoo faturou mais do que a Shopify alguma vez vai cobrar. Não é um artefacto visual, é uma sobrefaturação real e precisa de uma nota de crédito.</p>
+                <p>Sintoma: o faturado líquido do Odoo é superior ao total atual da Shopify, a encomenda não tem reembolsos e o total original da Shopify é superior ao atual. Quando as três condições se verificam ao mesmo tempo, a encomenda foi editada depois de faturada.</p>
+
+                <!-- Section 6: gift cards -->
+                <h2>
+                    <span class="section-number">5</span>
+                    <span>Causa 5: cartões-presente, vendidos e gastos</span>
+                </h2>
+                <p>Os cartões-presente produzem duas divergências completamente diferentes consoante o lado da transação em que estão, e vale a pena separá-las com cuidado.</p>
+                <p>Vender um cartão-presente. Na Shopify a linha traz a marca isGiftCard e normalmente não tem SKU nenhum. Os conectores não a emparelham por SKU: detetam a marca na importação e encaminham a linha para um produto dedicado configurado na instância do conector (na Emipro, gift_card_product_id). Se a sua reconciliação emparelha linhas por SKU, o mesmo cartão aparece como duas linhas a meio: uma do lado da Shopify com nome e sem SKU, outra do lado do Odoo com a referência interna do produto sintético. O cartão está bem; a chave de emparelhamento é que está errada.</p>
+                <p>Pagar com um cartão-presente. Aqui a Shopify não tem linha nenhuma: um cartão-presente usado como pagamento é um meio de pagamento e só aparece entre os gateways da encomenda. Os conectores que precisam de equilibrar o recebimento no Odoo acrescentam uma linha negativa — «Gift card for …» — a apontar para esse mesmo produto sintético. O Odoo passa a ter mais uma linha do que a Shopify e qualquer vista linha a linha ingénua mostra uma linha sem contraparte.</p>
+                <div class="tip-box">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>Se a diferença for um valor suspeitosamente redondo que também aparece entre os métodos de pagamento da encomenda, procure um cartão-presente antes de procurar um erro de preços.</span>
+                </div>
+
+                <!-- Section 7: discounts and artifacts -->
+                <h2>
+                    <span class="section-number">6</span>
+                    <span>Causa 6: descontos, ofertas e produtos artefacto</span>
+                </h2>
+                <p>A Shopify e o Odoo modelam o mesmo gesto comercial de formas diferentes. Uma oferta na Shopify é uma segunda linha a 0,00. Um desconto é um valor levado pela própria linha. Os conectores do Odoo exprimem muitas vezes ambos como uma linha extra que aponta para um produto sintético configurado na instância: tipicamente um produto de desconto, um de ajuste de reembolso, um de direitos aduaneiros, um de gorjeta e um de envio.</p>
+                <p>Essas linhas artefacto não têm contraparte nos lineItems da Shopify. Linha a linha parecem fantasmas; no total são exatamente o que faz os dois valores baterem certo. Apagá-las partiria a encomenda em vez de a arranjar.</p>
+                <p>Como comparar como deve ser: agregue as linhas por SKU antes de as emparelhar e exclua os produtos configurados como artefactos na instância do conector. Com essas duas regras no sítio, as diferenças que sobram são reais.</p>
+
+                <!-- Section 8: shipping and fees -->
+                <h2>
+                    <span class="section-number">7</span>
+                    <span>Causa 7: envio, direitos aduaneiros e taxas</span>
+                </h2>
+                <p>O envio é um conceito próprio na Shopify — uma linha de envio com preço e imposto próprios — enquanto no Odoo costuma chegar como uma linha de encomenda normal marcada com is_delivery, valorizada a partir do produto de envio do conector. Direitos aduaneiros, gorjetas e sobretaxas de pagamento seguem o mesmo padrão.</p>
+                <p>A consequência prática é que o número de linhas quase nunca coincide, mesmo numa encomenda perfeitamente sincronizada, e qualquer comparação de subtotais herda essa diferença. Compare primeiro totais; compare linhas só depois de excluir as de envio e taxas do lado do Odoo.</p>
+                <p>O mesmo se aplica ao eixo da entrega: uma linha de serviço não tem movimento de stock por trás, por isso a sua quantidade entregue fica a zero para sempre. É o comportamento correto, não um envio pendente.</p>
+
+                <!-- Section 9: currency and rounding -->
+                <h2>
+                    <span class="section-number">8</span>
+                    <span>Causa 8: moeda, presentment money e arredondamento</span>
+                </h2>
+                <p>A Shopify devolve cada campo monetário em duplicado: shopMoney, na moeda da sua loja, e presentmentMoney, na moeda que o cliente viu de facto. Se vende em várias moedas, o conector importou uma delas e é bem possível que esteja a ler a outra.</p>
+                <p>O Odoo acrescenta uma segunda conversão própria: a encomenda é guardada na sua moeda e convertida para a da empresa ao câmbio do dia. Uma taxa de câmbio desatualizada produz uma diferença pequena sempre inclinada para o mesmo lado — uma pista fiável, porque os erros verdadeiros raramente são tão consistentes.</p>
+                <p>Depois há o arredondamento puro. Diferenças de um a três cêntimos em encomendas com várias linhas e descontos percentuais por linha são arredondamento, e persegui-las é deitar uma tarde fora. Qualquer coisa maior tem uma das causas acima por trás.</p>
+
+                <!-- Section 10: quick reference table -->
+                <h2>
+                    <span>Referência rápida: do sintoma à causa</span>
+                </h2>
+                <div class="table-scroll">
+                    <table class="article-table">
+                        <thead>
+                            <tr>
+                                <th>O que vê</th>
+                                <th>Causa mais provável</th>
+                                <th>Onde verificar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A diferença é exatamente a taxa de imposto</td>
+                                <td>Preços com imposto incluído</td>
+                                <td>Imposto do Odoo «Incluído no preço»; comparar totais com imposto</td>
+                            </tr>
+                            <tr>
+                                <td>Odoo acima da Shopify e a encomenda tem reembolso</td>
+                                <td>Reembolso lançado depois da faturação</td>
+                                <td>account.move out_refund; qty_invoiced por linha</td>
+                            </tr>
+                            <tr>
+                                <td>Odoo acima, sem reembolso, Shopify original > atual</td>
+                                <td>Encomenda editada depois de faturada (sobrefaturação)</td>
+                                <td>originalTotalPriceSet contra currentTotalPriceSet</td>
+                            </tr>
+                            <tr>
+                                <td>Os valores batem certo, a quantidade de uma linha não</td>
+                                <td>Reembolso sem reposição de stock</td>
+                                <td>refundLineItems.restockType; currentQuantity</td>
+                            </tr>
+                            <tr>
+                                <td>Uma linha a mais no Odoo e uma diferença redonda</td>
+                                <td>Cartão-presente usado como pagamento</td>
+                                <td>Gateways de pagamento da encomenda; linha negativa no Odoo</td>
+                            </tr>
+                            <tr>
+                                <td>Um cartão-presente aparece como duas linhas a meio</td>
+                                <td>Emparelhado por SKU em vez da marca de cartão-presente</td>
+                                <td>isGiftCard; produto de cartão-presente da instância</td>
+                            </tr>
+                            <tr>
+                                <td>Linhas extra no Odoo com nome de desconto ou direitos</td>
+                                <td>Produtos artefacto do conector</td>
+                                <td>Produto de desconto / direitos / gorjeta / envio da instância</td>
+                            </tr>
+                            <tr>
+                                <td>Uma diferença de alguns cêntimos</td>
+                                <td>Arredondamento ou taxa de câmbio</td>
+                                <td>shopMoney contra presentmentMoney; câmbio do dia no Odoo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 11: five-minute check -->
+                <h2>
+                    <span>Uma verificação de cinco minutos que pode repetir</span>
+                </h2>
+                <p>Quando uma divergência lhe cai na secretária, esta sequência resolve-a mais depressa do que olhar fixamente para os dois ecrãs:</p>
+                <ol>
+                    <li>Abra a encomenda na Shopify. Aponte o total atual e veja se traz reembolsos ou se foi editada.</li>
+                    <li>Abra a ordem de venda no Odoo. Aponte amount_total e veja invoice_status.</li>
+                    <li>Se estiver faturada: some as faturas lançadas, subtraia as notas de crédito lançadas e compare esse valor — não o total da ordem — com o total atual da Shopify.</li>
+                    <li>Se ainda não estiver faturada: compare com amount_total e trate o resultado como provisório. Vai mudar assim que a fatura for lançada.</li>
+                    <li>Se mesmo assim não coincidirem, percorra as oito causas por ordem: impostos primeiro, depois faturação, reembolsos, edições, cartões-presente, artefactos, envio, moeda. A primeira que encaixa é quase sempre a resposta.</li>
+                </ol>
+                <p>Cinco minutos por encomenda está bem quando acontece duas vezes por mês. Deixa de estar quando um agente de apoio ao cliente tem de o fazer antes de responder a cada e-mail «cobraram-me o valor errado», ou quando alguém tem de verificar por amostragem as encomendas de um dia antes do fecho contabilístico.</p>
+
+                <!-- Keep reading -->
+                <h3>Continuar a ler</h3>
+                <ul>
+                    <li><a href="../user-guide.html">Guia do Utilizador</a></li>
+                    <li><a href="../pricing.html">Preços</a></li>
+                    <li><a href="../changelog.html">Changelog</a></li>
+                </ul>
+
+                <!-- CTA -->
+                <div class="article-cta">
+                    <h3>Ou verifique num clique</h3>
+                    <p>O Odoo–Shopify Order Check faz esta comparação toda por si, dentro da própria página da encomenda que já tem aberta: totais, impostos, quantidades, linhas, moradas e entrega, com reembolsos e cartões-presente tratados como contexto e não como erros. É apenas de leitura — nunca escreve no Odoo nem na Shopify — e não exige chaves de API.</p>
+                    <a href="https://chromewebstore.google.com/detail/chemgagmpiackpmhclekpacpfjmffbei/?utm_source=blog&amp;utm_medium=content&amp;utm_campaign=order-totals-mismatch&amp;utm_content=footer_cta" target="_blank" class="btn btn-primary btn-lg">Experimente grátis 14 dias</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Odoo–Shopify Order Check</h4>
+                    <p><span>Criado por</span> <strong>OdooIntegrations Team</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="../">Início</a></li>
+                        <li><a href="../pricing.html">Preços</a></li>
+                        <li><a href="../user-guide.html">Guia do Utilizador</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../changelog.html">Changelog</a></li>
+                        <li><a href="../privacy.html">Política de Privacidade</a></li>
+                        <li><a href="mailto:odoointegrations.team@gmail.com">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais integrações</h4>
+                    <ul>
+                        <li><a href="https://integrationnode.com/gmail-odoo/">Integração com o Gmail</a></li>
+                        <li><a href="https://integrationnode.com/shopify-odoo/">Integração com a Shopify</a></li>
+                        <li><a href="https://integrationnode.com/">IntegrationNode</a></li>
+                        <li><a href="https://integrationnode.com/services/?src=shopify">Serviços de consultoria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Aviso Legal</h4>
+                    <p class="small-text">Não afiliado com a Odoo S.A. nem com a Shopify Inc.</p>
+                    <p class="small-text">Odoo é uma marca registada da Odoo S.A.; Shopify é uma marca registada da Shopify Inc.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 IntegrationNode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher Script (nested page: /blog/<article>.html) -->
+    <script>
+    (function() {
+        var LANGUAGES = [
+            { code: 'en', name: 'English', path: '' },
+            { code: 'es', name: 'Español', path: 'es/' },
+            { code: 'fr', name: 'Français', path: 'fr/' },
+            { code: 'de', name: 'Deutsch', path: 'de/' },
+            { code: 'it', name: 'Italiano', path: 'it/' },
+            { code: 'pt', name: 'Português', path: 'pt/' },
+            { code: 'nl', name: 'Nederlands', path: 'nl/' },
+            { code: 'pl', name: 'Polski', path: 'pl/' }
+        ];
+
+        var dropdown = document.getElementById('lang-dropdown');
+        if (!dropdown) return;
+
+        var toggle = dropdown.querySelector('.lang-toggle');
+        var menu = dropdown.querySelector('.lang-menu');
+        var path = window.location.pathname;
+        var parts = path.split('/').filter(Boolean);
+        // Always "blog/<file>.html" for this page, whatever the base path is.
+        var page = parts.slice(-2).join('/');
+
+        var currentLang = LANGUAGES[0];
+        for (var i = 1; i < LANGUAGES.length; i++) {
+            if (path.indexOf('/' + LANGUAGES[i].path) !== -1) {
+                currentLang = LANGUAGES[i];
+                break;
+            }
+        }
+
+        LANGUAGES.forEach(function(lang) {
+            if (lang.code === currentLang.code) return;
+            var link = document.createElement('a');
+            // From /blog/x.html -> ../<lang>/blog/x.html ; from /<lang>/blog/x.html -> ../../<lang2>/blog/x.html
+            link.href = (currentLang.path ? '../../' : '../') + lang.path + page;
+            link.textContent = lang.name;
+            link.setAttribute('role', 'menuitem');
+            link.setAttribute('data-lang', lang.code);
+            menu.appendChild(link);
+        });
+
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                dropdown.classList.remove('open');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

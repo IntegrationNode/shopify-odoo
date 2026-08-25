@@ -45,6 +45,24 @@
       "ogDescription": "Comment l'extension en lecture seule Odoo–Shopify Order Check traite vos données. Aucune donnée de commande n'est envoyée au développeur ni à un tiers.",
       "twitterTitle": "Politique de confidentialité - Odoo–Shopify Order Check",
       "twitterDescription": "Comment nous traitons vos données et vos droits en matière de confidentialité. En lecture seule, aucune donnée de commande ne quitte votre Odoo et Shopify."
+    },
+    "blog": {
+      "title": "Blog - Odoo–Shopify Order Check",
+      "description": "Notes de terrain pour les équipes qui font tourner Shopify sur Odoo : rapprochement des commandes, facturé contre commandé, remboursements, cartes cadeaux et comportement des connecteurs.",
+      "canonical": "https://integrationnode.com/shopify-odoo/fr/blog.html",
+      "ogTitle": "Blog - Odoo–Shopify Order Check",
+      "ogDescription": "Guides pratiques pour rapprocher les commandes Shopify d'Odoo : quoi comparer, ce qui ne correspond jamais, et pourquoi.",
+      "twitterTitle": "Blog - Odoo–Shopify Order Check",
+      "twitterDescription": "Guides pratiques pour rapprocher les commandes Shopify d'Odoo : quoi comparer, ce qui ne correspond jamais, et pourquoi."
+    },
+    "blogTotalsMismatch": {
+      "title": "Totaux Odoo et Shopify différents ? 8 causes réelles",
+      "description": "Shopify affiche un total, Odoo un autre. Les 8 vraies raisons de l'écart — TVA, facturation, remboursements, modifications, cartes cadeaux — et comment les distinguer.",
+      "canonical": "https://integrationnode.com/shopify-odoo/fr/blog/odoo-shopify-order-totals-dont-match.html",
+      "ogTitle": "Pourquoi les totaux Odoo et Shopify ne correspondent pas",
+      "ogDescription": "Huit causes réelles d'un écart de montant entre Odoo et Shopify, chacune avec le symptôme qui l'identifie et le champ exact à vérifier.",
+      "twitterTitle": "Pourquoi les totaux Odoo et Shopify ne correspondent pas",
+      "twitterDescription": "Huit causes réelles d'un écart de montant entre Odoo et Shopify, chacune avec le symptôme qui l'identifie et le champ exact à vérifier."
     }
   },
   "userGuide": {
@@ -294,7 +312,7 @@
     "features": "Fonctionnalités",
     "pricing": "Tarifs",
     "userGuide": "Guide d'utilisation",
-    "blog": "Docs",
+    "blog": "Blog",
     "getExtension": "Obtenir l'extension",
     "brandHome": "IntegrationNode",
     "productsLabel": "Produits",
@@ -750,6 +768,140 @@
       }
     }
   },
+  "blogArticle": {
+    "backToBlog": "Retour au blog",
+    "keepReading": "À lire ensuite"
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Notes de terrain pour les équipes qui font tourner Shopify sur Odoo : rapprochement des commandes, comportement des connecteurs et les pièges entre les deux."
+    },
+    "readMore": "Lire l'article",
+    "article1": {
+      "date": "25 août 2026",
+      "title": "Les totaux Odoo et Shopify ne correspondent pas : 8 causes réelles",
+      "excerpt": "Shopify affiche 128,45, Odoo affiche 106,16, et rien n'est cassé. Huit causes expliquent presque tous les écarts de montant entre Odoo et Shopify — prix TTC, facturation, remboursements, modifications de commande, cartes cadeaux, produits artefacts, livraison et devise — chacune avec le symptôme qui l'identifie et le champ à vérifier."
+    },
+    "cta": {
+      "title": "Vérifiez n'importe quelle commande en un clic",
+      "subtitle": "Odoo–Shopify Order Check compare la commande que vous avez sous les yeux, champ par champ, et vous dit si elle correspond. Lecture seule, 14 jours d'essai gratuit.",
+      "button": "Installer l'extension"
+    }
+  },
+  "blogTotalsMismatch": {
+    "title": "Les totaux Odoo et Shopify ne correspondent pas : 8 causes réelles",
+    "date": "25 août 2026",
+    "intro": "Shopify indique 128,45 pour la commande. Le bon de commande dans Odoo indique 106,16. Personne n'a rien touché, le connecteur ne signale aucune erreur, et pourtant les deux chiffres divergent. En pratique, presque tous les écarts de montant entre Odoo et Shopify se ramènent à l'une de huit causes, et chacune laisse une empreinte différente. Ce guide les parcourt toutes les huit, donne le symptôme qui identifie chacune et pointe le champ exact à vérifier de chaque côté.",
+    "intro2": "Cela vaut pour toute commande Shopify hébergée dans Odoo, quel que soit le connecteur qui l'a importée : le Shopify Odoo Connector d'Emipro, Webkul, un module OCA ou une passerelle maison. Les noms de champ ci-dessous sont ceux des modèles standard d'Odoo, complétés le cas échéant par les paramètres qu'un connecteur expose habituellement sur son enregistrement d'instance.",
+    "section1": {
+      "title": "D'abord, assurez-vous de comparer des nombres comparables",
+      "p1": "Avant de chercher un bug, vérifiez ce que vous comparez réellement. Les deux systèmes affichent plusieurs « totaux », et ils ne veulent pas dire la même chose.",
+      "li1": "Total actuel Shopify : ce que le client doit aujourd'hui, après remboursements et modifications. Dans l'Admin API : currentTotalPriceSet.",
+      "li2": "Total d'origine Shopify : ce qui a été convenu au paiement, avant tout changement ultérieur : originalTotalPriceSet.",
+      "li3": "Total de la commande Odoo : amount_total sur sale.order, c'est-à-dire ce que le connecteur a importé, plus ce qu'il a resynchronisé ensuite.",
+      "li4": "Facturé net dans Odoo : factures clients comptabilisées moins avoirs comptabilisés (account.move, move_type out_invoice et out_refund).",
+      "p2": "Que ces quatre nombres diffèrent n'est pas, en soi, un problème. La seule vraie question est de savoir quelle paire devrait correspondre, et cela dépend du chemin parcouru par la commande : une commande non facturée n'appelle pas la même comparaison qu'une commande facturée, remboursée puis modifiée.",
+      "tip": "Règle empirique : dès qu'une commande est facturée dans Odoo, comparez le total actuel de Shopify au facturé net d'Odoo. Avant cela, comparez-le au total du bon de commande et considérez la réponse comme provisoire."
+    },
+    "section2": {
+      "title": "Cause 1 : prix taxe comprise",
+      "p1": "C'est la fausse alerte la plus fréquente, et la plus facile à écarter. Si vos prix Shopify incluent la taxe et que vos taxes Odoo sont configurées en « Comprise dans le prix », le sous-total de Shopify et le montant hors taxes d'Odoo mesurent deux choses différentes : le premier est TTC, le second HT.",
+      "p2": "Le symptôme ne trompe pas : l'écart vaut exactement le taux de taxe. 128,45 contre 106,16, ce n'est pas un arrondi, c'est 21 % de TVA.",
+      "p3": "La solution consiste à choisir une comparaison qui survit à ce réglage. Comparez les totaux TTC — total actuel Shopify contre amount_total d'Odoo — ou comparez le net des deux côtés, en retranchant amount_tax à amount_total dans Odoo. Ce qu'il ne faut jamais faire, c'est comparer le sous-total Shopify au amount_untaxed d'Odoo sans être certain que les deux côtés sont configurés de la même façon.",
+      "warning": "Un écart lié aux prix TTC est invisible sur les commandes sans taxe — exports, autoliquidation intracommunautaire, clients exonérés — si bien que la configuration peut sembler correcte pendant des semaines avant de casser à la première commande domestique."
+    },
+    "section3": {
+      "title": "Cause 2 : la commande est figée, la facture continue sa vie",
+      "p1": "Les connecteurs importent une commande Shopify dans un sale.order. Dès que cette commande est facturée, la plupart cessent d'y répercuter les changements ultérieurs, et c'est justifié : une commande facturée est un document comptable, pas un miroir. À partir de là, la commande enregistre ce qui a été commandé et les factures enregistrent ce qui a réellement été facturé.",
+      "p2": "Donc, quand un remboursement arrive après la facturation, le total actuel de Shopify baisse et la commande Odoo ne bouge pas. L'argent a bien bougé dans Odoo, mais ailleurs : dans un avoir, un account.move avec move_type = out_refund.",
+      "p3": "Où regarder : sale.order.invoice_ids donne toutes les factures et tous les avoirs rattachés à la commande. Additionnez les out_invoice comptabilisés, soustrayez les out_refund comptabilisés, et ce net est ce qui doit correspondre au total actuel de Shopify. Par ligne, la quantité qui fait foi est qty_invoiced, pas product_uom_qty.",
+      "p4": "C'est aussi pourquoi comparer le bon de commande à Shopify produit de plus en plus de fausses alertes à mesure que la commande vieillit : vous comparez une photo prise à l'import à un document vivant."
+    },
+    "section4": {
+      "title": "Cause 3 : remboursements — l'argent correspond toujours, les quantités pas forcément",
+      "p1": "Les remboursements Shopify existent en deux variantes, et une seule touche au stock. Un remboursement peut rendre l'argent et remettre les unités en stock, ou rendre l'argent en laissant les unités où elles sont : produit abîmé, geste commercial, ajustement partiel de prix.",
+      "p2": "Dans l'Admin API, la distinction se lit sur chaque ligne de remboursement, dans restockType : NO_RESTOCK, CANCEL, RETURN ou LEGACY_RESTOCK. Conséquence pour le rapprochement : un remboursement NO_RESTOCK baisse le montant sans changer la quantité vive de la ligne, donc un contrôle des quantités ligne à ligne peut sembler faux alors que l'argent est parfait.",
+      "p3": "C'est l'écart le plus mal interprété, parce que l'instinct pousse à croire les quantités plutôt que les montants. Ici les montants ont raison et les quantités racontent autre chose : ce qui a été facturé face à ce qui est physiquement revenu.",
+      "tip": "Quand vous cherchez « ce qui est encore vivant sur cette ligne », lisez currentQuantity, pas quantity. La seconde correspond à la commande initiale et ne change jamais."
+    },
+    "section5": {
+      "title": "Cause 4 : la commande a été modifiée après coup dans Shopify",
+      "p1": "L'édition de commande de Shopify modifie la commande sur place : des lignes sont ajoutées, retirées ou requantifiées après le paiement du client. Shopify conserve les deux chiffres — originalTotalPriceSet pour le paiement, currentTotalPriceSet pour la commande modifiée — et la plupart des connecteurs resynchronisent le bon de commande : amount_total suit donc la modification dans Odoo et cesse de correspondre à ce qui avait été commandé.",
+      "p2": "En soi, c'est sans danger. La variante risquée est la modification qui arrive après facturation : une ligne déjà facturée dans Odoo est supprimée dans Shopify. Odoo a alors facturé plus que ce que Shopify encaissera jamais. Ce n'est pas un artefact d'affichage, c'est une surfacturation réelle, et il faut un avoir.",
+      "p3": "Symptôme : le facturé net d'Odoo dépasse le total actuel de Shopify, la commande n'a aucun remboursement, et le total d'origine Shopify est supérieur à son total actuel. Quand ces trois conditions sont réunies, la commande a été modifiée après facturation."
+    },
+    "section6": {
+      "title": "Cause 5 : cartes cadeaux, vendues et dépensées",
+      "p1": "Les cartes cadeaux produisent deux écarts complètement différents selon le côté de la transaction où elles se trouvent, et il vaut la peine de bien les séparer.",
+      "p2": "Vendre une carte cadeau. Dans Shopify, la ligne porte l'indicateur isGiftCard et n'a généralement aucun SKU. Les connecteurs ne l'apparient pas par SKU : ils détectent l'indicateur à l'import et routent la ligne vers un produit dédié configuré sur l'instance du connecteur (chez Emipro, gift_card_product_id). Si votre rapprochement apparie les lignes par SKU, la même carte apparaît en deux demi-lignes : une côté Shopify avec un libellé et sans SKU, une côté Odoo avec la référence interne du produit synthétique. La carte va bien ; c'est la clé d'appariement qui est fausse.",
+      "p3": "Payer avec une carte cadeau. Là, Shopify n'a aucune ligne : une carte cadeau utilisée en paiement est un moyen de paiement, et elle n'apparaît que parmi les passerelles de la commande. Les connecteurs qui doivent équilibrer l'encaissement dans Odoo ajoutent une ligne négative — « Gift card for … » — pointant vers ce même produit synthétique. Odoo a dès lors une ligne de plus que Shopify, et toute vue ligne à ligne naïve montre une ligne sans contrepartie.",
+      "tip": "Si l'écart est un montant suspicieusement rond qui figure aussi parmi les moyens de paiement de la commande, cherchez une carte cadeau avant de chercher un bug de prix."
+    },
+    "section7": {
+      "title": "Cause 6 : remises, cadeaux et produits artefacts",
+      "p1": "Shopify et Odoo modélisent le même geste commercial sous des formes différentes. Un cadeau dans Shopify, c'est une deuxième ligne à 0,00. Une remise, c'est un montant porté par la ligne elle-même. Les connecteurs Odoo expriment souvent les deux par une ligne supplémentaire pointant vers un produit synthétique configuré sur l'instance : typiquement un produit de remise, un produit d'ajustement de remboursement, un produit de droits de douane, un produit de pourboire et un produit de livraison.",
+      "p2": "Ces lignes artefacts n'ont aucune contrepartie dans les lineItems de Shopify. Ligne à ligne, elles ressemblent à des fantômes ; sur le total, elles sont exactement ce qui fait coïncider les deux montants. Les supprimer casserait la commande au lieu de la réparer.",
+      "p3": "Comment comparer correctement : agrégez les lignes par SKU avant de les apparier, et excluez les produits configurés comme artefacts sur l'instance du connecteur. Une fois ces deux règles en place, les différences restantes sont réelles."
+    },
+    "section8": {
+      "title": "Cause 7 : livraison, droits de douane et frais",
+      "p1": "La livraison est un concept à part dans Shopify — une ligne de livraison avec son prix et sa taxe — alors que dans Odoo elle arrive en général comme une ligne de commande ordinaire marquée is_delivery, valorisée depuis le produit de livraison du connecteur. Droits de douane, pourboires et surcharges de paiement suivent le même schéma.",
+      "p2": "Conséquence pratique : le nombre de lignes ne correspond presque jamais, même sur une commande parfaitement synchronisée, et toute comparaison de sous-totaux hérite de cet écart. Comparez d'abord les totaux ; ne comparez les lignes qu'après avoir exclu les lignes de livraison et de frais côté Odoo.",
+      "p3": "Il en va de même pour l'axe livraison : une ligne de service n'a aucun mouvement de stock derrière elle, sa quantité livrée reste donc à zéro pour toujours. C'est le comportement correct, pas une expédition en attente."
+    },
+    "section9": {
+      "title": "Cause 8 : devise, presentment money et arrondis",
+      "p1": "Shopify renvoie chaque champ monétaire en double : shopMoney, dans la devise de votre boutique, et presentmentMoney, dans la devise que le client a réellement vue. Si vous vendez en plusieurs devises, le connecteur en a importé une et vous lisez peut-être l'autre.",
+      "p2": "Odoo ajoute sa propre seconde conversion : la commande est stockée dans sa devise puis convertie dans celle de la société au taux du jour. Un taux de change périmé produit un petit écart toujours orienté dans le même sens — un indice fiable, car les vraies erreurs sont rarement aussi régulières.",
+      "p3": "Reste l'arrondi pur. Des différences de un à trois centimes sur des commandes multi-lignes avec remises en pourcentage par ligne relèvent de l'arrondi, et les traquer, c'est perdre son après-midi. Tout écart plus grand a l'une des causes ci-dessus derrière lui."
+    },
+    "section10": {
+      "title": "Référence rapide : du symptôme à la cause",
+      "thSymptom": "Ce que vous voyez",
+      "thCause": "Cause la plus probable",
+      "thCheck": "Où vérifier",
+      "r1s": "L'écart vaut exactement le taux de taxe",
+      "r1c": "Prix taxe comprise",
+      "r1k": "Taxe Odoo « Comprise dans le prix » ; comparer les totaux TTC",
+      "r2s": "Odoo supérieur à Shopify, la commande a un remboursement",
+      "r2c": "Remboursement comptabilisé après facturation",
+      "r2k": "account.move out_refund ; qty_invoiced par ligne",
+      "r3s": "Odoo supérieur, sans remboursement, Shopify original > actuel",
+      "r3c": "Commande modifiée après facturation (surfacturation)",
+      "r3k": "originalTotalPriceSet contre currentTotalPriceSet",
+      "r4s": "Les montants correspondent, la quantité d'une ligne non",
+      "r4c": "Remboursement sans remise en stock",
+      "r4k": "refundLineItems.restockType ; currentQuantity",
+      "r5s": "Une ligne de plus dans Odoo, écart d'un montant rond",
+      "r5c": "Carte cadeau utilisée en paiement",
+      "r5k": "Passerelles de paiement ; ligne négative dans Odoo",
+      "r6s": "Une carte cadeau affichée en deux demi-lignes",
+      "r6c": "Appariée par SKU au lieu de l'indicateur carte cadeau",
+      "r6k": "isGiftCard ; produit carte cadeau de l'instance",
+      "r7s": "Lignes Odoo supplémentaires nommées remise ou douane",
+      "r7c": "Produits artefacts du connecteur",
+      "r7k": "Produit remise / douane / pourboire / livraison de l'instance",
+      "r8s": "Une différence de quelques centimes",
+      "r8c": "Arrondi ou taux de change",
+      "r8k": "shopMoney contre presentmentMoney ; taux du jour dans Odoo"
+    },
+    "section11": {
+      "title": "Un contrôle de cinq minutes, reproductible",
+      "p1": "Quand un écart atterrit sur votre bureau, cette séquence le résout plus vite que de fixer les deux écrans :",
+      "step1": "Ouvrez la commande Shopify. Notez le total actuel et regardez si elle porte des remboursements ou a été modifiée.",
+      "step2": "Ouvrez le bon de commande Odoo. Notez amount_total et regardez invoice_status.",
+      "step3": "Si elle est facturée : additionnez les factures comptabilisées, retranchez les avoirs comptabilisés, et comparez ce chiffre — pas le total de la commande — au total actuel de Shopify.",
+      "step4": "Si elle n'est pas encore facturée : comparez à amount_total et considérez le résultat comme provisoire. Il changera dès la comptabilisation de la facture.",
+      "step5": "Si l'écart persiste, parcourez les huit causes dans l'ordre : taxes d'abord, puis facturation, remboursements, modifications, cartes cadeaux, artefacts, livraison, devise. La première qui colle est presque toujours la bonne.",
+      "p2": "Cinq minutes par commande, c'est acceptable quand cela arrive deux fois par mois. Cela cesse de l'être quand un conseiller doit le faire avant de répondre à chaque e-mail « vous m'avez facturé le mauvais montant », ou quand quelqu'un doit contrôler par sondage une journée de commandes avant la clôture."
+    },
+    "cta": {
+      "title": "Ou vérifiez-le en un clic",
+      "subtitle": "Odoo–Shopify Order Check exécute toute cette comparaison à votre place, dans la page de commande que vous avez déjà ouverte : totaux, taxes, quantités, lignes, adresses et livraison, avec les remboursements et les cartes cadeaux traités comme du contexte et non comme des erreurs. L'extension est en lecture seule — elle n'écrit jamais dans Odoo ni dans Shopify — et ne demande aucune clé d'API.",
+      "button": "Essayer 14 jours gratuitement"
+    }
+  },
   "footer": {
     "title": "Odoo–Shopify Order Check",
     "builtBy": "Développé par",
@@ -759,7 +911,7 @@
     "userGuide": "Guide d'utilisation",
     "changelog": "Journal des modifications",
     "comparison": "Comparaison",
-    "blog": "Docs",
+    "blog": "Blog",
     "privacy": "Politique de confidentialité",
     "support": "Support",
     "legal": "Mentions légales",

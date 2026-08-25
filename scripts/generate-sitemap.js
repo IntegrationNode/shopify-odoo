@@ -23,6 +23,8 @@ const PAGES = [
     { src: 'index.html',                            urlPath: '',                                          priority: '1.0', changefreq: 'weekly' },
     { src: 'pricing.html',                          urlPath: 'pricing.html',                              priority: '0.9', changefreq: 'monthly' },
     { src: 'user-guide.html',                       urlPath: 'user-guide.html',                           priority: '0.8', changefreq: 'monthly' },
+    { src: 'blog.html',                             urlPath: 'blog.html',                                 priority: '0.6', changefreq: 'monthly' },
+    { src: 'blog/odoo-shopify-order-totals-dont-match.html', urlPath: 'blog/odoo-shopify-order-totals-dont-match.html', priority: '0.7', changefreq: 'yearly' },
     { src: 'changelog.html',                        urlPath: 'changelog.html',                            priority: '0.5', changefreq: 'weekly' },
     { src: 'privacy.html',                          urlPath: 'privacy.html',                              priority: '0.3', changefreq: 'yearly' },
 ];
