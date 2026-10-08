@@ -722,6 +722,15 @@
       "deliveryGhostRow": "Brak widmowych wierszy w kontroli dostawy",
       "deliveryGhostRowDesc": "Wiersze usług istniejące tylko w Odoo, które nigdy nie generują dokumentu dostawy (np. płatności kartą podarunkową), nie pojawiają się już w bloku dostawy."
     },
+    "v120": {
+      "date": "8 października 2026",
+      "inferredConnector": "Działa z większą liczbą konektorów Shopify",
+      "inferredConnectorDesc": "Jeśli Twoje Odoo korzysta z konektora Shopify, którego rozszerzenie jeszcze nie zna, teraz samo ustala, jak go odczytać, na podstawie konfiguracji Odoo i sprawdza go w Shopify, zanim cokolwiek porówna. W ustawieniach widać, czy konektor każdej instancji jest Supported czy Inferred.",
+      "connectorErrors": "Jasne komunikaty zamiast „Error querying Odoo”",
+      "connectorErrorsDesc": "W bazach Odoo bez konektora Emipro otwarcie zamówienia pokazywało ogólny błąd, jakby Odoo nie działało. Teraz rozszerzenie mówi, co znalazło: konektor Shopify, którego jeszcze nie potrafi odczytać (z linkiem, przez który możesz nam powiedzieć, jakiego używasz), albo użytkownika Odoo bez dostępu do integracji.",
+      "quietPanel": "Koniec z migającym panelem",
+      "quietPanelDesc": "Panel pojawia się tylko wtedy, gdy jest zamówienie do porównania albo coś, co możesz zrobić. Oferty, które nie pochodzą z Shopify, i bazy Odoo bez integracji z Shopify już go nie pokazują."
+    },
     "comingSoon": {
       "label": "Wkrótce:",
       "text": "Więcej konektorów i dodatkowe osie porównania są w planach. Ta strona będzie aktualizowana przy każdym wydaniu."

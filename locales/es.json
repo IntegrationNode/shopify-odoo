@@ -722,6 +722,15 @@
       "deliveryGhostRow": "Sin filas fantasma en la comprobación de entrega",
       "deliveryGhostRowDesc": "Las líneas de servicio solo de Odoo que nunca generan un albarán (como los pagos con tarjeta regalo) ya no aparecen en el bloque de entrega."
     },
+    "v120": {
+      "date": "8 de octubre de 2026",
+      "inferredConnector": "Compatible con más conectores de Shopify",
+      "inferredConnectorDesc": "Si tu Odoo usa un conector de Shopify que la extensión aún no conoce, ahora deduce cómo leerlo a partir de la propia configuración de Odoo y lo comprueba contra Shopify antes de comparar nada. Los ajustes indican si el conector de cada instancia es Supported o Inferred.",
+      "connectorErrors": "Mensajes claros en lugar de \"Error querying Odoo\"",
+      "connectorErrorsDesc": "En las bases de datos de Odoo sin el conector de Emipro, abrir un pedido mostraba un error genérico, como si Odoo estuviera caído. Ahora la extensión explica lo que ha encontrado: un conector de Shopify que todavía no sabe leer (con un enlace para decirnos cuál usas) o un usuario de Odoo sin acceso a la integración.",
+      "quietPanel": "Se acabó el parpadeo del panel",
+      "quietPanelDesc": "El panel solo aparece cuando hay un pedido que comparar o algo sobre lo que puedes actuar. Los presupuestos que no vienen de Shopify y las bases de datos de Odoo sin integración con Shopify ya no lo muestran."
+    },
     "comingSoon": {
       "label": "Próximamente:",
       "text": "Más conectores y ejes de comparación adicionales están en el roadmap. Esta página se actualizará con cada versión."

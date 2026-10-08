@@ -722,6 +722,15 @@
       "deliveryGhostRow": "Geen spookrijen meer in de leveringscontrole",
       "deliveryGhostRowDesc": "Serviceregels die alleen in Odoo bestaan en nooit een leveringsbon genereren (zoals betalingen met een cadeaubon) verschijnen niet meer in het leveringsblok."
     },
+    "v120": {
+      "date": "8 oktober 2026",
+      "inferredConnector": "Werkt met meer Shopify-connectors",
+      "inferredConnectorDesc": "Als je Odoo een Shopify-connector gebruikt die de extensie nog niet kent, leidt ze nu uit de eigen configuratie van Odoo af hoe ze die moet lezen, en controleert ze die bij Shopify voordat ze iets vergelijkt. In de instellingen zie je of de connector van elke instantie Supported of Inferred is.",
+      "connectorErrors": "Duidelijke meldingen in plaats van \"Error querying Odoo\"",
+      "connectorErrorsDesc": "In Odoo-databases zonder de connector van Emipro gaf het openen van een order een algemene fout, alsof Odoo onbereikbaar was. Nu vertelt de extensie wat ze heeft gevonden: een Shopify-connector die ze nog niet kan lezen (met een link om ons te laten weten welke je gebruikt), of een Odoo-gebruiker zonder toegang tot de integratie.",
+      "quietPanel": "Geen knipperend paneel meer",
+      "quietPanelDesc": "Het paneel verschijnt alleen nog als er een order te vergelijken is of als je iets kunt doen. Offertes die niet uit Shopify komen en Odoo-databases zonder Shopify-integratie tonen het niet meer."
+    },
     "comingSoon": {
       "label": "Binnenkort:",
       "text": "Meer connectors en aanvullende vergelijkingsassen staan op de roadmap. Deze pagina wordt bij elke release bijgewerkt."

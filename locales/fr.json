@@ -722,6 +722,15 @@
       "deliveryGhostRow": "Plus de lignes fantômes dans la vérification de livraison",
       "deliveryGhostRowDesc": "Les lignes de service présentes uniquement dans Odoo qui ne génèrent jamais de bon de livraison (comme les paiements par carte cadeau) n'apparaissent plus dans le bloc livraison."
     },
+    "v120": {
+      "date": "8 octobre 2026",
+      "inferredConnector": "Compatible avec davantage de connecteurs Shopify",
+      "inferredConnectorDesc": "Si votre Odoo utilise un connecteur Shopify que l'extension ne connaît pas encore, elle déduit désormais comment le lire à partir de la configuration même d'Odoo, et le vérifie auprès de Shopify avant toute comparaison. Les paramètres indiquent si le connecteur de chaque instance est Supported ou Inferred.",
+      "connectorErrors": "Des messages clairs au lieu de « Error querying Odoo »",
+      "connectorErrorsDesc": "Dans les bases Odoo sans le connecteur d'Emipro, ouvrir une commande affichait une erreur générique, comme si Odoo était indisponible. L'extension indique désormais ce qu'elle a trouvé : un connecteur Shopify qu'elle ne sait pas encore lire (avec un lien pour nous dire lequel vous utilisez) ou un utilisateur Odoo sans accès à l'intégration.",
+      "quietPanel": "Fini le panneau qui clignote",
+      "quietPanelDesc": "Le panneau n'apparaît plus que lorsqu'il y a une commande à comparer ou une action à mener. Les devis qui ne proviennent pas de Shopify et les bases Odoo sans intégration Shopify ne l'affichent plus."
+    },
     "comingSoon": {
       "label": "Prochainement :",
       "text": "D'autres connecteurs et axes de comparaison supplémentaires sont prévus. Cette page sera mise à jour à chaque version."

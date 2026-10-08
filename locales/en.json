@@ -722,6 +722,15 @@
       "deliveryGhostRow": "No phantom rows in the delivery check",
       "deliveryGhostRowDesc": "Odoo-only service lines that never produce a delivery order (such as gift card payments) no longer appear in the delivery block."
     },
+    "v120": {
+      "date": "October 8, 2026",
+      "inferredConnector": "Works with more Shopify connectors",
+      "inferredConnectorDesc": "If your Odoo uses a Shopify connector the extension doesn't know yet, it now works out how to read it from Odoo's own setup, and checks it against Shopify before comparing anything. Settings shows whether each instance's connector is Supported or Inferred.",
+      "connectorErrors": "Clear messages instead of \"Error querying Odoo\"",
+      "connectorErrorsDesc": "In Odoo databases without the Emipro connector, opening an order showed a generic error, as if Odoo were down. The extension now says what it found: a Shopify connector it can't read yet (with a link to tell us which one you use), or an Odoo user without access to the integration.",
+      "quietPanel": "No more flashing panel",
+      "quietPanelDesc": "The panel now appears only when there's an order to compare or something you can act on. Quotes that don't come from Shopify, and Odoo databases without a Shopify integration, stay quiet."
+    },
     "comingSoon": {
       "label": "Coming soon:",
       "text": "More connectors and additional comparison axes are on the roadmap. This page will be updated with each release."

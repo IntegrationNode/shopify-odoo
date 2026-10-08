@@ -722,6 +722,15 @@
       "deliveryGhostRow": "Keine Phantomzeilen in der Lieferprüfung",
       "deliveryGhostRowDesc": "Nur in Odoo vorhandene Dienstleistungszeilen, die nie einen Lieferschein erzeugen (z. B. Zahlungen mit Geschenkkarte), erscheinen nicht mehr im Lieferblock."
     },
+    "v120": {
+      "date": "8. Oktober 2026",
+      "inferredConnector": "Funktioniert mit mehr Shopify-Konnektoren",
+      "inferredConnectorDesc": "Wenn Ihr Odoo einen Shopify-Konnektor nutzt, den die Erweiterung noch nicht kennt, ermittelt sie jetzt aus der Konfiguration von Odoo selbst, wie er zu lesen ist, und prüft ihn gegen Shopify, bevor sie etwas vergleicht. In den Einstellungen sehen Sie, ob der Konnektor jeder Instanz Supported oder Inferred ist.",
+      "connectorErrors": "Klare Meldungen statt „Error querying Odoo“",
+      "connectorErrorsDesc": "In Odoo-Datenbanken ohne den Konnektor von Emipro zeigte das Öffnen einer Bestellung einen allgemeinen Fehler, als wäre Odoo nicht erreichbar. Jetzt sagt die Erweiterung, was sie gefunden hat: einen Shopify-Konnektor, den sie noch nicht lesen kann (mit einem Link, über den Sie uns mitteilen, welchen Sie verwenden), oder einen Odoo-Benutzer ohne Zugriff auf die Integration.",
+      "quietPanel": "Kein flackerndes Panel mehr",
+      "quietPanelDesc": "Das Panel erscheint nur noch, wenn es eine Bestellung zu vergleichen gibt oder Sie etwas tun können. Bei Angeboten, die nicht aus Shopify stammen, und in Odoo-Datenbanken ohne Shopify-Integration bleibt es ausgeblendet."
+    },
     "comingSoon": {
       "label": "Demnächst:",
       "text": "Weitere Connectoren und zusätzliche Vergleichsachsen sind in der Entwicklung. Diese Seite wird mit jedem Release aktualisiert."

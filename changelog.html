@@ -294,6 +294,28 @@
             </div>
 
             <div class="release-list">
+                <!-- Version 1.2.0 -->
+                <div class="release">
+                    <div class="release-header">
+                        <div class="version-badge">
+                            <span class="material-symbols-outlined">rocket_launch</span>
+                            <span>Version</span> 1.2.0
+                        </div>
+                        <div class="release-date">October 8, 2026</div>
+                    </div>
+                    <div class="release-content">
+                        <h3><span class="material-symbols-outlined">bolt</span> <span>New Features</span></h3>
+                        <ul>
+                            <li><strong>Works with more Shopify connectors</strong> - <span>If your Odoo uses a Shopify connector the extension doesn't know yet, it now works out how to read it from Odoo's own setup, and checks it against Shopify before comparing anything. Settings shows whether each instance's connector is Supported or Inferred.</span></li>
+                        </ul>
+                        <h3><span class="material-symbols-outlined">verified</span> <span>Bug Fixes</span></h3>
+                        <ul>
+                            <li><strong>Clear messages instead of "Error querying Odoo"</strong> - <span>In Odoo databases without the Emipro connector, opening an order showed a generic error, as if Odoo were down. The extension now says what it found: a Shopify connector it can't read yet (with a link to tell us which one you use), or an Odoo user without access to the integration.</span></li>
+                            <li><strong>No more flashing panel</strong> - <span>The panel now appears only when there's an order to compare or something you can act on. Quotes that don't come from Shopify, and Odoo databases without a Shopify integration, stay quiet.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- Version 1.1.1 -->
                 <div class="release">
                     <div class="release-header">
