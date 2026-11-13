@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Brak widmowych wierszy w kontroli dostawy",
       "deliveryGhostRowDesc": "Wiersze usług istniejące tylko w Odoo, które nigdy nie generują dokumentu dostawy (np. płatności kartą podarunkową), nie pojawiają się już w bloku dostawy."
     },
+    "v121": {
+      "date": "13 listopada 2026",
+      "recoverKey": "Odzyskaj klucz licencyjny",
+      "recoverKeyDesc": "Zgubiłeś klucz po ponownej instalacji lub zmianie komputera? „Manage subscription” pod polem klucza otwiera Twój portal klienta Polar, gdzie czeka Twój klucz.",
+      "activationForm": "Popraw literówkę w kluczu bez przeładowania",
+      "activationFormDesc": "Po nieprawidłowym kluczu pole i przycisk Activate zostawały na „Activating…”, dopóki nie przeładowałeś strony. Teraz możesz od razu poprawić klucz i spróbować ponownie.",
+      "afterUpdate": "Jasny komunikat po aktualizacji rozszerzenia",
+      "afterUpdateDesc": "Gdy rozszerzenie aktualizowało się przy otwartym panelu, panel zamarzał, a jego przyciski przestawały działać. Teraz prosi o przeładowanie strony i do tego czasu pokazuje porównanie.",
+      "noResponse": "Koniec z niekończącym się „Comparing…”",
+      "noResponseDesc": "Jeśli Odoo lub Shopify przestanie odpowiadać, panel poinformuje o tym po 15 sekundach, zamiast ładować się bez końca."
+    },
     "v120": {
       "date": "8 października 2026",
       "inferredConnector": "Działa z większą liczbą konektorów Shopify",

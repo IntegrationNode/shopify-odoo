@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Sin filas fantasma en la comprobación de entrega",
       "deliveryGhostRowDesc": "Las líneas de servicio solo de Odoo que nunca generan un albarán (como los pagos con tarjeta regalo) ya no aparecen en el bloque de entrega."
     },
+    "v121": {
+      "date": "13 de noviembre de 2026",
+      "recoverKey": "Recupera tu clave de licencia",
+      "recoverKeyDesc": "¿Perdiste la clave al reinstalar o al cambiar de ordenador? \"Manage subscription\", bajo el campo de la clave, abre tu portal de cliente de Polar, donde está tu clave.",
+      "activationForm": "Corrige una errata en la clave sin recargar",
+      "activationFormDesc": "Tras una clave no válida, el campo y el botón Activate se quedaban en \"Activating…\" hasta recargar la página. Ahora puedes corregir la clave y volver a intentarlo al momento.",
+      "afterUpdate": "Un mensaje claro cuando se actualiza la extensión",
+      "afterUpdateDesc": "Si la extensión se actualizaba con un panel abierto, el panel se congelaba y sus botones dejaban de responder. Ahora te pide que recargues la página y mantiene la comparación a la vista hasta que lo hagas.",
+      "noResponse": "Se acabó el \"Comparing…\" sin fin",
+      "noResponseDesc": "Si Odoo o Shopify dejan de responder, el panel lo dice a los 15 segundos en lugar de quedarse cargando para siempre."
+    },
     "v120": {
       "date": "8 de octubre de 2026",
       "inferredConnector": "Compatible con más conectores de Shopify",

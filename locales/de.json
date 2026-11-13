@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Keine Phantomzeilen in der Lieferprüfung",
       "deliveryGhostRowDesc": "Nur in Odoo vorhandene Dienstleistungszeilen, die nie einen Lieferschein erzeugen (z. B. Zahlungen mit Geschenkkarte), erscheinen nicht mehr im Lieferblock."
     },
+    "v121": {
+      "date": "13. November 2026",
+      "recoverKey": "Lizenzschlüssel wiederfinden",
+      "recoverKeyDesc": "Schlüssel nach einer Neuinstallation oder einem Rechnerwechsel verloren? „Manage subscription“ unter dem Schlüsselfeld öffnet Ihr Polar-Kundenportal, wo Ihr Schlüssel bereitliegt.",
+      "activationForm": "Tippfehler im Schlüssel ohne Neuladen korrigieren",
+      "activationFormDesc": "Nach einem ungültigen Schlüssel blieben das Feld und die Schaltfläche Activate auf „Activating…“ stehen, bis die Seite neu geladen wurde. Jetzt können Sie den Schlüssel sofort korrigieren und es erneut versuchen.",
+      "afterUpdate": "Eine klare Meldung nach einem Update der Erweiterung",
+      "afterUpdateDesc": "Wurde die Erweiterung bei geöffnetem Panel aktualisiert, fror das Panel ein und seine Schaltflächen reagierten nicht mehr. Jetzt fordert es Sie auf, die Seite neu zu laden, und zeigt den Vergleich bis dahin weiter an.",
+      "noResponse": "Kein endloses „Comparing…“ mehr",
+      "noResponseDesc": "Wenn Odoo oder Shopify nicht mehr antwortet, meldet das Panel dies nach 15 Sekunden, statt endlos zu laden."
+    },
     "v120": {
       "date": "8. Oktober 2026",
       "inferredConnector": "Funktioniert mit mehr Shopify-Konnektoren",

@@ -722,6 +722,17 @@
       "deliveryGhostRow": "No phantom rows in the delivery check",
       "deliveryGhostRowDesc": "Odoo-only service lines that never produce a delivery order (such as gift card payments) no longer appear in the delivery block."
     },
+    "v121": {
+      "date": "November 13, 2026",
+      "recoverKey": "Find your license key again",
+      "recoverKeyDesc": "Lost your key after reinstalling or moving to a new computer? \"Manage subscription\", under the license key field, opens your Polar customer portal, where your key is waiting.",
+      "activationForm": "Fix a typo in your license key without reloading",
+      "activationFormDesc": "After an invalid key, the field and the Activate button stayed stuck on \"Activating…\" until you reloaded the page. Now you can correct the key and try again straight away.",
+      "afterUpdate": "A clear message after the extension updates",
+      "afterUpdateDesc": "When the extension updated with a panel open, the panel froze and its buttons stopped working. It now tells you to reload the page, and keeps the comparison in view until you do.",
+      "noResponse": "No more endless \"Comparing…\"",
+      "noResponseDesc": "If Odoo or Shopify stops responding, the panel now says so after 15 seconds, instead of loading forever."
+    },
     "v120": {
       "date": "October 8, 2026",
       "inferredConnector": "Works with more Shopify connectors",

@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Plus de lignes fantômes dans la vérification de livraison",
       "deliveryGhostRowDesc": "Les lignes de service présentes uniquement dans Odoo qui ne génèrent jamais de bon de livraison (comme les paiements par carte cadeau) n'apparaissent plus dans le bloc livraison."
     },
+    "v121": {
+      "date": "13 novembre 2026",
+      "recoverKey": "Retrouvez votre clé de licence",
+      "recoverKeyDesc": "Vous avez perdu votre clé après une réinstallation ou un changement d’ordinateur ? « Manage subscription », sous le champ de la clé, ouvre votre portail client Polar, où votre clé vous attend.",
+      "activationForm": "Corrigez une faute de frappe dans la clé sans recharger",
+      "activationFormDesc": "Après une clé non valide, le champ et le bouton Activate restaient bloqués sur « Activating… » jusqu’au rechargement de la page. Vous pouvez maintenant corriger la clé et réessayer tout de suite.",
+      "afterUpdate": "Un message clair après la mise à jour de l’extension",
+      "afterUpdateDesc": "Quand l’extension se mettait à jour avec un panneau ouvert, le panneau se figeait et ses boutons ne répondaient plus. Il vous invite désormais à recharger la page et garde la comparaison à l’écran jusque-là.",
+      "noResponse": "Fini le « Comparing… » sans fin",
+      "noResponseDesc": "Si Odoo ou Shopify ne répond plus, le panneau l’indique au bout de 15 secondes au lieu de charger indéfiniment."
+    },
     "v120": {
       "date": "8 octobre 2026",
       "inferredConnector": "Compatible avec davantage de connecteurs Shopify",

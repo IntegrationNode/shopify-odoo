@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Niente righe fantasma nel controllo di consegna",
       "deliveryGhostRowDesc": "Le righe di servizio presenti solo in Odoo che non generano mai un documento di consegna (come i pagamenti con carta regalo) non compaiono più nel blocco consegna."
     },
+    "v121": {
+      "date": "13 novembre 2026",
+      "recoverKey": "Ritrova la tua chiave di licenza",
+      "recoverKeyDesc": "Hai perso la chiave dopo una reinstallazione o un cambio di computer? \"Manage subscription\", sotto il campo della chiave, apre il tuo portale clienti di Polar, dove trovi la tua chiave.",
+      "activationForm": "Correggi un errore di battitura nella chiave senza ricaricare",
+      "activationFormDesc": "Dopo una chiave non valida, il campo e il pulsante Activate restavano bloccati su \"Activating…\" finché non si ricaricava la pagina. Ora puoi correggere la chiave e riprovare subito.",
+      "afterUpdate": "Un messaggio chiaro dopo l’aggiornamento dell’estensione",
+      "afterUpdateDesc": "Quando l’estensione si aggiornava con un pannello aperto, il pannello si bloccava e i suoi pulsanti smettevano di funzionare. Ora ti chiede di ricaricare la pagina e mantiene il confronto visibile fino ad allora.",
+      "noResponse": "Basta \"Comparing…\" infinito",
+      "noResponseDesc": "Se Odoo o Shopify smettono di rispondere, il pannello lo segnala dopo 15 secondi invece di restare in caricamento per sempre."
+    },
     "v120": {
       "date": "8 ottobre 2026",
       "inferredConnector": "Funziona con più connettori Shopify",

@@ -722,6 +722,17 @@
       "deliveryGhostRow": "Geen spookrijen meer in de leveringscontrole",
       "deliveryGhostRowDesc": "Serviceregels die alleen in Odoo bestaan en nooit een leveringsbon genereren (zoals betalingen met een cadeaubon) verschijnen niet meer in het leveringsblok."
     },
+    "v121": {
+      "date": "13 november 2026",
+      "recoverKey": "Vind je licentiesleutel terug",
+      "recoverKeyDesc": "Sleutel kwijt na een herinstallatie of een nieuwe computer? \"Manage subscription\", onder het sleutelveld, opent je klantenportaal van Polar, waar je sleutel klaarstaat.",
+      "activationForm": "Een typfout in je sleutel verbeteren zonder te herladen",
+      "activationFormDesc": "Na een ongeldige sleutel bleven het veld en de knop Activate op \"Activating…\" staan tot je de pagina herlaadde. Nu kun je de sleutel meteen verbeteren en het opnieuw proberen.",
+      "afterUpdate": "Een duidelijke melding na een update van de extensie",
+      "afterUpdateDesc": "Werd de extensie bijgewerkt terwijl er een paneel open stond, dan bevroor het paneel en reageerden de knoppen niet meer. Nu vraagt het je de pagina te herladen en blijft de vergelijking tot dan in beeld.",
+      "noResponse": "Geen eindeloos \"Comparing…\" meer",
+      "noResponseDesc": "Als Odoo of Shopify niet meer reageert, meldt het paneel dat na 15 seconden in plaats van eindeloos te laden."
+    },
     "v120": {
       "date": "8 oktober 2026",
       "inferredConnector": "Werkt met meer Shopify-connectors",
