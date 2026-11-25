@@ -683,7 +683,8 @@
       "initialRelease": "Eerste release",
       "licensing": "Proefperiode & licenties",
       "newFeatures": "Nieuwe Functies",
-      "bugFixes": "Bugfixes"
+      "bugFixes": "Bugfixes",
+      "improvements": "Verbeteringen"
     },
     "v100": {
       "date": "Eerste release",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Rijen die alleen in Odoo bestaan (zoals betalingen met een cadeaubon) tonen nu \"—\" in plaats van hoeveelheden die van de connector zijn overgenomen.",
       "deliveryGhostRow": "Geen spookrijen meer in de leveringscontrole",
       "deliveryGhostRowDesc": "Serviceregels die alleen in Odoo bestaan en nooit een leveringsbon genereren (zoals betalingen met een cadeaubon) verschijnen niet meer in het leveringsblok."
+    },
+    "v130": {
+      "date": "26 november 2026",
+      "anyMenu": "Opent vanuit elk menu dat de order toont",
+      "anyMenuDesc": "Het paneel verscheen alleen als je de order opende via Verkoop › Offertes. In Odoo 18 en 19 verschijnt het nu ook via Verkooporders, het menu van de Shopify-connector, Te factureren en het tabblad Verkoop van de klant.",
+      "followsRecord": "Het paneel volgt wat er op het scherm staat",
+      "followsRecordDesc": "Als je de factuur van een order of de klant opent, gaat het paneel opzij in plaats van te blijven staan op een record dat niet de order is. Ga terug naar de order en het verschijnt weer.",
+      "oldOrders": "Orders ouder dan 60 dagen tonen niet langer „Not synced”",
+      "oldOrdersDesc": "Als je Shopify-connector alleen de orders van de afgelopen 60 dagen kan lezen, toonden oudere orders „Not synced”, ook als ze correct gekoppeld waren. Het paneel legt nu uit waarom het ze niet kan vergelijken en hoe je dat oplost."
     },
     "v121": {
       "date": "13 november 2026",

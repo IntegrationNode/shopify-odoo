@@ -683,7 +683,8 @@
       "initialRelease": "Lançamento Inicial",
       "licensing": "Período de Teste e Licenciamento",
       "newFeatures": "Novos Recursos",
-      "bugFixes": "Correções de Bugs"
+      "bugFixes": "Correções de Bugs",
+      "improvements": "Melhorias"
     },
     "v100": {
       "date": "Lançamento inicial",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "As linhas que só existem no Odoo (como pagamentos com cartão-presente) agora mostram «—» em vez de quantidades retiradas do conector.",
       "deliveryGhostRow": "Sem linhas fantasma na verificação de entrega",
       "deliveryGhostRowDesc": "As linhas de serviço apenas do Odoo que nunca geram uma guia de entrega (como pagamentos com cartão-presente) já não aparecem no bloco de entrega."
+    },
+    "v130": {
+      "date": "26 de novembro de 2026",
+      "anyMenu": "Abre a partir de qualquer menu que mostre o pedido",
+      "anyMenuDesc": "Antes o painel só aparecia ao abrir o pedido a partir de Vendas › Cotações. No Odoo 18 e 19 agora aparece também a partir de Pedidos de venda, do menu do conector Shopify, de A faturar e da aba Vendas do cliente.",
+      "followsRecord": "O painel acompanha o que está na tela",
+      "followsRecordDesc": "Quando você abre a fatura de um pedido ou o cliente dele, o painel se afasta em vez de ficar sobre um registro que não é o pedido. Volte ao pedido e ele reaparece.",
+      "oldOrders": "Pedidos com mais de 60 dias não mostram mais “Not synced”",
+      "oldOrdersDesc": "Se o seu conector Shopify só consegue ler os pedidos dos últimos 60 dias, os pedidos mais antigos mostravam “Not synced” mesmo estando corretamente vinculados. Agora o painel explica por que não consegue compará-los e como resolver."
     },
     "v121": {
       "date": "13 de novembro de 2026",

@@ -683,7 +683,8 @@
       "initialRelease": "Version initiale",
       "licensing": "Essai et licences",
       "newFeatures": "Nouvelles fonctionnalités",
-      "bugFixes": "Corrections de bugs"
+      "bugFixes": "Corrections de bugs",
+      "improvements": "Améliorations"
     },
     "v100": {
       "date": "Version initiale",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Les lignes qui n'existent que dans Odoo (comme les paiements par carte cadeau) affichent désormais « — » au lieu de quantités empruntées au connecteur.",
       "deliveryGhostRow": "Plus de lignes fantômes dans la vérification de livraison",
       "deliveryGhostRowDesc": "Les lignes de service présentes uniquement dans Odoo qui ne génèrent jamais de bon de livraison (comme les paiements par carte cadeau) n'apparaissent plus dans le bloc livraison."
+    },
+    "v130": {
+      "date": "26 novembre 2026",
+      "anyMenu": "S'ouvre depuis n'importe quel menu qui affiche la commande",
+      "anyMenuDesc": "Le panneau n'apparaissait que lorsque vous ouvriez la commande depuis Ventes › Devis. Dans Odoo 18 et 19, il apparaît désormais aussi depuis Bons de commande, le menu du connecteur Shopify, À facturer et l'onglet Ventes du client.",
+      "followsRecord": "Le panneau suit ce qui est à l'écran",
+      "followsRecordDesc": "Lorsque vous ouvrez la facture d'une commande ou son client, le panneau s'efface au lieu de rester sur un enregistrement qui n'est pas la commande. Revenez à la commande et il réapparaît.",
+      "oldOrders": "Les commandes de plus de 60 jours n'affichent plus « Not synced »",
+      "oldOrdersDesc": "Si votre connecteur Shopify ne peut lire que les commandes des 60 derniers jours, les commandes plus anciennes affichaient « Not synced » même lorsqu'elles étaient correctement liées. Le panneau explique désormais pourquoi il ne peut pas les comparer et comment y remédier."
     },
     "v121": {
       "date": "13 novembre 2026",

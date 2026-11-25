@@ -683,7 +683,8 @@
       "initialRelease": "Erstveröffentlichung",
       "licensing": "Testphase & Lizenzierung",
       "newFeatures": "Neue Funktionen",
-      "bugFixes": "Fehlerbehebungen"
+      "bugFixes": "Fehlerbehebungen",
+      "improvements": "Verbesserungen"
     },
     "v100": {
       "date": "Erstveröffentlichung",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Zeilen, die nur in Odoo existieren (z. B. Zahlungen mit Geschenkkarte), zeigen jetzt „—“ statt vom Konnektor übernommener Mengen.",
       "deliveryGhostRow": "Keine Phantomzeilen in der Lieferprüfung",
       "deliveryGhostRowDesc": "Nur in Odoo vorhandene Dienstleistungszeilen, die nie einen Lieferschein erzeugen (z. B. Zahlungen mit Geschenkkarte), erscheinen nicht mehr im Lieferblock."
+    },
+    "v130": {
+      "date": "26. November 2026",
+      "anyMenu": "Öffnet sich aus jedem Menü, das den Auftrag zeigt",
+      "anyMenuDesc": "Bisher erschien das Panel nur, wenn Sie den Auftrag über Verkauf › Angebote öffneten. In Odoo 18 und 19 erscheint es jetzt auch über Aufträge, das Menü des Shopify-Konnektors, Abzurechnen und den Reiter Verkauf des Kunden.",
+      "followsRecord": "Das Panel folgt dem, was auf dem Bildschirm ist",
+      "followsRecordDesc": "Wenn Sie die Rechnung eines Auftrags oder dessen Kunden öffnen, tritt das Panel zur Seite, statt auf einem Datensatz zu bleiben, der nicht der Auftrag ist. Zurück beim Auftrag erscheint es wieder.",
+      "oldOrders": "Aufträge älter als 60 Tage zeigen nicht mehr „Not synced“",
+      "oldOrdersDesc": "Wenn Ihr Shopify-Konnektor nur die Aufträge der letzten 60 Tage lesen kann, zeigten ältere Aufträge „Not synced“, obwohl sie korrekt verknüpft waren. Das Panel erklärt jetzt, warum es sie nicht vergleichen kann und wie Sie das beheben."
     },
     "v121": {
       "date": "13. November 2026",

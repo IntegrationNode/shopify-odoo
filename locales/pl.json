@@ -683,7 +683,8 @@
       "initialRelease": "Pierwsze wydanie",
       "licensing": "Okres próbny i licencjonowanie",
       "newFeatures": "Nowe funkcje",
-      "bugFixes": "Poprawki błędów"
+      "bugFixes": "Poprawki błędów",
+      "improvements": "Ulepszenia"
     },
     "v100": {
       "date": "Pierwsze wydanie",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Wiersze istniejące tylko w Odoo (np. płatności kartą podarunkową) pokazują teraz „—” zamiast ilości pobranych z konektora.",
       "deliveryGhostRow": "Brak widmowych wierszy w kontroli dostawy",
       "deliveryGhostRowDesc": "Wiersze usług istniejące tylko w Odoo, które nigdy nie generują dokumentu dostawy (np. płatności kartą podarunkową), nie pojawiają się już w bloku dostawy."
+    },
+    "v130": {
+      "date": "26 listopada 2026",
+      "anyMenu": "Otwiera się z każdego menu, które pokazuje zamówienie",
+      "anyMenuDesc": "Wcześniej panel pojawiał się tylko po otwarciu zamówienia z Sprzedaż › Oferty. W Odoo 18 i 19 pojawia się teraz także z Zamówień sprzedaży, menu konektora Shopify, Do zafakturowania i karty Sprzedaż klienta.",
+      "followsRecord": "Panel podąża za tym, co jest na ekranie",
+      "followsRecordDesc": "Gdy otwierasz fakturę zamówienia lub jego klienta, panel usuwa się, zamiast zostawać na rekordzie, który nie jest zamówieniem. Wróć do zamówienia, a pojawi się ponownie.",
+      "oldOrders": "Zamówienia starsze niż 60 dni nie pokazują już „Not synced”",
+      "oldOrdersDesc": "Jeśli Twój konektor Shopify może odczytać tylko zamówienia z ostatnich 60 dni, starsze zamówienia pokazywały „Not synced”, nawet gdy były poprawnie powiązane. Teraz panel wyjaśnia, dlaczego nie może ich porównać i jak to naprawić."
     },
     "v121": {
       "date": "13 listopada 2026",

@@ -683,7 +683,8 @@
       "initialRelease": "Rilascio Iniziale",
       "licensing": "Prova e Licenze",
       "newFeatures": "Nuove Funzionalità",
-      "bugFixes": "Correzioni Bug"
+      "bugFixes": "Correzioni Bug",
+      "improvements": "Miglioramenti"
     },
     "v100": {
       "date": "Rilascio iniziale",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Le righe presenti solo in Odoo (come i pagamenti con carta regalo) ora mostrano «—» invece di quantità prese dal connettore.",
       "deliveryGhostRow": "Niente righe fantasma nel controllo di consegna",
       "deliveryGhostRowDesc": "Le righe di servizio presenti solo in Odoo che non generano mai un documento di consegna (come i pagamenti con carta regalo) non compaiono più nel blocco consegna."
+    },
+    "v130": {
+      "date": "26 novembre 2026",
+      "anyMenu": "Si apre da qualsiasi menu che mostra l'ordine",
+      "anyMenuDesc": "Prima il pannello compariva solo aprendo l'ordine da Vendite › Preventivi. In Odoo 18 e 19 ora compare anche da Ordini di vendita, dal menu del connettore Shopify, da Da fatturare e dalla scheda Vendite del cliente.",
+      "followsRecord": "Il pannello segue ciò che è sullo schermo",
+      "followsRecordDesc": "Quando apri la fattura di un ordine o il suo cliente, il pannello si fa da parte invece di restare su un record che non è l'ordine. Torna all'ordine e ricompare.",
+      "oldOrders": "Gli ordini con più di 60 giorni non mostrano più «Not synced»",
+      "oldOrdersDesc": "Se il tuo connettore Shopify può leggere solo gli ordini degli ultimi 60 giorni, gli ordini più vecchi mostravano «Not synced» anche se erano collegati correttamente. Ora il pannello spiega perché non può confrontarli e come risolvere."
     },
     "v121": {
       "date": "13 novembre 2026",

@@ -683,7 +683,8 @@
       "initialRelease": "Lanzamiento inicial",
       "licensing": "Prueba y licencias",
       "newFeatures": "Nuevas Funciones",
-      "bugFixes": "Correcciones"
+      "bugFixes": "Correcciones",
+      "improvements": "Mejoras"
     },
     "v100": {
       "date": "Lanzamiento inicial",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Las filas que solo existen en Odoo (como los pagos con tarjeta regalo) ahora muestran «—» en lugar de cantidades tomadas del conector.",
       "deliveryGhostRow": "Sin filas fantasma en la comprobación de entrega",
       "deliveryGhostRowDesc": "Las líneas de servicio solo de Odoo que nunca generan un albarán (como los pagos con tarjeta regalo) ya no aparecen en el bloque de entrega."
+    },
+    "v130": {
+      "date": "26 de noviembre de 2026",
+      "anyMenu": "Se abre desde cualquier menú que muestre el pedido",
+      "anyMenuDesc": "Antes el panel solo aparecía al abrir el pedido desde Ventas › Presupuestos. En Odoo 18 y 19 ahora aparece también desde Pedidos de venta, el menú del conector de Shopify, A facturar y la pestaña Ventas del cliente.",
+      "followsRecord": "El panel sigue lo que hay en pantalla",
+      "followsRecordDesc": "Cuando abres la factura de un pedido o su cliente, el panel se retira en vez de quedarse sobre un registro que no es el pedido. Al volver al pedido, reaparece.",
+      "oldOrders": "Los pedidos de más de 60 días ya no muestran «Not synced»",
+      "oldOrdersDesc": "Si tu conector de Shopify solo puede leer los pedidos de los últimos 60 días, los más antiguos salían como «Not synced» aunque estuvieran bien enlazados. Ahora el panel explica por qué no puede compararlos y cómo solucionarlo."
     },
     "v121": {
       "date": "13 de noviembre de 2026",

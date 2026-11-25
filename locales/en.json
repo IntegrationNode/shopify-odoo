@@ -683,7 +683,8 @@
       "initialRelease": "Initial Release",
       "licensing": "Trial & Licensing",
       "newFeatures": "New Features",
-      "bugFixes": "Bug Fixes"
+      "bugFixes": "Bug Fixes",
+      "improvements": "Improvements"
     },
     "v100": {
       "date": "Initial release",
@@ -721,6 +722,15 @@
       "historyColumnsDesc": "Rows that only exist in Odoo (such as gift card payments) now show \"—\" instead of quantities borrowed from the connector.",
       "deliveryGhostRow": "No phantom rows in the delivery check",
       "deliveryGhostRowDesc": "Odoo-only service lines that never produce a delivery order (such as gift card payments) no longer appear in the delivery block."
+    },
+    "v130": {
+      "date": "November 26, 2026",
+      "anyMenu": "Opens from any menu that shows the order",
+      "anyMenuDesc": "The panel used to appear only when you opened the order from Sales › Quotations. In Odoo 18 and 19 it now also appears from Sales Orders, the Shopify connector's menu, To Invoice and the customer's Sales tab.",
+      "followsRecord": "The panel follows what's on screen",
+      "followsRecordDesc": "When you open an order's invoice or its customer, the panel steps aside instead of staying on a record that isn't the order. Go back to the order and it comes back.",
+      "oldOrders": "Orders older than 60 days no longer show “Not synced”",
+      "oldOrdersDesc": "If your Shopify connector can only read the last 60 days of orders, older orders showed “Not synced” even when they were correctly linked. The panel now explains why it can't compare them and how to fix it."
     },
     "v121": {
       "date": "November 13, 2026",
